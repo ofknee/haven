@@ -17,6 +17,8 @@ script = ExtResource("5_t36mh")
 position = Vector2(216, 160)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=902821499]
+physics_interpolation_mode = 1
+position = Vector2(216, 160)
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=1667432914]
 process_priority = 300
@@ -24,7 +26,11 @@ process_physics_priority = 300
 script = ExtResource("3_ws5ps")
 metadata/_custom_type_script = "uid://bd046eokvcnu2"
 
-[node name="PhantomCamera2D" type="Node2D" parent="." unique_id=126753815]
+[node name="PhantomCamera2D" type="Node2D" parent="." unique_id=126753815 node_paths=PackedStringArray("follow_target")]
+top_level = true
+position = Vector2(216, 160)
 script = ExtResource("4_cwgdg")
+follow_mode = 2
+follow_target = NodePath("../Player")
 tween_resource = SubResource("Resource_0vfjo")
 metadata/_custom_type_script = "uid://bhexx6mj1xv3q"
