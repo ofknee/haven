@@ -8,6 +8,7 @@
 
 [sub_resource type="Resource" id="Resource_0vfjo"]
 script = ExtResource("5_t36mh")
+transition = 5
 
 [node name="main" type="Node2D" unique_id=870418785]
 y_sort_enabled = true
@@ -36,4 +37,6 @@ script = ExtResource("4_cwgdg")
 follow_mode = 2
 follow_target = NodePath("../Player")
 tween_resource = SubResource("Resource_0vfjo")
+follow_damping = true
+follow_damping_value = Vector2(0.5, 0.5)
 metadata/_custom_type_script = "uid://bhexx6mj1xv3q"
