@@ -1,7 +1,11 @@
 [gd_scene format=3 uid="uid://e427571yeqii"]
 
 [ext_resource type="PackedScene" uid="uid://bnh1tvyu8hqcj" path="res://general/tile_map_layer.tscn" id="1_ciee5"]
+[ext_resource type="PackedScene" uid="uid://bbtkhynfqgm7g" path="res://general/player.tscn" id="2_xilss"]
 
 [node name="main" type="Node2D" unique_id=870418785]
 
 [node name="TileMapLayer" parent="." unique_id=1602380198 instance=ExtResource("1_ciee5")]
+
+[node name="Player" parent="." unique_id=77730844 instance=ExtResource("2_xilss")]
+position = Vector2(216, 160)
