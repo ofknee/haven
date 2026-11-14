@@ -18,6 +18,7 @@ animations = [{
 size = Vector2(24, 11)
 
 [node name="Player" type="CharacterBody2D" unique_id=77730844]
+z_index = 1
 script = ExtResource("1_cvdqf")
 
 [node name="Fatcat" type="AnimatedSprite2D" parent="." unique_id=373058302]
