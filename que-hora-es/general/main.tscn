@@ -2,6 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://bnh1tvyu8hqcj" path="res://general/tile_map_layer.tscn" id="1_ciee5"]
 [ext_resource type="PackedScene" uid="uid://bbtkhynfqgm7g" path="res://general/player.tscn" id="2_xilss"]
+[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="3_ws5ps"]
+[ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="4_cwgdg"]
+[ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="5_t36mh"]
+
+[sub_resource type="Resource" id="Resource_0vfjo"]
+script = ExtResource("5_t36mh")
 
 [node name="main" type="Node2D" unique_id=870418785]
 
@@ -9,3 +15,16 @@
 
 [node name="Player" parent="." unique_id=77730844 instance=ExtResource("2_xilss")]
 position = Vector2(216, 160)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=902821499]
+
+[node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=1667432914]
+process_priority = 300
+process_physics_priority = 300
+script = ExtResource("3_ws5ps")
+metadata/_custom_type_script = "uid://bd046eokvcnu2"
+
+[node name="PhantomCamera2D" type="Node2D" parent="." unique_id=126753815]
+script = ExtResource("4_cwgdg")
+tween_resource = SubResource("Resource_0vfjo")
+metadata/_custom_type_script = "uid://bhexx6mj1xv3q"
