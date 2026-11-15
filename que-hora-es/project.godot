@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 PhantomCameraManager="*uid://duq6jhf6unyis"
 SignalBus="*uid://coiwpx2bk48os"
+Global="*uid://85y13nrqlgla"
 
 [display]
 
