@@ -27,11 +27,11 @@ region = Rect2(672, 0, 48, 11)
 [node name="main" type="Node2D" unique_id=870418785]
 y_sort_enabled = true
 
-[node name="TileMapLayer" parent="." unique_id=1602380198 instance=ExtResource("1_ciee5")]
-
 [node name="Player" parent="." unique_id=77730844 instance=ExtResource("2_xilss")]
 y_sort_enabled = true
 position = Vector2(216, 160)
+
+[node name="TileMapLayer" parent="." unique_id=1602380198 instance=ExtResource("1_ciee5")]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=902821499]
 physics_interpolation_mode = 1
