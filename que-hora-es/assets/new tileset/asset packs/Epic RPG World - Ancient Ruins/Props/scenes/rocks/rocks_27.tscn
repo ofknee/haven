@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dww35462e50jr"]
+
+[ext_resource type="Texture2D" uid="uid://dggwvblcy3fib" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/rocks_27.png" id="1_5j6gm"]
+
+[node name="Rocks27" type="Node2D" unique_id=1070610394]
+texture_filter = 1
+
+[node name="Rocks27" type="Sprite2D" parent="." unique_id=1093680558]
+texture = ExtResource("1_5j6gm")
+centered = false
+offset = Vector2(-34, -26)

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cqavkdil5gfg"]
+
+[ext_resource type="Texture2D" uid="uid://dq8b0ysvfje3l" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/generic_estructure2_6.png" id="1_e0qh2"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/structures/generic_estructure2_on_grass_pillars.tscn" id="2_w35ux"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/structures/generic_estructure2_on_grass_pillars2.tscn" id="3_5g2dn"]
+
+[node name="FrontRuinsPlatform" type="Node2D" unique_id=632259999]
+y_sort_enabled = true
+texture_filter = 1
+
+[node name="Platform" type="Sprite2D" parent="." unique_id=1342538628]
+z_index = -1
+texture = ExtResource("1_e0qh2")
+centered = false
+offset = Vector2(-180, -249)
+
+[node name="Arch" parent="." unique_id=616156317 instance=ExtResource("2_w35ux")]
+position = Vector2(-46, -203)
+
+[node name="Pillar" parent="." unique_id=1378805431 instance=ExtResource("3_5g2dn")]
+position = Vector2(100.5, -204)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1222264271]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1242625310]
+polygon = PackedVector2Array(-110, -201, 143, -200, 144, -170, 173, -172, 173, -48, 144, -47, 141, -17, 114, -19, 114, -2, 80, -2, 80, -70, 115, -70, 115, -86, 142, -88, 141, -150, 141, -166, 137, -193, -104, -196, -104, -175, -81, -176, -81, -146, -80, -72, -38, -72, -43, 0, -75, -1, -76, -26, -107, -25, -106, -48, -144, -48, -144, -75, -170, -74, -170, -113, -148, -114, -147, -165, -109, -165)

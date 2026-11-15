@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://mlr2qbnug38d"]
+
+[ext_resource type="Texture2D" uid="uid://b723vwk1ob7w0" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/pillars and generic support3__15.png" id="1_vsjim"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0helc"]
+radius = 10.5
+height = 28.8
+
+[node name="PillarsAndGenericSupport315" type="StaticBody2D" unique_id=391686631]
+texture_filter = 1
+collision_mask = 0
+
+[node name="PillarsAndGenericSupport315" type="Sprite2D" parent="." unique_id=830127548]
+texture = ExtResource("1_vsjim")
+centered = false
+offset = Vector2(-16, -64)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=196753861]
+position = Vector2(0, -10)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_0helc")

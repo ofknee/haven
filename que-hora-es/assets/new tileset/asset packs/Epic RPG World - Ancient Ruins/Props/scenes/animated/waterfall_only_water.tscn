@@ -1,0 +1,83 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/animated/waterfall-96x128-only-water.png" id="1_11hac"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_je0my"]
+atlas = ExtResource("1_11hac")
+region = Rect2(0, 0, 96, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o5gll"]
+atlas = ExtResource("1_11hac")
+region = Rect2(96, 0, 96, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0f3hu"]
+atlas = ExtResource("1_11hac")
+region = Rect2(192, 0, 96, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pxv2v"]
+atlas = ExtResource("1_11hac")
+region = Rect2(288, 0, 96, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kq3jk"]
+atlas = ExtResource("1_11hac")
+region = Rect2(384, 0, 96, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_718ag"]
+atlas = ExtResource("1_11hac")
+region = Rect2(480, 0, 96, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mgm0u"]
+atlas = ExtResource("1_11hac")
+region = Rect2(576, 0, 96, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q0faf"]
+atlas = ExtResource("1_11hac")
+region = Rect2(672, 0, 96, 128)
+filter_clip = true
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qoh04"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_je0my")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o5gll")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0f3hu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pxv2v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kq3jk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_718ag")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mgm0u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q0faf")
+}],
+"loop": 1,
+"name": &"flow",
+"speed": 10.0
+}]
+
+[node name="WaterfallOnlyWater" type="AnimatedSprite2D" unique_id=1728951034]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_qoh04")
+animation = &"flow"
+autoplay = "flow"
+centered = false
+offset = Vector2(-48, -116)

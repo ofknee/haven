@@ -1,0 +1,28 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/trees with separated shadows/birch tree_shadow3.png" id="1_mw13q"]
+[ext_resource type="Texture2D" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/trees with separated shadows/birch trees_3.png" id="2_kf8gj"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_swnal"]
+radius = 3.5
+height = 10.8
+
+[node name="BirchTrees3" type="StaticBody2D" unique_id=1617778542]
+texture_filter = 1
+collision_mask = 0
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=623097894]
+z_index = -1
+texture = ExtResource("1_mw13q")
+centered = false
+offset = Vector2(-55, -50)
+
+[node name="BirchTrees3" type="Sprite2D" parent="." unique_id=1840016896]
+texture = ExtResource("2_kf8gj")
+centered = false
+offset = Vector2(-55, -146)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1881561351]
+position = Vector2(0, -3.5)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_swnal")

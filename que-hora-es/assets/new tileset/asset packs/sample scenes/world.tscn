@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://c5ut2xij43x6u"]
+
+[ext_resource type="PackedScene" uid="uid://dmgfsm80gp1t2" path="res://RafaelMatos/asset packs/sample scenes/desert_sample_scene.tscn" id="2_amx22"]
+[ext_resource type="PackedScene" uid="uid://dywawy82ekl3i" path="res://RafaelMatos/asset packs/sample scenes/ancient_ruins_sample_scene.tscn" id="3_mrx54"]
+[ext_resource type="PackedScene" uid="uid://dsvkyf8qt1hm2" path="res://RafaelMatos/asset packs/testing_character.tscn" id="6_1rgnd"]
+[ext_resource type="PackedScene" uid="uid://cxuarr5ak751u" path="res://RafaelMatos/asset packs/shaders/night_effect.tscn" id="7_6h63e"]
+
+[node name="World" type="Node2D" unique_id=622302654]
+
+[node name="SampleScene" type="Node2D" parent="." unique_id=1373902130]
+
+[node name="DesertSampleScene" parent="SampleScene" unique_id=816752894 instance=ExtResource("2_amx22")]
+visible = false
+
+[node name="TestingCharacter" parent="SampleScene/DesertSampleScene/ActorsAndProps" parent_id_path=PackedInt32Array(816752894, 1185376518) index="0" unique_id=1249981257 instance=ExtResource("6_1rgnd")]
+position = Vector2(1434, 356)
+
+[node name="AncientRuinsSampleScene" parent="SampleScene" unique_id=1356605059 instance=ExtResource("3_mrx54")]
+
+[node name="NightEffect" parent="." unique_id=1335366042 instance=ExtResource("7_6h63e")]
+visible = false
+
+[editable path="SampleScene/DesertSampleScene"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree2_590"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree2_591"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/Poi_1"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree1_392"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree1_315"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree1_355"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree2_592"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree2_589"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree1_316"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree1_398"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree1_312"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree1_388"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree2_593"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree1_319"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree1_308"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree2_594"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree1_326"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/FortressTowerV_36"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree2_598"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree1_324"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree1_384"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree1_396"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/FortressTowerWallCorner1Up_17"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree2_595"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree1_414"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree1_394"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree2_597"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree2_596"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree1_416"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/Houses1_-101974"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/House2_-101982"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/House3_-102070"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/Houses1_-102615"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/Houses4_-102788"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree1_533"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/PalmTree1_424"]
+[editable path="SampleScene/DesertSampleScene/ActorsAndProps/RunicStone"]

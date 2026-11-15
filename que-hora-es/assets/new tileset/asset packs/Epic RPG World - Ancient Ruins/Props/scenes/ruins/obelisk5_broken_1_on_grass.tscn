@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://ds0yi1atqhjbd"]
+
+[ext_resource type="Texture2D" uid="uid://bnyg3p1dw5crc" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/obelisk5-broken-1-on-grass.png" id="1_tmsm0"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tmsm0"]
+radius = 9.0
+height = 34.0
+
+[node name="Obelisk5Broken1OnGrass" type="StaticBody2D" unique_id=370116670]
+texture_filter = 1
+collision_mask = 0
+
+[node name="Obelisk5Broken1OnGrass" type="Sprite2D" parent="." unique_id=1698158280]
+texture = ExtResource("1_tmsm0")
+centered = false
+offset = Vector2(-33, -94)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=861260187]
+position = Vector2(0, -24)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_tmsm0")

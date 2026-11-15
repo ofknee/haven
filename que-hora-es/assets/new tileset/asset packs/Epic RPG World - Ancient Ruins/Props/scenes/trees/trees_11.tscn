@@ -1,0 +1,28 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/trees with separated shadows/trees_shadow3.png" id="1_83qkt"]
+[ext_resource type="Texture2D" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/trees with separated shadows/trees_11.png" id="2_327wf"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j36ll"]
+radius = 4.0
+height = 18.0
+
+[node name="Trees11" type="StaticBody2D" unique_id=1359094594]
+texture_filter = 1
+collision_mask = 0
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=424590462]
+z_index = -1
+texture = ExtResource("1_83qkt")
+centered = false
+offset = Vector2(-50, -42)
+
+[node name="Trees11" type="Sprite2D" parent="." unique_id=2122968585]
+texture = ExtResource("2_327wf")
+centered = false
+offset = Vector2(-50, -170)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1610164843]
+position = Vector2(0, -4)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_j36ll")
