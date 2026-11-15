@@ -5,10 +5,24 @@
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="3_ws5ps"]
 [ext_resource type="Script" uid="uid://bhexx6mj1xv3q" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="4_cwgdg"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="5_t36mh"]
+[ext_resource type="Texture2D" uid="uid://cuqb1nwkf4nnh" path="res://assets/ProgressBar/StraightBars_Spritesheet.png" id="6_cwgdg"]
+[ext_resource type="Script" uid="uid://dxsmmi1upr6ug" path="res://general/progress_bar.gd" id="7_t36mh"]
 
 [sub_resource type="Resource" id="Resource_0vfjo"]
 script = ExtResource("5_t36mh")
 transition = 5
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_43hlm"]
+atlas = ExtResource("6_cwgdg")
+region = Rect2(816, 0, 48, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8o121"]
+atlas = ExtResource("6_cwgdg")
+region = Rect2(0, 0, 48, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q1nve"]
+atlas = ExtResource("6_cwgdg")
+region = Rect2(672, 0, 48, 11)
 
 [node name="main" type="Node2D" unique_id=870418785]
 y_sort_enabled = true
@@ -40,3 +54,44 @@ tween_resource = SubResource("Resource_0vfjo")
 follow_damping = true
 follow_damping_value = Vector2(0.5, 0.5)
 metadata/_custom_type_script = "uid://bhexx6mj1xv3q"
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1358648128]
+
+[node name="Control" type="Control" parent="UI" unique_id=1947777376]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/Control" unique_id=166965618]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -112.0
+offset_right = 112.0
+offset_bottom = 30.0
+grow_horizontal = 2
+theme_override_constants/margin_top = 12
+
+[node name="ProgressBar" type="TextureProgressBar" parent="UI/Control/MarginContainer" unique_id=653295992]
+visible = false
+layout_mode = 2
+value = 100.0
+fill_mode = 6
+nine_patch_stretch = true
+stretch_margin_left = 14
+stretch_margin_top = 4
+stretch_margin_right = 16
+stretch_margin_bottom = 5
+texture_under = SubResource("AtlasTexture_43hlm")
+texture_over = SubResource("AtlasTexture_8o121")
+texture_progress = SubResource("AtlasTexture_q1nve")
+script = ExtResource("7_t36mh")
+
+[node name="Timer" type="Timer" parent="UI/Control/MarginContainer/ProgressBar" unique_id=1169884365]
+process_callback = 0
+wait_time = 5.0
+ignore_time_scale = true
