@@ -1,6 +1,6 @@
 extends Node2D
 
-@export var player_sprite: Sprite2D
+@export var player_sprite: AnimatedSprite2D
 @export var playback_speed: float = 0.5
 @onready var ghost_sprite: Sprite2D = $Sprite2D
 
@@ -67,9 +67,9 @@ func _process(delta: float) -> void:
 				weight
 			)
 
-	ghost_sprite.texture = frame["texture"]
-	ghost_sprite.hframes = frame["hframes"]
-	ghost_sprite.vframes = frame["vframes"]
+#	ghost_sprite.texture = frame["texture"]
+#	ghost_sprite.hframes = frame["hframes"]
+#	ghost_sprite.vframes = frame["vframes"]
 	ghost_sprite.frame = frame["frame"]
 	ghost_sprite.flip_h = frame["flip_h"]
 	ghost_sprite.flip_v = frame["flip_v"]
@@ -82,9 +82,9 @@ func record_frame() -> void:
 	history.append({
 		"time": record_time,
 		"transform": player_sprite.global_transform,
-		"texture": player_sprite.texture,
-		"hframes": player_sprite.hframes,
-		"vframes": player_sprite.vframes,
+#		"texture": player_sprite.texture,
+#		"hframes": player_sprite.hframes,
+#		"vframes": player_sprite.vframes,
 		"frame": player_sprite.frame,
 		"flip_h": player_sprite.flip_h,
 		"flip_v": player_sprite.flip_v,
