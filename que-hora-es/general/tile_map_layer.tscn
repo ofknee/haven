@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://bnh1tvyu8hqcj"]
 
 [ext_resource type="TileSet" uid="uid://70eohgk6sj10" path="res://resources/rpg_tileset.tres" id="1_776qs"]
+[ext_resource type="TileSet" uid="uid://bm4afay5iq6fq" path="res://assets/cat/Ancient Ruins.tres" id="2_27o05"]
 
 [node name="TileMapLayer" type="TileMapLayer" unique_id=1602380198]
 y_sort_enabled = true
@@ -55,7 +56,10 @@ y_sort_enabled = true
 tile_map_data = PackedByteArray("AAD+//b/AgAAAAIAAAD+//f/AgAAAAMAAAD+//j/AgAAAAQAAAD+//n/AgAAAAUAAAD///X/AgABAAEAAAD///b/AgABAAIAAAD///f/AgABAAMAAAD///j/AgABAAQAAAD///n/AgABAAUAAAD///r/AgABAAYAAAAAAPX/AgACAAEAAAAAAPb/AgACAAIAAAAAAPf/AgACAAMAAAAAAPj/AgACAAQAAAAAAPn/AgACAAUAAAAAAPr/AgACAAYAAAABAPX/AgADAAEAAAABAPb/AgADAAIAAAABAPf/AgADAAMAAAABAPj/AgADAAQAAAABAPn/AgADAAUAAAABAPr/AgADAAYAAAACAPb/AgAEAAIAAAACAPf/AgAEAAMAAAACAPj/AgAEAAQAAAACAPn/AgAEAAUAAAAXAPT/AgABAAEAAAAXAPX/AgAAAAQAAAAXAPb/AgABAAYAAAAYAPT/AgACAAEAAAAYAPX/AgACAAUAAAAYAPb/AgACAAYAAAAZAPT/AgACAAEAAAAZAPX/AgAFAAUAAAAZAPb/AgABAAUAAAAZAPf/AgABAAYAAAAaAPT/AgACAAEAAAAaAPX/AgAGAAUAAAAaAPb/AgADAAUAAAAaAPf/AgADAAYAAAAbAPT/AgADAAEAAAAbAPX/AgAEAAQAAAAbAPb/AgAEAAUAAAAcAPr/AgABAAEAAAAdAPr/AgACAAEAAAAeAPX/AgABAAUAAAAeAPb/AgABAAYAAAAeAPr/AgADAAEAAAAfAPX/AgABAAUAAAAfAPb/AgABAAYAAAAgAPX/AgACAAUAAAAgAPb/AgACAAYAAAAhAPX/AgADAAUAAAAhAPb/AgADAAYAAAA=")
 tile_set = ExtResource("1_776qs")
 
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=740104273]
+tile_set = ExtResource("2_27o05")
+
 [connection signal="body_entered" from="Water/Wood" to="Water/Wood" method="_on_body_entered"]
 [connection signal="body_entered" from="Wood/Wood" to="Wood/Wood" method="_on_body_entered"]
-[connection signal="body_entered" from="Wood/@Area2D@54072" to="Wood/@Area2D@54072" method="_on_body_entered"]
-[connection signal="body_entered" from="Wood/@Area2D@54073" to="Wood/@Area2D@54073" method="_on_body_entered"]
+[connection signal="body_entered" from="Wood/@Area2D@74186" to="Wood/@Area2D@74186" method="_on_body_entered"]
+[connection signal="body_entered" from="Wood/@Area2D@74187" to="Wood/@Area2D@74187" method="_on_body_entered"]
