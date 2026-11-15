@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dsvkyf8qt1hm2"]
+
+[ext_resource type="Script" uid="uid://baf3stcgp88it" path="res://RafaelMatos/asset packs/testing_character.gd" id="1_odegd"]
+[ext_resource type="Texture2D" uid="uid://sk3dxbpkgkg" path="res://icon.svg" id="2_lsvnj"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s1y0x"]
+radius = 7.0
+height = 18.0
+
+[node name="TestingCharacter" type="CharacterBody2D" unique_id=1249981257]
+y_sort_enabled = true
+collision_layer = 2
+motion_mode = 1
+wall_min_slide_angle = 0.44331363
+script = ExtResource("1_odegd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1831772144]
+position = Vector2(1, 0)
+scale = Vector2(0.296875, 0.38281247)
+texture = ExtResource("2_lsvnj")
+offset = Vector2(0, -63)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=910843529]
+position = Vector2(5.9604645e-08, -7)
+rotation = 1.5707964
+scale = Vector2(1, 0.99999994)
+shape = SubResource("CapsuleShape2D_s1y0x")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=625111332]
+process_callback = 0
+limit_smoothed = true
+position_smoothing_enabled = true
