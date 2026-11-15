@@ -1,0 +1,172 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/animated/chests-4-closing.png" id="1_cil5k"]
+[ext_resource type="Texture2D" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/animated/chests-4-opening.png" id="2_beull"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rmksx"]
+atlas = ExtResource("1_cil5k")
+region = Rect2(0, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hnhoa"]
+atlas = ExtResource("1_cil5k")
+region = Rect2(64, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kj3rl"]
+atlas = ExtResource("1_cil5k")
+region = Rect2(128, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_osevo"]
+atlas = ExtResource("1_cil5k")
+region = Rect2(192, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vucwf"]
+atlas = ExtResource("1_cil5k")
+region = Rect2(256, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgx3f"]
+atlas = ExtResource("1_cil5k")
+region = Rect2(320, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yb1yh"]
+atlas = ExtResource("1_cil5k")
+region = Rect2(384, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5j2d2"]
+atlas = ExtResource("2_beull")
+region = Rect2(0, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_23oc5"]
+atlas = ExtResource("2_beull")
+region = Rect2(64, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_buk23"]
+atlas = ExtResource("2_beull")
+region = Rect2(128, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_agn6l"]
+atlas = ExtResource("2_beull")
+region = Rect2(192, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vni08"]
+atlas = ExtResource("2_beull")
+region = Rect2(256, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjh3s"]
+atlas = ExtResource("2_beull")
+region = Rect2(320, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f3jm7"]
+atlas = ExtResource("2_beull")
+region = Rect2(384, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2q8i6"]
+atlas = ExtResource("2_beull")
+region = Rect2(448, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qa65g"]
+atlas = ExtResource("2_beull")
+region = Rect2(512, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1i0pr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rmksx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hnhoa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kj3rl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_osevo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vucwf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cgx3f")
+}, {
+"duration": 9.0,
+"texture": SubResource("AtlasTexture_yb1yh")
+}],
+"loop": 0,
+"name": &"close",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5j2d2")
+}],
+"loop": 0,
+"name": &"closed",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5j2d2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_23oc5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_buk23")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_agn6l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vni08")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pjh3s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f3jm7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2q8i6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qa65g")
+}],
+"loop": 0,
+"name": &"open",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ydvqp"]
+radius = 3.5
+height = 16.2
+
+[node name="Chest4" type="StaticBody2D" unique_id=379887891]
+texture_filter = 1
+collision_mask = 0
+
+[node name="Chest4" type="AnimatedSprite2D" parent="." unique_id=2085460492]
+sprite_frames = SubResource("SpriteFrames_1i0pr")
+animation = &"closed"
+centered = false
+offset = Vector2(-32, -57)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1774530882]
+position = Vector2(0, -3.5)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_ydvqp")

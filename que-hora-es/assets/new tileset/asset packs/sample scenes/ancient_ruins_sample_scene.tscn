@@ -1,0 +1,1599 @@
+[gd_scene format=4 uid="uid://dywawy82ekl3i"]
+
+[ext_resource type="TileSet" uid="uid://bm4afay5iq6fq" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Tilesets/Ancient Ruins.tres" id="1_7sue2"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/trees/birch_trees_no_leaves_3.tscn" id="2_ea1p1"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/trees/birch_trees_no_leaves_0.tscn" id="3_bjget"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/trees/birch_trees_5.tscn" id="4_tlsbk"]
+[ext_resource type="Texture2D" uid="uid://j583153ykvsr" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/shrubs_4.png" id="5_l4bmb"]
+[ext_resource type="Texture2D" uid="uid://bv033l4kmaaoo" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/shrubs_3.png" id="6_gt8tm"]
+[ext_resource type="Texture2D" uid="uid://kunn24d1nfex" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/shrubs_5.png" id="7_lkh57"]
+[ext_resource type="Texture2D" uid="uid://djlte44x1ickg" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/shrubs_2.png" id="8_8d6sh"]
+[ext_resource type="Texture2D" uid="uid://dl6qdw6yev7pt" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/shrubs_1.png" id="9_425ls"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/trees/trees_2.tscn" id="10_ny5ci"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/structures/generic_structure_5.tscn" id="11_avqyn"]
+[ext_resource type="Texture2D" uid="uid://dspl7w5ydq3sr" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/little stones to create paths_39.png" id="12_4cb2m"]
+[ext_resource type="Texture2D" uid="uid://bf2xcjuhagcke" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/little stones to create paths_51.png" id="13_yyqjh"]
+[ext_resource type="Texture2D" uid="uid://cq84yi72kv3i" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/little stones to create paths_49.png" id="14_iw1tq"]
+[ext_resource type="Texture2D" uid="uid://dhhwh6jrjrm4f" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/little stones to create paths_53.png" id="15_q61ir"]
+[ext_resource type="Texture2D" uid="uid://5uupx23huted" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/little stones to create paths_47.png" id="16_xlhnt"]
+[ext_resource type="Texture2D" uid="uid://buo24yo46jb70" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/little stones to create paths_34.png" id="17_s6x4c"]
+[ext_resource type="Texture2D" uid="uid://dc48wf0c7v25d" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/little stones to create paths_43.png" id="18_nr3mg"]
+[ext_resource type="Texture2D" uid="uid://ig6ijik26eea" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/little stones to create paths_33.png" id="19_r7gt4"]
+[ext_resource type="Texture2D" uid="uid://64rg2r8ae8pf" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/little stones to create paths_55.png" id="20_uibjh"]
+[ext_resource type="Texture2D" uid="uid://bfex6rmuc8xya" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/little stones to create paths_35.png" id="21_jph0k"]
+[ext_resource type="Texture2D" uid="uid://bhvivwm7bnvyr" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/little stones to create paths_31.png" id="22_kmnbq"]
+[ext_resource type="Texture2D" uid="uid://6n5bfvnvojm" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/little stones to create paths_48.png" id="23_r14te"]
+[ext_resource type="Texture2D" uid="uid://m3r4qk1lxvxd" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/little stones to create paths_52.png" id="24_6g78x"]
+[ext_resource type="Texture2D" uid="uid://bedk2yhb1obg3" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/little stones to create paths_40.png" id="25_ro8vv"]
+[ext_resource type="PackedScene" uid="uid://b1kvg33v32d67" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/ruins/pillars_and_generic_support1_4.tscn" id="26_dhhbc"]
+[ext_resource type="PackedScene" uid="uid://tu1yjpi35d01" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/ruins/pillars_and_generic_support1_2.tscn" id="27_5iyft"]
+[ext_resource type="Texture2D" uid="uid://bykufsjixrv0b" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/pillars and generic support1_2.png" id="27_bjget"]
+[ext_resource type="Texture2D" uid="uid://ycil76ig5te8" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/stone sculpted head.png" id="28_tlsbk"]
+[ext_resource type="Texture2D" uid="uid://bivgp4dnxo2gx" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/rocks_0.png" id="29_3io5o"]
+[ext_resource type="Texture2D" uid="uid://saqajt4bnli7" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations2_33.png" id="30_dy1p7"]
+[ext_resource type="Texture2D" uid="uid://brmmjfck81ynv" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations3_14.png" id="31_t7bcd"]
+[ext_resource type="Texture2D" uid="uid://vbhhjqyfuea7" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations3_5.png" id="32_25w2n"]
+[ext_resource type="Texture2D" uid="uid://cb4hhg61neho7" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations2_41.png" id="33_s303i"]
+[ext_resource type="Texture2D" uid="uid://bbpdttf0hfdd0" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations2_45.png" id="34_yxbt8"]
+[ext_resource type="Texture2D" uid="uid://dfoawqc5d8j64" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_29.png" id="35_oj0dg"]
+[ext_resource type="Texture2D" uid="uid://b1klf3hkrppej" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_18.png" id="36_vqe20"]
+[ext_resource type="Texture2D" uid="uid://0qfaabkr31vo" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_27.png" id="37_hmyru"]
+[ext_resource type="Texture2D" uid="uid://oajfsf1qlxln" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_32.png" id="38_yanfh"]
+[ext_resource type="Texture2D" uid="uid://bslda4akduior" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_12.png" id="39_frfa0"]
+[ext_resource type="Texture2D" uid="uid://77ml7t58xcqb" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_13.png" id="40_fv8cb"]
+[ext_resource type="Texture2D" uid="uid://mgwwtedg6fpu" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_20.png" id="41_egsq8"]
+[ext_resource type="Texture2D" uid="uid://ci1v5lrowmaxg" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations3_19.png" id="42_cf2pq"]
+[ext_resource type="Texture2D" uid="uid://d2basm02t3j2o" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations3_12.png" id="43_l782q"]
+[ext_resource type="Texture2D" uid="uid://dag3upjcuj85a" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations3_2.png" id="44_vl54u"]
+[ext_resource type="PackedScene" uid="uid://bkua8wsenkrrl" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/rocks/rocks_33.tscn" id="45_ww7v7"]
+[ext_resource type="Texture2D" uid="uid://b7g22pxiv0g2h" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/rocks_2.png" id="46_wmnk5"]
+[ext_resource type="PackedScene" uid="uid://e8g4pjdber1" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/animated/portal_grass.tscn" id="47_55dwl"]
+[ext_resource type="Texture2D" uid="uid://bwkcr5li4jh6" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_26.png" id="48_afl4q"]
+[ext_resource type="Texture2D" uid="uid://cyvurvuk74cxf" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_7.png" id="49_8v8s4"]
+[ext_resource type="Texture2D" uid="uid://caoe40pr5d5s" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/rocks_3.png" id="50_mog5d"]
+[ext_resource type="Texture2D" uid="uid://thw7tmt4bakx" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/rocks_6.png" id="51_ss652"]
+[ext_resource type="PackedScene" uid="uid://wpisqwa56i15" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/rocks/rocks_28.tscn" id="52_jyb0c"]
+[ext_resource type="Texture2D" uid="uid://c60raifvj0ido" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/little stones to create paths_36.png" id="53_gxfjx"]
+[ext_resource type="Texture2D" uid="uid://cjhgtefcwh4lf" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/little stones to create paths_28.png" id="54_btwy8"]
+[ext_resource type="Texture2D" uid="uid://d20ivo8kj0f1t" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/little stones to create paths_41.png" id="55_0q3bk"]
+[ext_resource type="Texture2D" uid="uid://cjppc72j4segv" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/little stones to create paths_44.png" id="56_kjqwi"]
+[ext_resource type="Texture2D" uid="uid://c1k15uhi80jwl" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/little stones to create paths_32.png" id="57_m5cgs"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/trees/trees_11.tscn" id="58_4ynql"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/trees/trees_7.tscn" id="59_o1a8j"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/trees/trees_4.tscn" id="60_uo7f4"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/trees/birch_trees_8.tscn" id="61_eosl0"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/trees/birch_trees_0.tscn" id="62_cwnj3"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/trees/birch_trees_no_leaves_5.tscn" id="63_ky2pd"]
+[ext_resource type="Texture2D" uid="uid://cepafa7u07fpg" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/flooded gras details_5.png" id="64_clghc"]
+[ext_resource type="Texture2D" uid="uid://dcpycojy8gukp" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/flooded gras details_6.png" id="65_0skds"]
+[ext_resource type="Texture2D" uid="uid://l86umtyoq7ql" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/flooded gras details_11.png" id="66_bseng"]
+[ext_resource type="Texture2D" uid="uid://bgmgpei1n4lmx" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/flooded gras details_2.png" id="67_8vh6a"]
+[ext_resource type="Texture2D" uid="uid://bdwggjkifto4k" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/flooded gras details_1.png" id="68_0j074"]
+[ext_resource type="Texture2D" uid="uid://fsa5wphniet" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/flooded gras details_3.png" id="69_e6wao"]
+[ext_resource type="Texture2D" uid="uid://desrh3foltj47" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/flooded gras details_4.png" id="70_mgd50"]
+[ext_resource type="Texture2D" uid="uid://dlgl5i28ajrwq" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/flooded gras details_0.png" id="71_bisth"]
+[ext_resource type="Texture2D" uid="uid://bxp1cy48tb6a6" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/flooded gras details_10.png" id="72_hrgua"]
+[ext_resource type="Texture2D" uid="uid://b3evetdjlcj5s" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/flooded gras details_7.png" id="73_w7wqy"]
+[ext_resource type="Texture2D" uid="uid://bf0fu4p1fqy5i" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_30.png" id="74_aaxga"]
+[ext_resource type="Texture2D" uid="uid://dov20oqcd2lhi" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_24.png" id="75_fwc1d"]
+[ext_resource type="Texture2D" uid="uid://87me7utf5nxc" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations2_40.png" id="76_f6kn3"]
+[ext_resource type="Texture2D" uid="uid://c2xvwwwruo237" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations2_46.png" id="77_u73eb"]
+[ext_resource type="PackedScene" uid="uid://cpe5j84fd8tmq" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/rocks/rocks_36.tscn" id="78_i6u75"]
+[ext_resource type="Texture2D" uid="uid://boj5l4rq7we7" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/rocks_11.png" id="79_s7olj"]
+[ext_resource type="Texture2D" uid="uid://cydvous0dcx3y" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/rocks_10.png" id="80_xvfbe"]
+[ext_resource type="Texture2D" uid="uid://cxm0wdkhodlmn" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_11.png" id="81_rmt82"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/trees/birch_trees_no_leaves_2.tscn" id="82_svh8q"]
+[ext_resource type="PackedScene" uid="uid://baa0l484nynf8" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/ruins/pillars_and_generic_support2_32.tscn" id="83_n3l60"]
+[ext_resource type="PackedScene" uid="uid://lutw2yjjs8pp" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/ruins/pillars_and_generic_support2_33.tscn" id="84_l5d0b"]
+[ext_resource type="Texture2D" uid="uid://b242ljvdul3bc" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations20_20.png" id="85_b025s"]
+[ext_resource type="Texture2D" uid="uid://cc41rrl15o83g" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations34_34.png" id="86_ie5w6"]
+[ext_resource type="Texture2D" uid="uid://cnibe45ckow0m" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations2_18.png" id="87_ylsuy"]
+[ext_resource type="Texture2D" uid="uid://cn745e4ojxt7x" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations2_21.png" id="88_qxuhx"]
+[ext_resource type="Texture2D" uid="uid://dcv8n0sxk5u3q" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/bushes_11.png" id="89_mrw3h"]
+[ext_resource type="Texture2D" uid="uid://bgssf36gte7bh" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/bushes_3.png" id="90_keljr"]
+[ext_resource type="Texture2D" uid="uid://y8e4esd7cprg" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/bushes_9.png" id="91_lodh1"]
+[ext_resource type="Texture2D" uid="uid://bbvvk1rg6meco" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_31.png" id="92_wsqr4"]
+[ext_resource type="Texture2D" uid="uid://c7lgqtoqb8c7r" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_25.png" id="93_qhv20"]
+[ext_resource type="Texture2D" uid="uid://ct867fwvcntpk" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_19.png" id="94_0n82j"]
+[ext_resource type="Texture2D" uid="uid://dwnqm6sc3r4x" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_0.png" id="95_eru76"]
+[ext_resource type="Texture2D" uid="uid://b5vrx22j057lp" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_2.png" id="96_unbl4"]
+[ext_resource type="PackedScene" uid="uid://d22j3rc7wmw43" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/ruins/pillars_and_generic_support7_7.tscn" id="97_flmfy"]
+[ext_resource type="Texture2D" uid="uid://bootlr1mgocvr" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/shrubs_0.png" id="98_0mn35"]
+[ext_resource type="Texture2D" uid="uid://d0cpefh6yuc2" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_10.png" id="99_qc1sj"]
+[ext_resource type="Texture2D" uid="uid://c0ocl162p0qxi" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_21.png" id="100_5nrea"]
+[ext_resource type="Texture2D" uid="uid://dpb6xjial3xlu" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations1_20.png" id="101_ftmq4"]
+[ext_resource type="Texture2D" uid="uid://dj6ctt8tys8be" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations1_17.png" id="102_o85f7"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/trees/trees_3.tscn" id="103_syhwh"]
+[ext_resource type="Texture2D" uid="uid://g66ud24a7ve3" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/bushes_2.png" id="104_erppm"]
+[ext_resource type="Texture2D" uid="uid://kla14b0de4fi" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations8_8.png" id="105_buy4w"]
+[ext_resource type="Texture2D" uid="uid://cqtgeuu1xx1r6" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations21_21.png" id="106_graqf"]
+[ext_resource type="Texture2D" uid="uid://bfxnukipefinl" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/bushes_1.png" id="107_8s0pj"]
+[ext_resource type="Texture2D" uid="uid://dldp3ad16qmwo" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_4.png" id="108_1i8ka"]
+[ext_resource type="PackedScene" uid="uid://vh1x3jniahe5" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/ruins/pillars_and_generic_support3_14.tscn" id="109_mm6we"]
+[ext_resource type="PackedScene" uid="uid://h63xjre4u8pb" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/ruins/pillars_and_generic_support3_17.tscn" id="110_nne7c"]
+[ext_resource type="PackedScene" uid="uid://mlr2qbnug38d" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/ruins/pillars_and_generic_support3_15.tscn" id="111_fcigg"]
+[ext_resource type="PackedScene" uid="uid://r1rjhnbgb55t" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/ruins/pillars_and_generic_support3_18.tscn" id="112_arad5"]
+[ext_resource type="PackedScene" uid="uid://cpigl52t8mfi7" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/ruins/pillars_and_generic_support3_11.tscn" id="113_yx144"]
+[ext_resource type="Texture2D" uid="uid://dac8mr3pnelcp" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations3_24.png" id="114_qd53b"]
+[ext_resource type="Texture2D" uid="uid://buwp4xk80gr6q" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations3_26.png" id="115_t77pl"]
+[ext_resource type="Texture2D" uid="uid://b02p24gh6j0qh" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations4_10.png" id="116_p0n3v"]
+[ext_resource type="Texture2D" uid="uid://dt5e7vuklwu41" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations4_6.png" id="117_qldwi"]
+[ext_resource type="Texture2D" uid="uid://bfvyy7wc5ej5i" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_28.png" id="118_j6jcq"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/trees/birch_trees_4.tscn" id="119_sxvj5"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/trees/birch_trees_no_leaves_1.tscn" id="120_ppsqf"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/trees/birch_trees_2.tscn" id="121_thnx0"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/trees/birch_trees_1.tscn" id="122_7hc8r"]
+[ext_resource type="Texture2D" uid="uid://cd2ru83j8citc" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/rocks_7.png" id="123_vuqob"]
+[ext_resource type="Texture2D" uid="uid://bkuxwipdgpe2w" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/Atlas-Props.png" id="124_py8vt"]
+[ext_resource type="Texture2D" uid="uid://daytq5v1y0h35" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_6.png" id="125_5me28"]
+[ext_resource type="PackedScene" uid="uid://ug3mxhrwbp40" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/ruins/pillars_and_generic_support3_9.tscn" id="126_xwlea"]
+[ext_resource type="PackedScene" uid="uid://brql4eg2qbi0j" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/ruins/pillars_and_generic_support3_20.tscn" id="127_70e0g"]
+[ext_resource type="Texture2D" uid="uid://bob2kaosds1bj" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations4_25.png" id="128_5neve"]
+[ext_resource type="Texture2D" uid="uid://byl8qli1j3vm4" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations4_12.png" id="129_4ihpe"]
+[ext_resource type="Texture2D" uid="uid://cvewhk4wgv0ew" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations2_0.png" id="130_kt4n0"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/scenes/moose_1.tscn" id="131_iw1tq"]
+[ext_resource type="Texture2D" uid="uid://da6tt7oosbh6y" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/tall dry grass ish_8.png" id="131_q1rey"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/trees/trees_1.tscn" id="132_ehax6"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/scenes/moose_2.tscn" id="132_q61ir"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/scenes/trees/trees_9.tscn" id="133_c8i04"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/scenes/moose_3.tscn" id="133_xlhnt"]
+[ext_resource type="Texture2D" uid="uid://cvyytn45rwmub" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations4_7.png" id="134_5noye"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/scenes/moose_4.tscn" id="134_s6x4c"]
+[ext_resource type="Texture2D" uid="uid://d30ftk7ltax7i" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations4_28.png" id="135_2j7ao"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/scenes/moose_5.tscn" id="135_nr3mg"]
+[ext_resource type="Texture2D" uid="uid://qg08oiksn3sl" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations4_5.png" id="136_n7bm2"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/scenes/moose_6.tscn" id="136_r7gt4"]
+[ext_resource type="Texture2D" uid="uid://cw1tjf58ce6ku" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations4_22.png" id="137_l6nuj"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/scenes/npc_merchant.tscn" id="137_uibjh"]
+[ext_resource type="Texture2D" uid="uid://p5ulmx3dmot7" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations2_11.png" id="138_3khit"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/scenes/npc_merchant_animated_items.tscn" id="138_jph0k"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/scenes/stone_golem.tscn" id="139_kmnbq"]
+[ext_resource type="Texture2D" uid="uid://cxavigioo2rry" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/vegetations4_18.png" id="139_w1k2j"]
+[ext_resource type="PackedScene" uid="uid://dsvkyf8qt1hm2" path="res://RafaelMatos/asset packs/testing_character.tscn" id="140_ea1p1"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/scenes/stone_golem_v2.tscn" id="140_r14te"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/scenes/silly_luck_creature.tscn" id="141_6g78x"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cpmj7"]
+radius = 14.0
+height = 40.5
+
+[node name="AncientRuinsSampleScene" type="Node2D" unique_id=1356605059]
+texture_filter = 1
+metadata/asset_name = "Ancient Ruins"
+metadata/map_size = Vector2i(40, 24)
+metadata/tile_size = Vector2i(32, 32)
+
+[node name="Ground" type="TileMapLayer" parent="." unique_id=913577308]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAAAAAEACEAAAABAAAAAAAAABoAAAACAAAAAAABABgAAAADAAAAAAACAAwAAAAEAAAAAAADABsAAAAFAAAAAAABABsAAAAGAAAAAAAAAA8AAAAHAAAAAAAEAA0AAAAIAAAAAAAAABkAAAAJAAAAAAACAA0AAAAKAAAAAAAAABwAAAALAAAAAAABABQAAAAMAAAAAAAEAB0AAAANAAAAAAAEACEAAAAOAAAAAAACAA4AAAAPAAAAAAAAABIAAAAQAAAAAAABABYAAAARAAAAAAAAABIAAAASAAAAAAAAABYAAAATAAAAAAAEAAwAAAAUAAAAAAABACEAAAAVAAAAAAABABoAAAAWAAAAAAAAABkAAAAXAAAAAAABACIAAAAYAAAAAAAEACAAAAAZAAAAAAAAACEAAAAaAAAAAAAAABcAAAAbAAAAAAACABgAAAAcAAAAAAABAAwAAAAdAAAAAAAAABMAAAAeAAAAAAAAABoAAAAfAAAAAAABABgAAAAgAAAAAAACAAwAAAAhAAAAAAADABsAAAAiAAAAAAABABsAAAAjAAAAAAAAAA8AAAAkAAAAAAAEAA0AAAAlAAAAAAAAABkAAAAmAAAAAAACAA0AAAAnAAAAAAAAABwAAAAAAAEAAAABABsAAAABAAEAAAACAB8AAAACAAEAAAADAB8AAAADAAEAAAADABMAAAAEAAEAAAADAAwAAAAFAAEAAAAEAA0AAAAGAAEAAAABABsAAAAHAAEAAAADACAAAAAIAAEAAAADABwAAAAJAAEAAAAEABYAAAAKAAEAAAABABEAAAALAAEAAAAAAB4AAAAMAAEAAAADABcAAAANAAEAAAABABwAAAAOAAEAAAADAA4AAAAPAAEAAAACABcAAAAQAAEAAAADAB8AAAARAAEAAAABACIAAAASAAEAAAADABYAAAATAAEAAAACACMAAAAUAAEAAAAEABoAAAAVAAEAAAADABkAAAAWAAEAAAADABMAAAAXAAEAAAAAAB4AAAAYAAEAAAAEAA4AAAAZAAEAAAADAAwAAAAaAAEAAAACABMAAAAbAAEAAAAAAA0AAAAcAAEAAAACAA8AAAAdAAEAAAABABwAAAAeAAEAAAACAB8AAAAfAAEAAAADAB8AAAAgAAEAAAADABMAAAAhAAEAAAADAAwAAAAiAAEAAAAEAA0AAAAjAAEAAAABABsAAAAkAAEAAAADACAAAAAlAAEAAAADABwAAAAmAAEAAAAEABYAAAAnAAEAAAABABEAAAAAAAIAAAAEACMAAAABAAIAAAABACAAAAACAAIAAAAAABcAAAADAAIAAAABAB0AAAAEAAIAAAAEABkAAAAFAAIAAAAEABgAAAAGAAIAAAAEACMAAAAHAAIAAAADABYAAAAIAAIAAAABAB0AAAAJAAIAAAABAB4AAAAKAAIAAAABABMAAAALAAIAAAAAABQAAAAMAAIAAAABABwAAAANAAIAAAAEACAAAAAOAAIAAAAAAB4AAAAPAAIAAAAAACAAAAAQAAIAAAABAA4AAAARAAIAAAACABMAAAASAAIAAAAAABMAAAATAAIAAAAEABsAAAAUAAIAAAABAA8AAAAVAAIAAAABABgAAAAWAAIAAAACABAAAAAXAAIAAAAEAB0AAAAYAAIAAAADABYAAAAZAAIAAAAEABQAAAAaAAIAAAAAABUAAAAbAAIAAAAEABIAAAAcAAIAAAAEABsAAAAdAAIAAAADABgAAAAeAAIAAAABACAAAAAfAAIAAAAAABcAAAAgAAIAAAABAB0AAAAhAAIAAAAEABkAAAAiAAIAAAAEABgAAAAjAAIAAAAEACMAAAAkAAIAAAADABYAAAAlAAIAAAABAB0AAAAmAAIAAAABAB4AAAAnAAIAAAABABMAAAAAAAMAAAABAB0AAAABAAMAAAABABMAAAACAAMAAAAAACEAAAADAAMAAAAAABsAAAAEAAMAAAADAAwAAAAFAAMAAAAAAAwAAAAGAAMAAAADABYAAAAHAAMAAAAAACMAAAAIAAMAAAADABoAAAAJAAMAAAAEAAwAAAAKAAMAAAAEAB4AAAALAAMAAAAEABwAAAAMAAMAAAAAABIAAAANAAMAAAAEACEAAAAOAAMAAAAAAAwAAAAPAAMAAAABABwAAAAQAAMAAAAEAB8AAAARAAMAAAAEABcAAAASAAMAAAAAAB0AAAATAAMAAAAAAA0AAAAUAAMAAAABAA4AAAAVAAMAAAADACMAAAAWAAMAAAAAABUAAAAXAAMAAAABABMAAAAYAAMAAAAAACIAAAAZAAMAAAAEABkAAAAaAAMAAAAAABEAAAAbAAMAAAAAABMAAAAcAAMAAAACAAwAAAAdAAMAAAABABUAAAAeAAMAAAABABMAAAAfAAMAAAAAACEAAAAgAAMAAAAAABsAAAAhAAMAAAADAAwAAAAiAAMAAAAAAAwAAAAjAAMAAAADABYAAAAkAAMAAAAAACMAAAAlAAMAAAADABoAAAAmAAMAAAAEAAwAAAAnAAMAAAAEAB4AAAAAAAQAAAAAACMAAAABAAQAAAAEABcAAAACAAQAAAAAABQAAAADAAQAAAABABgAAAAEAAQAAAADACEAAAAFAAQAAAADAAwAAAAGAAQAAAAAAA8AAAAHAAQAAAADABAAAAAIAAQAAAABABQAAAAJAAQAAAACABQAAAAKAAQAAAAEABMAAAALAAQAAAAEABgAAAAMAAQAAAAEABkAAAANAAQAAAACABEAAAAOAAQAAAACABUAAAAPAAQAAAAEAA8AAAAQAAQAAAAAACMAAAARAAQAAAADABUAAAASAAQAAAAAABcAAAATAAQAAAADABAAAAAUAAQAAAAEACIAAAAVAAQAAAAAAAwAAAAWAAQAAAAEAB8AAAAXAAQAAAADAAwAAAAYAAQAAAACACAAAAAZAAQAAAAEABQAAAAaAAQAAAAEABoAAAAbAAQAAAAEABYAAAAcAAQAAAABABcAAAAdAAQAAAAEABgAAAAeAAQAAAAEABcAAAAfAAQAAAAAABQAAAAgAAQAAAABABgAAAAhAAQAAAADACEAAAAiAAQAAAADAAwAAAAjAAQAAAAAAA8AAAAkAAQAAAADABAAAAAlAAQAAAABABQAAAAmAAQAAAACABQAAAAnAAQAAAAEABMAAAAAAAUAAAAAAA8AAAABAAUAAAAAABEAAAACAAUAAAAEAA0AAAADAAUAAAADABwAAAAEAAUAAAABABsAAAAFAAUAAAAAACMAAAAGAAUAAAADABcAAAAHAAUAAAADACIAAAAIAAUAAAACAA0AAAAJAAUAAAABABMAAAAKAAUAAAABABoAAAALAAUAAAAAABcAAAAMAAUAAAADABYAAAANAAUAAAAAACMAAAAOAAUAAAAEABEAAAAPAAUAAAACACAAAAAQAAUAAAACABEAAAARAAUAAAAEABkAAAASAAUAAAADACAAAAATAAUAAAADABAAAAAUAAUAAAADABwAAAAVAAUAAAACAA4AAAAWAAUAAAAEAA8AAAAXAAUAAAADAA8AAAAYAAUAAAAAABMAAAAZAAUAAAABACIAAAAaAAUAAAADACAAAAAbAAUAAAAEACEAAAAcAAUAAAABABgAAAAdAAUAAAACABwAAAAeAAUAAAAAABEAAAAfAAUAAAAEAA0AAAAgAAUAAAADABwAAAAhAAUAAAABABsAAAAiAAUAAAAAACMAAAAjAAUAAAADABcAAAAkAAUAAAADACIAAAAlAAUAAAACAA0AAAAmAAUAAAABABMAAAAnAAUAAAABABoAAAAAAAYAAAACACIAAAABAAYAAAABABMAAAACAAYAAAAEACMAAAADAAYAAAABABIAAAAEAAYAAAAAABUAAAAFAAYAAAAEABoAAAAGAAYAAAADAA4AAAAHAAYAAAADACAAAAAIAAYAAAAEABAAAAAJAAYAAAAEABIAAAAKAAYAAAAAABIAAAALAAYAAAADAA4AAAAMAAYAAAACABoAAAANAAYAAAADAA4AAAAOAAYAAAAAABAAAAAPAAYAAAAAABYAAAAQAAYAAAADAA8AAAARAAYAAAAAAA0AAAASAAYAAAAEABoAAAATAAYAAAABAA0AAAAUAAYAAAACAA8AAAAVAAYAAAACAAwAAAAWAAYAAAACABoAAAAXAAYAAAAEABIAAAAYAAYAAAAAABUAAAAZAAYAAAABAA4AAAAaAAYAAAADABcAAAAbAAYAAAAEAB0AAAAcAAYAAAAAABcAAAAdAAYAAAABABwAAAAeAAYAAAABABMAAAAfAAYAAAAEACMAAAAgAAYAAAABABIAAAAhAAYAAAAAABUAAAAiAAYAAAAEABoAAAAjAAYAAAADAA4AAAAkAAYAAAADACAAAAAlAAYAAAAEABAAAAAmAAYAAAAEABIAAAAnAAYAAAAAABIAAAAAAAcAAAABABAAAAABAAcAAAADABEAAAACAAcAAAAEAA4AAAADAAcAAAABAB0AAAAEAAcAAAADACIAAAAFAAcAAAADAA8AAAAGAAcAAAAAABsAAAAHAAcAAAADACIAAAAIAAcAAAAAABUAAAAJAAcAAAAAACMAAAAKAAcAAAABABAAAAALAAcAAAABAB4AAAAMAAcAAAADAA8AAAANAAcAAAACABcAAAAOAAcAAAAAABgAAAAPAAcAAAAAABQAAAAQAAcAAAAEAB8AAAARAAcAAAACAA8AAAASAAcAAAABACAAAAATAAcAAAABABcAAAAUAAcAAAABABIAAAAVAAcAAAAAAA0AAAAWAAcAAAACABMAAAAXAAcAAAABABUAAAAYAAcAAAADABEAAAAZAAcAAAAAABEAAAAaAAcAAAACAAwAAAAbAAcAAAAAAB8AAAAcAAcAAAACABsAAAAdAAcAAAABABsAAAAeAAcAAAADABEAAAAfAAcAAAAEAA4AAAAgAAcAAAABAB0AAAAhAAcAAAADACIAAAAiAAcAAAADAA8AAAAjAAcAAAAAABsAAAAkAAcAAAADACIAAAAlAAcAAAAAABUAAAAmAAcAAAAAACMAAAAnAAcAAAABABAAAAAAAAgAAAABAA4AAAABAAgAAAABABcAAAACAAgAAAAAABkAAAADAAgAAAACAB4AAAAEAAgAAAAEAB4AAAAFAAgAAAAEABEAAAAGAAgAAAABABYAAAAHAAgAAAADABcAAAAIAAgAAAADAB8AAAAJAAgAAAABAAwAAAAKAAgAAAAAABEAAAALAAgAAAABACIAAAAMAAgAAAAEACEAAAANAAgAAAAAABEAAAAOAAgAAAAEABEAAAAPAAgAAAAEAB4AAAAQAAgAAAAAABQAAAARAAgAAAADACEAAAASAAgAAAAEAA4AAAATAAgAAAAEAA0AAAAUAAgAAAAAAAwAAAAVAAgAAAABABkAAAAWAAgAAAAAABcAAAAXAAgAAAADACIAAAAYAAgAAAAAABQAAAAZAAgAAAADAAwAAAAaAAgAAAADACIAAAAbAAgAAAADACMAAAAcAAgAAAACAA4AAAAdAAgAAAACABUAAAAeAAgAAAABABcAAAAfAAgAAAAAABkAAAAgAAgAAAACAB4AAAAhAAgAAAAEAB4AAAAiAAgAAAAEABEAAAAjAAgAAAABABYAAAAkAAgAAAADABcAAAAlAAgAAAADAB8AAAAmAAgAAAABAAwAAAAnAAgAAAAAABEAAAAAAAkAAAABAB0AAAABAAkAAAACACIAAAACAAkAAAAAABgAAAADAAkAAAADABUAAAAEAAkAAAACACAAAAAFAAkAAAADABsAAAAGAAkAAAAAABkAAAAHAAkAAAADABkAAAAIAAkAAAABABgAAAAJAAkAAAAEABwAAAAKAAkAAAACABkAAAALAAkAAAABAA4AAAAMAAkAAAACABQAAAANAAkAAAACAB8AAAAOAAkAAAABABsAAAAPAAkAAAAAABwAAAAQAAkAAAACAAwAAAARAAkAAAAAABoAAAASAAkAAAADABsAAAATAAkAAAAEABAAAAAUAAkAAAAAABUAAAAVAAkAAAACACEAAAAWAAkAAAABAAwAAAAXAAkAAAAEABEAAAAYAAkAAAAEABkAAAAZAAkAAAACACAAAAAaAAkAAAABAB0AAAAbAAkAAAADABUAAAAcAAkAAAADABEAAAAdAAkAAAADACMAAAAeAAkAAAACACIAAAAfAAkAAAAAABgAAAAgAAkAAAADABUAAAAhAAkAAAACACAAAAAiAAkAAAADABsAAAAjAAkAAAAAABkAAAAkAAkAAAADABkAAAAlAAkAAAABABgAAAAmAAkAAAAEABwAAAAnAAkAAAACABkAAAAAAAoAAAACABAAAAABAAoAAAACAB0AAAACAAoAAAACABoAAAADAAoAAAADABIAAAAEAAoAAAAAABQAAAAFAAoAAAADACAAAAAGAAoAAAAEAAwAAAAHAAoAAAAEAAwAAAAIAAoAAAABACAAAAAJAAoAAAAAABAAAAAKAAoAAAAAABgAAAALAAoAAAAAABEAAAAMAAoAAAAAABsAAAANAAoAAAAAABYAAAAOAAoAAAACACIAAAAPAAoAAAADAA8AAAAQAAoAAAAEABgAAAARAAoAAAACABcAAAASAAoAAAABAA4AAAATAAoAAAADACAAAAAUAAoAAAAEABUAAAAVAAoAAAAEABQAAAAWAAoAAAADABQAAAAXAAoAAAACAAwAAAAYAAoAAAADACIAAAAZAAoAAAAEACMAAAAaAAoAAAACABsAAAAbAAoAAAACABYAAAAcAAoAAAAAACIAAAAdAAoAAAACABEAAAAeAAoAAAACAB0AAAAfAAoAAAACABoAAAAgAAoAAAADABIAAAAhAAoAAAAAABQAAAAiAAoAAAADACAAAAAjAAoAAAAEAAwAAAAkAAoAAAAEAAwAAAAlAAoAAAABACAAAAAmAAoAAAAAABAAAAAnAAoAAAAAABgAAAAAAAsAAAACABYAAAABAAsAAAACACMAAAACAAsAAAAEAA0AAAADAAsAAAABABsAAAAEAAsAAAABAA8AAAAFAAsAAAADAA0AAAAGAAsAAAABACMAAAAHAAsAAAAEABkAAAAIAAsAAAABABMAAAAJAAsAAAABAB8AAAAKAAsAAAACAB0AAAALAAsAAAABABMAAAAMAAsAAAACABUAAAANAAsAAAAAACAAAAAOAAsAAAACAB4AAAAPAAsAAAAEAA4AAAAQAAsAAAABABIAAAARAAsAAAABAB0AAAASAAsAAAADAB0AAAATAAsAAAABABQAAAAUAAsAAAABABoAAAAVAAsAAAAEABwAAAAWAAsAAAABABUAAAAXAAsAAAABABIAAAAYAAsAAAAEAB4AAAAZAAsAAAAEABkAAAAaAAsAAAABAA8AAAAbAAsAAAABACMAAAAcAAsAAAACABsAAAAdAAsAAAADACIAAAAeAAsAAAACACMAAAAfAAsAAAAEAA0AAAAgAAsAAAABABsAAAAhAAsAAAABAA8AAAAiAAsAAAADAA0AAAAjAAsAAAABACMAAAAkAAsAAAAEABkAAAAlAAsAAAABABMAAAAmAAsAAAABAB8AAAAnAAsAAAACAB0AAAAAAAwAAAABACIAAAABAAwAAAAAACEAAAACAAwAAAABACEAAAADAAwAAAACACIAAAAEAAwAAAADABcAAAAFAAwAAAACACMAAAAGAAwAAAAEABcAAAAHAAwAAAABABoAAAAIAAwAAAAAABMAAAAJAAwAAAAEAA8AAAAKAAwAAAACABAAAAALAAwAAAAAABMAAAAMAAwAAAAEABEAAAANAAwAAAADABQAAAAOAAwAAAACAA4AAAAPAAwAAAABABYAAAAQAAwAAAACABUAAAARAAwAAAABAAwAAAASAAwAAAAEABgAAAATAAwAAAACACMAAAAUAAwAAAADABYAAAAVAAwAAAACACEAAAAWAAwAAAADAB8AAAAXAAwAAAACABQAAAAYAAwAAAADAB0AAAAZAAwAAAACACIAAAAaAAwAAAAAABsAAAAbAAwAAAAAAA0AAAAcAAwAAAABAA0AAAAdAAwAAAAEABAAAAAeAAwAAAAAACEAAAAfAAwAAAABACEAAAAgAAwAAAACACIAAAAhAAwAAAADABcAAAAiAAwAAAACACMAAAAjAAwAAAAEABcAAAAkAAwAAAABABoAAAAlAAwAAAAAABMAAAAmAAwAAAAEAA8AAAAnAAwAAAACABAAAAAAAA0AAAAAAB0AAAABAA0AAAADAAwAAAACAA0AAAADACAAAAADAA0AAAAAAB4AAAAEAA0AAAAEAAwAAAAFAA0AAAABAB8AAAAGAA0AAAADABIAAAAHAA0AAAABAA8AAAAIAA0AAAAEABkAAAAJAA0AAAABABsAAAAKAA0AAAABABEAAAALAA0AAAACAA4AAAAMAA0AAAAAACEAAAANAA0AAAAAACIAAAAOAA0AAAACABIAAAAPAA0AAAAAACMAAAAQAA0AAAABABYAAAARAA0AAAABACMAAAASAA0AAAAEAA4AAAATAA0AAAADACEAAAAUAA0AAAAEABsAAAAVAA0AAAAAACEAAAAWAA0AAAAEAA8AAAAXAA0AAAAEABwAAAAYAA0AAAAEACMAAAAZAA0AAAADABsAAAAaAA0AAAACAA0AAAAbAA0AAAAEACAAAAAcAA0AAAAAAAwAAAAdAA0AAAABABIAAAAeAA0AAAAAABoAAAAfAA0AAAABABgAAAAgAA0AAAACAAwAAAAhAA0AAAADABsAAAAiAA0AAAABABsAAAAjAA0AAAAAAA8AAAAkAA0AAAAEAA0AAAAlAA0AAAAAABkAAAAmAA0AAAACAA0AAAAnAA0AAAAAABwAAAAAAA4AAAADACMAAAABAA4AAAAEAB0AAAACAA4AAAACABcAAAADAA4AAAAAAA4AAAAEAA4AAAAEABoAAAAFAA4AAAADACAAAAAGAA4AAAACABYAAAAHAA4AAAABAA0AAAAIAA4AAAAAACIAAAAJAA4AAAABABkAAAAKAA4AAAADABQAAAALAA4AAAACAB8AAAAMAA4AAAABABsAAAANAA4AAAADABwAAAAOAA4AAAAAABkAAAAPAA4AAAAAABcAAAAQAA4AAAACABQAAAARAA4AAAAAAA8AAAASAA4AAAABABgAAAATAA4AAAAAAAwAAAAUAA4AAAACABYAAAAVAA4AAAAEACIAAAAWAA4AAAADAA8AAAAXAA4AAAAAABYAAAAYAA4AAAABACIAAAAZAA4AAAADABwAAAAaAA4AAAABAA0AAAAbAA4AAAADABkAAAAcAA4AAAACABoAAAAdAA4AAAADACEAAAAeAA4AAAACAB8AAAAfAA4AAAADAB8AAAAgAA4AAAADABMAAAAhAA4AAAADAAwAAAAiAA4AAAAEAA0AAAAjAA4AAAABABsAAAAkAA4AAAADACAAAAAlAA4AAAADABwAAAAmAA4AAAAEABYAAAAnAA4AAAABABEAAAAAAA8AAAABABcAAAABAA8AAAAEABQAAAACAA8AAAAEACIAAAADAA8AAAAAABsAAAAEAA8AAAADACMAAAAFAA8AAAABAA4AAAAGAA8AAAABABwAAAAHAA8AAAACABIAAAAIAA8AAAACAB0AAAAJAA8AAAABABgAAAAKAA8AAAAAABMAAAALAA8AAAAAACMAAAAMAA8AAAAEACMAAAANAA8AAAADAAwAAAAOAA8AAAABABwAAAAPAA8AAAADABkAAAAQAA8AAAAEABAAAAARAA8AAAAEABMAAAASAA8AAAAAAA0AAAATAA8AAAAEACAAAAAUAA8AAAABABUAAAAVAA8AAAACABIAAAAWAA8AAAACAA0AAAAXAA8AAAAEACEAAAAYAA8AAAADAB0AAAAZAA8AAAACAB0AAAAaAA8AAAAEAA0AAAAbAA8AAAACABoAAAAcAA8AAAAAAA0AAAAdAA8AAAAAABUAAAAeAA8AAAABACAAAAAfAA8AAAAAABcAAAAgAA8AAAABAB0AAAAhAA8AAAAEABkAAAAiAA8AAAAEABgAAAAjAA8AAAAEACMAAAAkAA8AAAADABYAAAAlAA8AAAABAB0AAAAmAA8AAAABAB4AAAAnAA8AAAABABMAAAAAABAAAAAAAB8AAAABABAAAAAEACIAAAACABAAAAACABYAAAADABAAAAACABcAAAAEABAAAAAEACAAAAAFABAAAAAEABUAAAAGABAAAAACABQAAAAHABAAAAABACAAAAAIABAAAAAEABwAAAAJABAAAAAEABEAAAAKABAAAAACAA0AAAALABAAAAABACIAAAAMABAAAAACAB4AAAANABAAAAAEABIAAAAOABAAAAAAAAwAAAAPABAAAAADAAwAAAAQABAAAAADACMAAAARABAAAAAEAA4AAAASABAAAAABABUAAAATABAAAAABABoAAAAUABAAAAAAABkAAAAVABAAAAAAACMAAAAWABAAAAACAB4AAAAXABAAAAABACMAAAAYABAAAAAAAA4AAAAZABAAAAAEAB0AAAAaABAAAAAEACAAAAAbABAAAAABACAAAAAcABAAAAAEAB0AAAAdABAAAAAEABcAAAAeABAAAAABABMAAAAfABAAAAAAACEAAAAgABAAAAAAABsAAAAhABAAAAADAAwAAAAiABAAAAAAAAwAAAAjABAAAAADABYAAAAkABAAAAAAACMAAAAlABAAAAADABoAAAAmABAAAAAEAAwAAAAnABAAAAAEAB4AAAAAABEAAAACABAAAAABABEAAAAEABkAAAACABEAAAADAA8AAAADABEAAAABABcAAAAEABEAAAABABwAAAAFABEAAAAAAA8AAAAGABEAAAABABoAAAAHABEAAAACABYAAAAIABEAAAABABMAAAAJABEAAAAEABsAAAAKABEAAAAEABsAAAALABEAAAAAAAwAAAAMABEAAAAEABUAAAANABEAAAAEABsAAAAOABEAAAADACAAAAAPABEAAAADABoAAAAQABEAAAACAA4AAAARABEAAAADAAwAAAASABEAAAADACAAAAATABEAAAAAAA8AAAAUABEAAAAAACEAAAAVABEAAAAAABoAAAAWABEAAAABAAwAAAAXABEAAAAAAB4AAAAYABEAAAABABAAAAAZABEAAAACABQAAAAaABEAAAADAAwAAAAbABEAAAADAA4AAAAcABEAAAAEAB8AAAAdABEAAAADAB8AAAAeABEAAAAEABcAAAAfABEAAAAAABQAAAAgABEAAAABABgAAAAhABEAAAADACEAAAAiABEAAAADAAwAAAAjABEAAAAAAA8AAAAkABEAAAADABAAAAAlABEAAAABABQAAAAmABEAAAACABQAAAAnABEAAAAEABMAAAAAABIAAAACAAwAAAABABIAAAABACEAAAACABIAAAACAB4AAAADABIAAAAAAA8AAAAEABIAAAADABwAAAAFABIAAAACABYAAAAGABIAAAACACIAAAAHABIAAAABAB4AAAAIABIAAAACABEAAAAJABIAAAAEABUAAAAKABIAAAACABUAAAALABIAAAABABIAAAAMABIAAAAAACAAAAANABIAAAABABIAAAAOABIAAAABABsAAAAPABIAAAADAB0AAAAQABIAAAADABwAAAARABIAAAABABIAAAASABIAAAACAA0AAAATABIAAAAEACMAAAAUABIAAAACABoAAAAVABIAAAAAABwAAAAWABIAAAABAB8AAAAXABIAAAABAA4AAAAYABIAAAAEAA4AAAAZABIAAAAEABkAAAAaABIAAAADABwAAAAbABIAAAACABIAAAAcABIAAAADABAAAAAdABIAAAAAAB0AAAAeABIAAAAAABEAAAAfABIAAAAEAA0AAAAgABIAAAADABwAAAAhABIAAAABABsAAAAiABIAAAAAACMAAAAjABIAAAADABcAAAAkABIAAAADACIAAAAlABIAAAACAA0AAAAmABIAAAABABMAAAAnABIAAAABABoAAAAAABMAAAAEABUAAAABABMAAAAAABkAAAACABMAAAAEABUAAAADABMAAAACACAAAAAEABMAAAABACAAAAAFABMAAAADABUAAAAGABMAAAACABkAAAAHABMAAAAAACEAAAAIABMAAAAEABEAAAAJABMAAAABABAAAAAKABMAAAACACMAAAALABMAAAAEABIAAAAMABMAAAACABgAAAANABMAAAACABYAAAAOABMAAAADACIAAAAPABMAAAABACIAAAAQABMAAAACABgAAAARABMAAAABABYAAAASABMAAAAAABQAAAATABMAAAADABsAAAAUABMAAAADABoAAAAVABMAAAACACEAAAAWABMAAAAAACMAAAAXABMAAAABABUAAAAYABMAAAAAACEAAAAZABMAAAAAABoAAAAaABMAAAACACAAAAAbABMAAAAEABQAAAAcABMAAAACABIAAAAdABMAAAADABwAAAAeABMAAAABABMAAAAfABMAAAAEACMAAAAgABMAAAABABIAAAAhABMAAAAAABUAAAAiABMAAAAEABoAAAAjABMAAAADAA4AAAAkABMAAAADACAAAAAlABMAAAAEABAAAAAmABMAAAAEABIAAAAnABMAAAAAABIAAAAAABQAAAAEABQAAAABABQAAAAEACEAAAACABQAAAADABUAAAADABQAAAABAA8AAAAEABQAAAADABAAAAAFABQAAAABACEAAAAGABQAAAACACEAAAAHABQAAAADACIAAAAIABQAAAABACMAAAAJABQAAAAAABoAAAAKABQAAAAAABcAAAALABQAAAAAABgAAAAMABQAAAAEABEAAAANABQAAAACABEAAAAOABQAAAADABQAAAAPABQAAAABACMAAAAQABQAAAAEABgAAAARABQAAAABACMAAAASABQAAAABAA8AAAATABQAAAACAB4AAAAUABQAAAACAA0AAAAVABQAAAACABsAAAAWABQAAAABABUAAAAXABQAAAACAA4AAAAYABQAAAADAA8AAAAZABQAAAAAAB8AAAAaABQAAAABABQAAAAbABQAAAABACIAAAAcABQAAAADABUAAAAdABQAAAADAB4AAAAeABQAAAADABEAAAAfABQAAAAEAA4AAAAgABQAAAABAB0AAAAhABQAAAADACIAAAAiABQAAAADAA8AAAAjABQAAAAAABsAAAAkABQAAAADACIAAAAlABQAAAAAABUAAAAmABQAAAAAACMAAAAnABQAAAABABAAAAAAABUAAAAAABsAAAABABUAAAAAAA8AAAACABUAAAAEAA4AAAADABUAAAAEACMAAAAEABUAAAADABgAAAAFABUAAAAEABwAAAAGABUAAAADACAAAAAHABUAAAAEABIAAAAIABUAAAABAAwAAAAJABUAAAABACMAAAAKABUAAAAEABwAAAALABUAAAADAAwAAAAMABUAAAAAABIAAAANABUAAAADAA8AAAAOABUAAAADAB0AAAAPABUAAAADAB8AAAAQABUAAAAEABAAAAARABUAAAABABEAAAASABUAAAABABQAAAATABUAAAAEABwAAAAUABUAAAAAAA8AAAAVABUAAAADABwAAAAWABUAAAABABYAAAAXABUAAAAEAAwAAAAYABUAAAABACIAAAAZABUAAAADABQAAAAaABUAAAAAAB8AAAAbABUAAAAAABQAAAAcABUAAAABABMAAAAdABUAAAADACEAAAAeABUAAAABABcAAAAfABUAAAAAABkAAAAgABUAAAACAB4AAAAhABUAAAAEAB4AAAAiABUAAAAEABEAAAAjABUAAAABABYAAAAkABUAAAADABcAAAAlABUAAAADAB8AAAAmABUAAAABAAwAAAAnABUAAAAAABEAAAAAABYAAAABABsAAAABABYAAAAAACMAAAACABYAAAACABcAAAADABYAAAACABIAAAAEABYAAAAEAB0AAAAFABYAAAAAACIAAAAGABYAAAABAB0AAAAHABYAAAADABQAAAAIABYAAAAAABwAAAAJABYAAAACABYAAAAKABYAAAABABIAAAALABYAAAAAABMAAAAMABYAAAAAABwAAAANABYAAAAEABUAAAAOABYAAAACAB0AAAAPABYAAAAEABIAAAAQABYAAAAAABoAAAARABYAAAABACIAAAASABYAAAACABwAAAATABYAAAACABkAAAAUABYAAAACABoAAAAVABYAAAAEABgAAAAWABYAAAACAB4AAAAXABYAAAAEACEAAAAYABYAAAAEABgAAAAZABYAAAADABMAAAAaABYAAAABABwAAAAbABYAAAADAA8AAAAcABYAAAACABYAAAAdABYAAAABABIAAAAeABYAAAACACIAAAAfABYAAAAAABgAAAAgABYAAAADABUAAAAhABYAAAACACAAAAAiABYAAAADABsAAAAjABYAAAAAABkAAAAkABYAAAADABkAAAAlABYAAAABABgAAAAmABYAAAAEABwAAAAnABYAAAACABkAAAAAABcAAAAEAA4AAAABABcAAAAEABMAAAACABcAAAADABAAAAADABcAAAAAABwAAAAEABcAAAABAB0AAAAFABcAAAAEAB0AAAAGABcAAAADAAwAAAAHABcAAAABABwAAAAIABcAAAADAB0AAAAJABcAAAAEABwAAAAKABcAAAACABAAAAALABcAAAAAAA0AAAAMABcAAAACAB0AAAANABcAAAAEACAAAAAOABcAAAADAA8AAAAPABcAAAABACAAAAAQABcAAAADACMAAAARABcAAAAEABMAAAASABcAAAAEABQAAAATABcAAAACACMAAAAUABcAAAAEAA4AAAAVABcAAAABABIAAAAWABcAAAADABIAAAAXABcAAAAEACEAAAAYABcAAAAAAB0AAAAZABcAAAABABwAAAAaABcAAAAEABAAAAAbABcAAAACABkAAAAcABcAAAABABAAAAAdABcAAAAAABMAAAAeABcAAAACAB0AAAAfABcAAAACABoAAAAgABcAAAADABIAAAAhABcAAAAAABQAAAAiABcAAAADACAAAAAjABcAAAAEAAwAAAAkABcAAAAEAAwAAAAlABcAAAABACAAAAAmABcAAAAAABAAAAAnABcAAAAAABgAAAA=")
+tile_set = ExtResource("1_7sue2")
+
+[node name="GrassTransitions" type="TileMapLayer" parent="." unique_id=68141715]
+z_index = -1
+tile_map_data = PackedByteArray("AAAAAAAAAAAJAAsAAAABAAAAAAAiAAUAAAACAAAAAAAGACkAAAADAAAAAAAjAAIAAAAEAAAAAAAfAAIAAAAFAAAAAAAjAAkAAAAGAAAAAAAfAAIAAAAHAAAAAAAFACsAAAAIAAAAAAAgAAUAAAAJAAAAAAAiAAwAAAAKAAAAAAAgAAwAAAALAAAAAAAIACgAAAANAAAAAAAfAAwAAAAOAAAAAAAgAAwAAAAPAAAAAAAFABsAAAAQAAAAAAAiAAMAAAARAAAAAAAGACgAAAASAAAAAAAGACgAAAATAAAAAAAgAAMAAAAUAAAAAAAIACkAAAAYAAAAAAAgAAIAAAAZAAAAAAAjAAMAAAAaAAAAAAAgAA0AAAAbAAAAAAAjAAwAAAAlAAAAAAAfAAMAAAAmAAAAAAAgAAoAAAAnAAAAAAAiAAoAAAAAAAEAAAAgAAwAAAABAAEAAAAiAAMAAAACAAEAAAAjAAMAAAADAAEAAAAfAAsAAAAEAAEAAAAjAAQAAAAFAAEAAAAgAA0AAAAGAAEAAAAjAAwAAAAIAAEAAAAfAAwAAAAJAAEAAAAjAAkAAAAKAAEAAAAgAAMAAAALAAEAAAAiAAMAAAAMAAEAAAAGACoAAAANAAEAAAAjAAMAAAAOAAEAAAAfAAsAAAAPAAEAAAAiAAUAAAAQAAEAAAAgAAUAAAARAAEAAAAiAAQAAAASAAEAAAAFAAsAAAATAAEAAAAFAAsAAAAUAAEAAAAIACkAAAAYAAEAAAAHACgAAAAZAAEAAAAiAAoAAAAaAAEAAAAiAAIAAAAiAAEAAAAgAAkAAAAjAAEAAAAGACgAAAAkAAEAAAAjAAMAAAAlAAEAAAAgAA0AAAAmAAEAAAAFACsAAAAnAAEAAAAgAAwAAAAAAAIAAAAfAAIAAAABAAIAAAAhAA0AAAACAAIAAAAiAA0AAAADAAIAAAAfAAwAAAAEAAIAAAAjAAUAAAAGAAIAAAAfAAoAAAAHAAIAAAAjAAMAAAAIAAIAAAAgAAkAAAAJAAIAAAAfAAkAAAAKAAIAAAAgAAUAAAALAAIAAAAFABgAAAAMAAIAAAAFABsAAAANAAIAAAAiAAoAAAAOAAIAAAAgAAMAAAAPAAIAAAAiAAMAAAAQAAIAAAAgAAMAAAARAAIAAAAFAA8AAAASAAIAAAAIABEAAAATAAIAAAAiAAwAAAAUAAIAAAAjAAwAAAAYAAIAAAAgAA0AAAAZAAIAAAAgAAwAAAAaAAIAAAAiAAMAAAAbAAIAAAAjAAoAAAAeAAIAAAAgAAkAAAAfAAIAAAAGACgAAAAgAAIAAAAhAAIAAAAhAAIAAAAhAAIAAAAiAAIAAAAgAAoAAAAjAAIAAAAGABgAAAAkAAIAAAAIACoAAAAnAAIAAAAgAA0AAAAAAAMAAAAjAAkAAAABAAMAAAAFACoAAAACAAMAAAAjAAoAAAAGAAMAAAAHACgAAAAHAAMAAAAiAAMAAAAIAAMAAAAgAAoAAAAJAAMAAAAiAAMAAAAKAAMAAAAgAAoAAAALAAMAAAAIABQAAAAMAAMAAAAjAAgAAAANAAMAAAAGABgAAAAOAAMAAAAIAA4AAAAPAAMAAAAGABsAAAAQAAMAAAAIABUAAAARAAMAAAAiAAwAAAASAAMAAAAFACsAAAATAAMAAAAjAAwAAAAZAAMAAAAfAAwAAAAaAAMAAAAhAAYAAAAbAAMAAAAiAAYAAAAeAAMAAAAgAA0AAAAfAAMAAAAGACsAAAAgAAMAAAAgAAwAAAAhAAMAAAAiAAUAAAAiAAMAAAAgAAwAAAAjAAMAAAAIABoAAAAkAAMAAAAiAAoAAAAlAAMAAAAjAAoAAAAAAAQAAAAgAAMAAAABAAQAAAAHACMAAAACAAQAAAAIACkAAAADAAQAAAAfAAMAAAAEAAQAAAAhAAIAAAAFAAQAAAAhAAIAAAAGAAQAAAAfAAkAAAAHAAQAAAAgAAwAAAAIAAQAAAAiAAQAAAAJAAQAAAAJABwAAAAKAAQAAAAGAA8AAAALAAQAAAAHAAwAAAAMAAQAAAAIABMAAAANAAQAAAAiAAUAAAAOAAQAAAAhAAYAAAAPAAQAAAAgAAwAAAAQAAQAAAAHABMAAAARAAQAAAAjAAsAAAASAAQAAAAfAAoAAAATAAQAAAAhAAIAAAAUAAQAAAAhAAkAAAAVAAQAAAAiAAkAAAAYAAQAAAAfAAoAAAAZAAQAAAAiAAIAAAAgAAQAAAAfAAwAAAAhAAQAAAAjAAkAAAAiAAQAAAAgAAoAAAAjAAQAAAAiAAUAAAAkAAQAAAAgAAUAAAAlAAQAAAAiAAoAAAAmAAQAAAAiAAkAAAAAAAUAAAAiAAwAAAABAAUAAAAgAAUAAAACAAUAAAAjAAQAAAADAAUAAAAfAAUAAAAEAAUAAAAhAAYAAAAFAAUAAAAGACsAAAAGAAUAAAAjAAIAAAAHAAUAAAAgAAMAAAAIAAUAAAAJAB0AAAAJAAUAAAAGABAAAAAKAAUAAAAFACMAAAALAAUAAAAiAAwAAAAMAAUAAAAFACkAAAANAAUAAAAiAA0AAAAOAAUAAAAfAAoAAAAPAAUAAAAgAAMAAAAQAAUAAAAjAAgAAAARAAUAAAAIACkAAAASAAUAAAAfAAUAAAATAAUAAAAhAA0AAAAUAAUAAAAgAAwAAAAVAAUAAAAiAAMAAAAWAAUAAAAjAAMAAAAXAAUAAAAfAAMAAAAYAAUAAAAgAAMAAAAZAAUAAAAjAAsAAAAhAAUAAAAfAAUAAAAiAAUAAAAhAAYAAAAjAAUAAAAiAAYAAAAkAAUAAAAgAA0AAAAlAAUAAAAGACkAAAAmAAUAAAAiAA0AAAAAAAYAAAAIACgAAAABAAYAAAAfAAwAAAACAAYAAAAiAA0AAAAFAAYAAAAgAAkAAAAGAAYAAAAgAAMAAAAHAAYAAAAHABoAAAAIAAYAAAAJABUAAAAJAAYAAAAGABwAAAAKAAYAAAAiAAwAAAALAAYAAAAjAAwAAAAOAAYAAAAfAAUAAAAPAAYAAAAhAAYAAAAQAAYAAAAhAAYAAAARAAYAAAAjAAkAAAASAAYAAAAiAAkAAAATAAYAAAAgAAkAAAAUAAYAAAAgAAMAAAAVAAYAAAAFABMAAAAWAAYAAAAIACgAAAAXAAYAAAAfAAwAAAAYAAYAAAAGACkAAAAZAAYAAAAiAA0AAAAfAAYAAAAgAAIAAAAgAAYAAAAGACgAAAAhAAYAAAAiAAkAAAAAAAcAAAAjAAIAAAABAAcAAAAjAAMAAAAFAAcAAAAfAAUAAAAGAAcAAAAGACsAAAAHAAcAAAAgAAUAAAAIAAcAAAAiAAUAAAAJAAcAAAAFACkAAAAKAAcAAAAjAAwAAAARAAcAAAAgAA0AAAASAAcAAAAiAA0AAAATAAcAAAAfAAwAAAAUAAcAAAAgAAwAAAAVAAcAAAAhAAgAAAAWAAcAAAAiAAMAAAAXAAcAAAAiAAIAAAAfAAcAAAAgAAYAAAAgAAcAAAAgAAwAAAAhAAcAAAAIACgAAAAlAAcAAAAgAAkAAAAmAAcAAAAFACgAAAAnAAcAAAAjAAoAAAAAAAgAAAAfAAkAAAABAAgAAAAiAAYAAAAGAAgAAAAgAAIAAAAHAAgAAAAgAAoAAAAIAAgAAAAiAAMAAAAJAAgAAAAjAAMAAAAUAAgAAAAgAAYAAAAVAAgAAAAgAAwAAAAWAAgAAAAJABIAAAAXAAgAAAAiAAoAAAAYAAgAAAAiAAIAAAAgAAgAAAAfAAwAAAAhAAgAAAAiAAYAAAAjAAgAAAAgAAIAAAAkAAgAAAAjAAoAAAAlAAgAAAAgAA0AAAAmAAgAAAAgAAUAAAAnAAgAAAAiAAoAAAAAAAkAAAAiAAMAAAABAAkAAAAiAAIAAAAGAAkAAAAHACsAAAAHAAkAAAAjAAcAAAAIAAkAAAAiAAUAAAAJAAkAAAAjAAwAAAASAAkAAAAfAAoAAAATAAkAAAAGACgAAAAUAAkAAAAhAAIAAAAVAAkAAAAfAAkAAAAWAAkAAAAgAAwAAAAXAAkAAAAJACAAAAAYAAkAAAAiAAoAAAAZAAkAAAAhAAIAAAAaAAkAAAAjAAoAAAAgAAkAAAAfAAoAAAAhAAkAAAAjAAMAAAAjAAkAAAAfAAwAAAAkAAkAAAAiAAYAAAAlAAkAAAAfAAMAAAAmAAkAAAAgAAoAAAAnAAkAAAAJABYAAAAAAAoAAAAGAA4AAAABAAoAAAAIACgAAAAFAAoAAAAgAAkAAAAGAAoAAAAgAAMAAAAHAAoAAAAiAAUAAAAIAAoAAAAjAAkAAAAJAAoAAAAiAAIAAAASAAoAAAAgAAYAAAATAAoAAAAgAAUAAAAUAAoAAAAFABkAAAAVAAoAAAAiAAoAAAAWAAoAAAAfAAIAAAAXAAoAAAAgAAUAAAAYAAoAAAAhAAQAAAAZAAoAAAAIACEAAAAaAAoAAAAiAAMAAAAbAAoAAAAFACgAAAAcAAoAAAAjAAoAAAAgAAoAAAAHACsAAAAhAAoAAAAjAAsAAAAiAAoAAAAfAAMAAAAjAAoAAAAiAAIAAAAlAAoAAAAfAAwAAAAmAAoAAAAGACsAAAAnAAoAAAAGACsAAAAAAAsAAAAFACsAAAABAAsAAAAjAAUAAAAFAAsAAAAHACsAAAAGAAsAAAAiAAwAAAAHAAsAAAAiAA0AAAAIAAsAAAAfAAwAAAAJAAsAAAAjAAUAAAATAAsAAAAgAA0AAAAUAAsAAAAGACkAAAAVAAsAAAAGACkAAAAWAAsAAAAjAAIAAAAXAAsAAAAfAAIAAAAYAAsAAAAGACkAAAAZAAsAAAAgAAwAAAAaAAsAAAAHAA0AAAAbAAsAAAAiAAcAAAAcAAsAAAAIACgAAAAgAAsAAAAfAAwAAAAhAAsAAAAiAAYAAAAiAAsAAAAHACsAAAAjAAsAAAAIACsAAAAFAAwAAAAHACsAAAAGAAwAAAAjAAsAAAAUAAwAAAAfAAMAAAAVAAwAAAAFACoAAAAWAAwAAAAgAAMAAAAXAAwAAAAiAAoAAAAYAAwAAAAFACoAAAAZAAwAAAAgAAoAAAAaAAwAAAAIABAAAAAbAAwAAAAiAAUAAAAcAAwAAAAiAA0AAAAiAAwAAAAHACsAAAAjAAwAAAAiAAoAAAAkAAwAAAAjAAMAAAADAA0AAAAgAAIAAAAEAA0AAAAGACgAAAAFAA0AAAAgAAoAAAAGAA0AAAAIACsAAAANAA0AAAAgAAkAAAAOAA0AAAAiAAIAAAATAA0AAAAfAAoAAAAUAA0AAAAgAAMAAAAVAA0AAAAiAAUAAAAWAA0AAAAgAAUAAAAXAA0AAAAiAAwAAAAYAA0AAAAgAAwAAAAZAA0AAAAiAAUAAAAaAA0AAAAFACkAAAAbAA0AAAAiAAYAAAAiAA0AAAAgAA0AAAAjAA0AAAAgAAUAAAAkAA0AAAAiAAoAAAAlAA0AAAAiAAkAAAAAAA4AAAAFACoAAAABAA4AAAAhAAIAAAACAA4AAAAGACgAAAADAA4AAAAgAAMAAAAEAA4AAAAGABIAAAAFAA4AAAAhAAQAAAAGAA4AAAAIACoAAAANAA4AAAAHACsAAAAOAA4AAAAiAAMAAAAPAA4AAAAGACgAAAAQAA4AAAAjAAMAAAARAA4AAAAfAAoAAAASAA4AAAAFACoAAAATAA4AAAAgAAMAAAAUAA4AAAAiAAwAAAAVAA4AAAAjAAUAAAAWAA4AAAAgAA0AAAAXAA4AAAAiAAYAAAAYAA4AAAAfAAsAAAAZAA4AAAAjAAsAAAAjAA4AAAAHACsAAAAkAA4AAAAiAAsAAAAlAA4AAAAjAAQAAAAAAA8AAAAjAAYAAAABAA8AAAAIABgAAAACAA8AAAAiAAUAAAADAA8AAAAFACkAAAAEAA8AAAAgAAUAAAAFAA8AAAAHABoAAAAGAA8AAAAiAAMAAAAHAA8AAAAjAAMAAAANAA8AAAAHACsAAAAOAA8AAAAGABsAAAAPAA8AAAAGACIAAAAQAA8AAAAIACkAAAARAA8AAAAgAAYAAAASAA8AAAAFACkAAAATAA8AAAAGACsAAAAUAA8AAAAjAAUAAAAYAA8AAAAfAAUAAAAZAA8AAAAiAA0AAAAjAA8AAAAfAAsAAAAkAA8AAAAGABsAAAAlAA8AAAAIACkAAAAAABAAAAAgAAwAAAABABAAAAAhAAQAAAACABAAAAAIACoAAAAEABAAAAAfAAwAAAAFABAAAAAgAAwAAAAGABAAAAAGABYAAAAHABAAAAAIACoAAAANABAAAAAfAAwAAAAOABAAAAAFACkAAAAPABAAAAAgAAwAAAAQABAAAAAiAAMAAAARABAAAAAiAAIAAAAjABAAAAAfAAUAAAAkABAAAAAgAAwAAAAlABAAAAAiAAoAAAAmABAAAAAhAAIAAAAnABAAAAAiAAIAAAAAABEAAAAHACsAAAABABEAAAAhAAQAAAACABEAAAAIACgAAAAFABEAAAAHACkAAAAGABEAAAAGABAAAAAHABEAAAAIACsAAAAPABEAAAAgAAYAAAAQABEAAAAgAAUAAAARABEAAAAiAAoAAAASABEAAAAGACgAAAATABEAAAAGACgAAAAUABEAAAAGACgAAAAVABEAAAAjAAoAAAAeABEAAAAfAAMAAAAfABEAAAAjAAoAAAAkABEAAAAgAA0AAAAlABEAAAAFACsAAAAmABEAAAAgAAUAAAAnABEAAAAIACkAAAAAABIAAAAgAAMAAAABABIAAAAiAAUAAAACABIAAAAjAAUAAAAFABIAAAAgAA0AAAAGABIAAAAgAAwAAAAHABIAAAAiAAMAAAAIABIAAAAiAAkAAAAJABIAAAAfAAoAAAAKABIAAAAGACgAAAALABIAAAAiAAkAAAAMABIAAAAgAAIAAAANABIAAAAhAAkAAAAOABIAAAAhAAIAAAAPABIAAAAjAAMAAAAQABIAAAAfAAUAAAARABIAAAAgAAwAAAASABIAAAAHABUAAAATABIAAAAJABwAAAAUABIAAAAiAAwAAAAVABIAAAAiAAYAAAAdABIAAAAgAAIAAAAeABIAAAAgAAMAAAAfABIAAAAIACsAAAAkABIAAAAgAAIAAAAlABIAAAAGACgAAAAmABIAAAAgAAMAAAAnABIAAAAIACoAAAAAABMAAAAIABgAAAABABMAAAAjAAsAAAAGABMAAAAfAAsAAAAHABMAAAAHABEAAAAIABMAAAAiAAoAAAAJABMAAAAgAAoAAAAKABMAAAAFABYAAAALABMAAAAjAAsAAAAMABMAAAAHACsAAAANABMAAAAJACEAAAAOABMAAAAiAAwAAAAPABMAAAAiAAYAAAARABMAAAAfAAQAAAASABMAAAAHABAAAAATABMAAAAiAAwAAAAUABMAAAAjAAUAAAAVABMAAAAfAAoAAAAWABMAAAAjAAMAAAAbABMAAAAgAAkAAAAcABMAAAAjAAoAAAAdABMAAAAHACkAAAAeABMAAAAiAAUAAAAfABMAAAAjAAUAAAAkABMAAAAgAA0AAAAlABMAAAAGACsAAAAmABMAAAAgAAwAAAAnABMAAAAiAAMAAAAAABQAAAAiAAwAAAABABQAAAAjAAUAAAAGABQAAAAHACsAAAAHABQAAAAFABAAAAAIABQAAAAhAAQAAAAJABQAAAAiAAUAAAAKABQAAAAhAAYAAAALABQAAAAjAAwAAAAMABQAAAAHACsAAAANABQAAAAhAAsAAAAOABQAAAAIACoAAAAQABQAAAAfAAMAAAARABQAAAAgAAoAAAASABQAAAAIAA8AAAATABQAAAAIACkAAAAUABQAAAAgAAIAAAAVABQAAAAgAAMAAAAWABQAAAAIACkAAAAbABQAAAAgAAYAAAAcABQAAAAiAAYAAAAdABQAAAAfAAQAAAAeABQAAAAIACgAAAAmABQAAAAHACkAAAAnABQAAAAIACEAAAAAABUAAAAIACkAAAAGABUAAAAfAAUAAAAHABUAAAAFACkAAAAIABUAAAAhAAYAAAAJABUAAAAjAAwAAAAMABUAAAAHACsAAAANABUAAAAIABsAAAAOABUAAAAiAAMAAAAPABUAAAAjAAoAAAAQABUAAAAgAA0AAAARABUAAAAGACsAAAASABUAAAAgAAUAAAATABUAAAAiAAoAAAAUABUAAAAgAAoAAAAVABUAAAAiAAgAAAAWABUAAAAIACgAAAAdABUAAAAHACsAAAAeABUAAAAjAAQAAAAmABUAAAAfAAQAAAAnABUAAAAGABgAAAAAABYAAAAIACoAAAAMABYAAAAHACsAAAANABYAAAAJACEAAAAOABYAAAAfAAYAAAAPABYAAAAjAAQAAAASABYAAAAfAAUAAAATABYAAAAhAA0AAAAUABYAAAAgAAwAAAAVABYAAAAGABYAAAAWABYAAAAIACoAAAAdABYAAAAHACoAAAAeABYAAAAiAAoAAAAfABYAAAAjAAMAAAAgABYAAAAfAAoAAAAhABYAAAAiAAIAAAAmABYAAAAfAAUAAAAnABYAAAAFACkAAAAAABcAAAAiAAoAAAABABcAAAAiAAkAAAAMABcAAAAgAAYAAAANABcAAAAgAAUAAAAOABcAAAAIACAAAAAPABcAAAAIACoAAAAQABcAAAAgAAIAAAARABcAAAAiAAkAAAATABcAAAAfAAMAAAAUABcAAAAgAAMAAAAVABcAAAAiAAUAAAAWABcAAAAjAAwAAAAcABcAAAAfAAoAAAAdABcAAAAfAAkAAAAeABcAAAAgAAUAAAAfABcAAAAiAAoAAAAgABcAAAAfAAkAAAAhABcAAAAiAAYAAAAlABcAAAAfAAoAAAAmABcAAAAjAAMAAAAnABcAAAAfAAoAAAA=")
+tile_set = ExtResource("1_7sue2")
+
+[node name="GroundDetails" type="TileMapLayer" parent="." unique_id=304837527]
+z_index = -1
+tile_map_data = PackedByteArray("AAADAAYAAAAbABoAAAAEAAYAAAAeABsAAAACAAcAAAAaABsAAAADAAcAAAAnAB0AAAAEAAcAAAApABsAAAABAAgAAAAbABoAAAACAAgAAAAaABoAAAADAAgAAAAlABwAAAAEAAgAAAAdABsAAAAFAAgAAAAdABoAAAABAAkAAAAfABsAAAACAAkAAAAgABsAAAADAAkAAAAaABwAAAAEAAkAAAAdAB0AAAAFAAkAAAAdAB4AAAADAAoAAAAfABsAAAAEAAoAAAAeAB0AAAACAAsAAAAaABsAAAADAAsAAAAeABsAAAACAAwAAAAfABwAAAADAAwAAAAeAB0AAAADAA4AAAAiABwAAAAEAA4AAAAqAB0AAAAFAA4AAAAjABwAAAADAA8AAAAfABwAAAAEAA8AAAAhABsAAAAFAA8AAAAeAB0AAAADABAAAAAbABoAAAAEABAAAAAeABsAAAADABEAAAAaABwAAAAEABEAAAApABsAAAACABIAAAAiABsAAAADABIAAAAaABoAAAAEABIAAAAgABsAAAACABMAAAAfABwAAAADABMAAAAeABoAAAAEABMAAAAeABsAAAADABQAAAAaABwAAAAEABQAAAApABsAAAADABUAAAAaAB0AAAAEABUAAAAgABsAAAAFABUAAAAiABwAAAAGABUAAAAeABsAAAAFABYAAAAfABwAAAAGABYAAAAgABsAAAAJABYAAAAiABsAAAAKABYAAAAjABsAAAAEABcAAAAbABoAAAAFABcAAAAqABsAAAAGABcAAAAqABwAAAAHABcAAAAjABsAAAAIABcAAAAiABsAAAAJABcAAAAnABwAAAAKABcAAAApAB0AAAA=")
+tile_set = ExtResource("1_7sue2")
+
+[node name="Platforms" type="TileMapLayer" parent="." unique_id=424970003]
+z_index = -1
+tile_map_data = PackedByteArray("AAAUAAAACgAAAAIAAAAVAAAACgACAAEAAAAUAAEACgAAAAIAAAAVAAEACgACAAEAAAAUAAIACgAAAAIAAAAVAAIACgACAAEAAAAIAAMACgAAAAEAAAAJAAMACgAEAA4AAAAKAAMACgACAAAAAAALAAMACgACAAAAAAAMAAMACgACAAAAAAANAAMACgAEAAwAAAAOAAMACgAEAA0AAAAPAAMACgAEAA4AAAAQAAMACgAEAA4AAAARAAMACgAEAA0AAAASAAMACgAEAA0AAAATAAMACgAEAAwAAAAUAAMACgABAAEAAAAVAAMACgACAAEAAAAIAAQACgACAA0AAAAJAAQACgACAAEAAAAKAAQACgACAAEAAAALAAQACgACAAEAAAAMAAQACgACAAEAAAANAAQACgACAAEAAAAOAAQACgACAAEAAAAPAAQACgACAAEAAAAQAAQACgACAAEAAAARAAQACgACAAEAAAASAAQACgACAAEAAAATAAQACgACAAEAAAAUAAQACgACAAEAAAAVAAQACgACAAEAAAAIAAUACgACAA0AAAAJAAUACgACAAEAAAAIAAYACgACAAwAAAAJAAYACgACAAEAAAAIAAcACgACAAwAAAAJAAcACgACAAEAAAAIAAgACgACAAwAAAAJAAgACgACAAEAAAAAAAkACgAEAAEAAAAIAAkACgAAAAIAAAAJAAkACgACAAEAAAAAAAoACgABAAwAAAABAAoACgAEAAEAAAAGAAoACgAAAAEAAAAHAAoACgAEAA0AAAAIAAoACgABAAEAAAAJAAoACgACAAEAAAAAAAsACgACAAEAAAABAAsAAQAAADYAAAACAAsAAQABADYAAAADAAsAAQACADYAAAAEAAsAAQADADYAAAAFAAsAAQAEADYAAAAGAAsAAQAFADYAAAAHAAsACgACAAEAAAAIAAsACgACAAEAAAAJAAsACgACAAEAAAAAAAwACgACAAEAAAABAAwAAQAAADcAAAACAAwAAQABADcAAAADAAwAAQACADcAAAAEAAwAAQADADcAAAAFAAwAAQAEADcAAAAGAAwAAQAFADcAAAAHAAwACgACAAEAAAAAAA0ACgACAAEAAAABAA0AAQAAADgAAAACAA0AAQABADgAAAADAA0AAQACADgAAAAEAA0AAQADADgAAAAFAA0AAQAEADgAAAAGAA0AAQAFADgAAAAHAA0ACgACAAEAAAAAAA4ACgACAAEAAAABAA4AAQAAADkAAAACAA4AAQABADkAAAADAA4AAQACADkAAAAEAA4AAQADADkAAAAFAA4AAQAEADkAAAAGAA4AAQAFADkAAAAHAA4ACgACAAEAAAAAAA8ACgACAAEAAAABAA8AAQAAADoAAAACAA8AAQABADoAAAADAA8AAQACADoAAAAEAA8AAQADADoAAAAFAA8AAQAEADoAAAAGAA8AAQAFADoAAAAHAA8ACgACAAEAAAAAABAACgADAAMAAAABABAACgAMAAwAAAAGABAACgAAAAMAAAAHABAACgABAAMAAAAIABAACgACAAEAAAAJABAACgACAAEAAAAAABEACgAIAAwAAAABABEACgAMAA0AAAAGABEACgAAAAQAAAAHABEACgABAAQAAAAIABEACgADAAkAAAAJABEACgABAAkAAAANABEACgAEAAkAAAAOABEACgABAAMAAAAPABEACgACAAEAAAAAABIACgAIAA0AAAABABIACgAMAA4AAAAGABIACgAAAAUAAAAHABIACgABAAUAAAAIABIACgADAAoAAAAJABIACgABAAoAAAANABIACgAEAAoAAAAOABIACgAJAAEAAAAPABIACgACAAEAAAAAABMACgAIAA4AAAAHABMACgABAAYAAAAIABMACgADAAsAAAAJABMACgABAAsAAAANABMACgAEAAsAAAAOABMACgAJAAIAAAAPABMACgACAAEAAAAOABQACgAAAAIAAAAPABQACgACAAEAAAAOABUACgAAAAIAAAAPABUACgACAAEAAAAOABYACgAAAAMAAAAPABYACgABAAMAAAAQABYACgACAAEAAAAPABcACgAAAAIAAAAQABcACgACAAEAAAA=")
+tile_set = ExtResource("1_7sue2")
+metadata/erw_walls_settings = {
+"ancient_ruins/wall_1_3t_transparent": {
+"seed": 1,
+"variations": true
+}
+}
+
+[node name="PlatformDetails" type="TileMapLayer" parent="." unique_id=1671486606]
+z_index = -1
+tile_map_data = PackedByteArray("AAAIAAQAAQAEABsAAAAIAAUAAQAEABwAAAAIAAYAAQAEAB0AAAAIAAcAAQAEABsAAAAIAAgAAQAEABwAAAAIAAkAAQAEAB0AAAAKABEAAQAKABkAAAALABEAAQALABkAAAAMABEAAQAMABkAAAAKABIAAQAKABoAAAALABIAAQALABoAAAAMABIAAQAMABoAAAAKABMAAQAKABsAAAALABMAAQALABsAAAAMABMAAQAMABsAAAAKABQAAQAKABwAAAALABQAAQALABwAAAAMABQAAQAMABwAAAA=")
+tile_set = ExtResource("1_7sue2")
+
+[node name="WaterAndWaterfall" type="TileMapLayer" parent="." unique_id=1763878702]
+z_index = -1
+tile_map_data = PackedByteArray("AAAZAAAAEQAAAAMAAAAaAAAAEQABAAMAAAAbAAAAEQACAAEAAAAcAAAAHwABAAAAAAAdAAAAHwAKAAAAAAAeAAAAHwABAAUAAAAfAAAAEQACAAEAAAAgAAAAEQADAAMAAAAhAAAAEQACAAkAAAAiAAAAEQADAAkAAAAjAAAAEQAEAAkAAAAZAAEAEQAAAAQAAAAaAAEAEQABAAQAAAAbAAEAEQADAAkAAAAcAAEAHwABAAEAAAAdAAEAHwAKAAEAAAAeAAEAHwABAAYAAAAfAAEAEQAEAAkAAAAgAAEAEQADAAQAAAAhAAEAEQACAAoAAAAiAAEAEQADAAoAAAAjAAEAEQAEAAoAAAAaAAIAEQABAAUAAAAbAAIAEQADAAoAAAAcAAIAHwABAAIAAAAdAAIAHwAKAAIAAAAeAAIAHwABAAcAAAAfAAIAEQAEAAoAAAAgAAIAEQADAAUAAAAbAAMAHwABAAQAAAAcAAMAHwABAAMAAAAdAAMAHwAKAAMAAAAeAAMAHwABAAgAAAAfAAMAHwABAAkAAAAaAAQABAAOABsAAAAbAAQABAAOABQAAAAcAAQABAAAAAEAAAAdAAQABAAAAAEAAAAeAAQABAAAAAEAAAAfAAQABAAFABYAAAAgAAQABAAFAB0AAAAaAAUABAAWABAAAAAbAAUABAAAAAEAAAAcAAUABAAAAAEAAAAdAAUABAAAAAEAAAAeAAUABAAAAAEAAAAfAAUABAAAAAEAAAAgAAUABAAFABYAAAAhAAUABAAOABEAAAAaAAYABAAWABgAAAAbAAYABAAAAAEAAAAcAAYABAAAAAEAAAAdAAYABAAAAAEAAAAeAAYABAAAAAEAAAAfAAYABAAAAAEAAAAgAAYABAAAAAEAAAAhAAYABAAFABwAAAAaAAcABAAXABsAAAAbAAcABAAWAB0AAAAcAAcABAAWABwAAAAdAAcABAAFABkAAAAeAAcABAAXABoAAAAfAAcABAAFABkAAAAgAAcABAAWABUAAAAhAAcABAAFABMAAAAcAAgABAAWABgAAAAdAAgABAAFABwAAAAeAAgABAAWABAAAAAfAAgABAAFABwAAAAbAAkABAAOABsAAAAcAAkABAANABUAAAAdAAkABAANABAAAAAeAAkABAAOABwAAAAfAAkABAANABAAAAAgAAkABAAOABEAAAAQAAoAAgAVACEAAAARAAoAAgAVACUAAAASAAoAAgAVACQAAAAbAAoABAAXABsAAAAcAAoABAAXABIAAAAdAAoABAAAAAEAAAAeAAoABAAAAAEAAAAfAAoABAAAAAEAAAAgAAoABAANABAAAAAhAAoABAAOABkAAAAPAAsAAgAVACEAAAAQAAsAAgAVACcAAAARAAsAAgAlABkAAAASAAsAAgAFACkAAAATAAsAAgAFACgAAAAcAAsABAAWABgAAAAdAAsABAAAAAEAAAAeAAsABAAAAAEAAAAfAAsABAAAAAEAAAAgAAsABAAAAAEAAAAhAAsABAAFABYAAAAiAAsABAAFABUAAAAPAAwAAgAlACQAAAAQAAwAAgAlACcAAAARAAwAAgAlAB4AAAASAAwAAgAlABoAAAATAAwAAgAFACcAAAAbAAwABAAOABMAAAAcAAwABAANABUAAAAdAAwABAAAAAEAAAAeAAwABAAAAAEAAAAfAAwABAAAAAEAAAAgAAwABAAAAAEAAAAhAAwABAAAAAEAAAAiAAwABAAFABwAAAARAA0AAgAlAB8AAAASAA0AAgAlACAAAAATAA0AAgAFACQAAAAbAA0ABAAWABAAAAAcAA0ABAAAAAEAAAAdAA0ABAAAAAEAAAAeAA0ABAAAAAEAAAAfAA0ABAAAAAEAAAAgAA0ABAAAAAEAAAAhAA0ABAAAAAEAAAAiAA0ABAAFABYAAAAjAA0ABAAFAB0AAAAaAA4ABAAOABYAAAAbAA4ABAAOABQAAAAcAA4ABAAAAAEAAAAdAA4ABAAAAAEAAAAeAA4ABAAAAAEAAAAfAA4ABAAAAAEAAAAgAA4ABAAAAAEAAAAhAA4ABAAAAAEAAAAiAA4ABAAAAAEAAAAjAA4ABAAFABQAAAAYAA8ABAAOABMAAAAZAA8ABAAOABoAAAAaAA8ABAAOABwAAAAbAA8ABAAAAAEAAAAcAA8ABAAAAAEAAAAdAA8ABAAAAAEAAAAeAA8ABAAAAAEAAAAfAA8ABAAAAAEAAAAgAA8ABAAAAAEAAAAhAA8ABAAAAAEAAAAiAA8ABAAAAAEAAAAjAA8ABAAFABwAAAAYABAABAAWABgAAAAZABAABAAAAAEAAAAaABAABAAAAAEAAAAbABAABAAAAAEAAAAcABAABAAAAAEAAAAdABAABAAFABkAAAAeABAABAAWABUAAAAfABAABAAWAB0AAAAgABAABAAXABoAAAAhABAABAAAAAEAAAAiABAABAAAAAEAAAAjABAABAAFABYAAAAkABAABAAOABoAAAAlABAABAAFAB0AAAAYABEABAAXABkAAAAZABEABAAXABIAAAAaABEABAAAAAEAAAAbABEABAAFABoAAAAcABEABAAWAB0AAAAdABEABAAFABAAAAAgABEABAAXABMAAAAhABEABAAWABUAAAAiABEABAAWABQAAAAjABEABAAAAAEAAAAkABEABAAAAAEAAAAlABEABAAFABQAAAAYABIABAAOABMAAAAZABIABAANABUAAAAaABIABAAAAAEAAAAbABIABAAFABwAAAAiABIABAAWABAAAAAjABIABAAAAAEAAAAkABIABAAFABoAAAAlABIABAAFABMAAAAYABMABAAWABAAAAAZABMABAAAAAEAAAAaABMABAAFABkAAAAbABMABAAFABMAAAAhABMABAAOABMAAAAiABMABAANAB0AAAAjABMABAAAAAEAAAAkABMABAAFABYAAAAlABMABAAOABkAAAAXABQABAAOABsAAAAYABQABAANAB0AAAAZABQABAAFABEAAAAaABQABAAFABsAAAAgABQABAAOAB4AAAAhABQABAANAB0AAAAiABQABAAAAAEAAAAjABQABAAAAAEAAAAkABQABAAAAAEAAAAlABQABAAFAB4AAAAmABQABAAOABEAAAAWABUABAAOABMAAAAXABUABAANAB0AAAAYABUABAAAAAEAAAAZABUABAANABgAAAAaABUABAAFABUAAAAgABUABAAWABgAAAAhABUABAAAAAEAAAAiABUABAAAAAEAAAAjABUABAAAAAEAAAAkABUABAAAAAEAAAAlABUABAAAAAEAAAAmABUABAAFABwAAAAWABYABAAWABgAAAAXABYABAAAAAEAAAAYABYABAAAAAEAAAAZABYABAAAAAEAAAAaABYABAANABgAAAAbABYABAAFABUAAAAgABYABAAXABkAAAAhABYABAAWAB0AAAAiABYABAAWABwAAAAjABYABAAAAAEAAAAkABYABAAAAAEAAAAlABYABAAAAAEAAAAmABYABAAFABQAAAAVABcABAAOAB4AAAAWABcABAAOABwAAAAXABcABAAAAAEAAAAYABcABAAFABEAAAAZABcABAAWABUAAAAaABcABAAWABUAAAAbABcABAAFABMAAAAiABcABAAWABAAAAAjABcABAAAAAEAAAAkABcABAAFABkAAAAlABcABAAWAB0AAAAmABcABAAFABgAAAA=")
+tile_set = ExtResource("1_7sue2")
+metadata/erw_walls_settings = {
+"ancient_ruins/wall_5_2t_transparent": {
+"seed": 1,
+"variations": true
+}
+}
+
+[node name="StairsAndStonework" type="TileMapLayer" parent="." unique_id=1340958321]
+z_index = -1
+tile_map_data = PackedByteArray("AAAkAAAAAQAcAD0AAAAlAAAAAQAdAD0AAAAmAAAAAQAeAD0AAAAnAAAAAQAfAD0AAAAkAAEAAQAcAD4AAAAlAAEAAQAdAD4AAAAmAAEAAQAeAD4AAAAnAAEAAQAfAD4AAAAkAAIAAQAcAD8AAAAlAAIAAQAdAD8AAAAmAAIAAQAeAD8AAAAnAAIAAQAfAD8AAAAkAAMAAQAcAEAAAAAlAAMAAQAdAEAAAAAmAAMAAQAeAEAAAAAnAAMAAQAAAAEAAAAOAAwAAQASADgAAAAOAA0AAQASADkAAAAOAA4AAQASADkAAAAOAA8AAQATADoAAAAPAA8AAQATADsAAAAQAA8AAQAUADsAAAARAA8AAQAVADsAAAASAA8AAQATADsAAAATAA8AAQAUADsAAAAUAA8AAQAVADsAAAAVAA8AAQAWADsAAAAWAA8AAQAZADsAAAAXAA8AAQAaADsAAAA=")
+tile_set = ExtResource("1_7sue2")
+
+[node name="Walls" type="TileMapLayer" parent="." unique_id=95876851]
+z_index = -1
+tile_set = ExtResource("1_7sue2")
+
+[node name="ActorsAndProps" type="Node2D" parent="." unique_id=1719347463]
+y_sort_enabled = true
+
+[node name="BirchTreesNoLeaves3_2" parent="ActorsAndProps" unique_id=2006087073 instance=ExtResource("2_ea1p1")]
+position = Vector2(674, 201.5)
+
+[node name="BirchTreesNoLeaves0_3" parent="ActorsAndProps" unique_id=1669794647 instance=ExtResource("3_bjget")]
+position = Vector2(625.5, 164.5)
+
+[node name="BirchTrees5_4" parent="ActorsAndProps" unique_id=799123467 instance=ExtResource("4_tlsbk")]
+position = Vector2(762, 97)
+
+[node name="Shrubs4_7" type="Sprite2D" parent="ActorsAndProps" unique_id=1592214283]
+position = Vector2(690.5, 160)
+texture = ExtResource("5_l4bmb")
+centered = false
+offset = Vector2(-32, -96)
+
+[node name="Shrubs3_8" type="Sprite2D" parent="ActorsAndProps" unique_id=602120795]
+position = Vector2(725.5, 153)
+texture = ExtResource("6_gt8tm")
+centered = false
+offset = Vector2(-32, -96)
+
+[node name="Shrubs5_9" type="Sprite2D" parent="ActorsAndProps" unique_id=824031466]
+position = Vector2(684.5, 118)
+texture = ExtResource("7_lkh57")
+centered = false
+offset = Vector2(-32, -96)
+
+[node name="Shrubs2_10" type="Sprite2D" parent="ActorsAndProps" unique_id=1587806130]
+position = Vector2(724, 199)
+texture = ExtResource("8_8d6sh")
+centered = false
+offset = Vector2(-16, -64)
+
+[node name="Shrubs2_11" type="Sprite2D" parent="ActorsAndProps" unique_id=543522136]
+position = Vector2(478, 166)
+texture = ExtResource("8_8d6sh")
+centered = false
+offset = Vector2(-16, -64)
+
+[node name="Shrubs3_12" type="Sprite2D" parent="ActorsAndProps" unique_id=565307491]
+position = Vector2(426, 187)
+texture = ExtResource("6_gt8tm")
+centered = false
+offset = Vector2(-32, -96)
+
+[node name="Shrubs1_13" type="Sprite2D" parent="ActorsAndProps" unique_id=1037110639]
+position = Vector2(470, 194)
+texture = ExtResource("9_425ls")
+centered = false
+offset = Vector2(-16, -64)
+
+[node name="Shrubs5_14" type="Sprite2D" parent="ActorsAndProps" unique_id=1482084496]
+position = Vector2(527, 170)
+texture = ExtResource("7_lkh57")
+centered = false
+offset = Vector2(-32, -96)
+
+[node name="Shrubs4_15" type="Sprite2D" parent="ActorsAndProps" unique_id=2141459329]
+position = Vector2(420, 220)
+texture = ExtResource("5_l4bmb")
+centered = false
+offset = Vector2(-32, -96)
+
+[node name="Shrubs4_16" type="Sprite2D" parent="ActorsAndProps" unique_id=1914119199]
+position = Vector2(581, 184)
+texture = ExtResource("5_l4bmb")
+centered = false
+offset = Vector2(-32, -96)
+
+[node name="Shrubs2_17" type="Sprite2D" parent="ActorsAndProps" unique_id=952279942]
+position = Vector2(508.5, 209)
+texture = ExtResource("8_8d6sh")
+centered = false
+offset = Vector2(-16, -64)
+
+[node name="Trees2_20" parent="ActorsAndProps" unique_id=1018890356 instance=ExtResource("10_ny5ci")]
+position = Vector2(390, 142)
+
+[node name="GenericStructure5_29" parent="ActorsAndProps" unique_id=779331144 instance=ExtResource("11_avqyn")]
+position = Vector2(1261, 289)
+
+[node name="PillarsAndGenericSupport14_54" parent="ActorsAndProps" unique_id=1177688804 instance=ExtResource("26_dhhbc")]
+position = Vector2(1152.5, 413)
+
+[node name="PillarsAndGenericSupport12_55" type="StaticBody2D" parent="ActorsAndProps" unique_id=1008774107]
+texture_filter = 1
+position = Vector2(467.5, 380)
+collision_mask = 0
+
+[node name="PillarsAndGenericSupport12" type="Sprite2D" parent="ActorsAndProps/PillarsAndGenericSupport12_55" unique_id=687548615]
+texture = ExtResource("27_bjget")
+centered = false
+offset = Vector2(-32.5, -61)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ActorsAndProps/PillarsAndGenericSupport12_55" unique_id=1586513347]
+position = Vector2(-1, -16)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_cpmj7")
+
+[node name="StoneSculptedHead_60" type="StaticBody2D" parent="ActorsAndProps/PillarsAndGenericSupport12_55" unique_id=1931772569]
+texture_filter = 1
+position = Vector2(0.5, -43)
+collision_mask = 0
+
+[node name="StoneSculptedHead" type="Sprite2D" parent="ActorsAndProps/PillarsAndGenericSupport12_55/StoneSculptedHead_60" unique_id=2134817352]
+texture = ExtResource("28_tlsbk")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="PillarsAndGenericSupport12_56" parent="ActorsAndProps" unique_id=25989255 instance=ExtResource("27_5iyft")]
+position = Vector2(467.5, 220)
+
+[node name="StoneSculptedHead_59" type="StaticBody2D" parent="ActorsAndProps/PillarsAndGenericSupport12_56" unique_id=2128750051]
+texture_filter = 1
+position = Vector2(0.5, -44)
+collision_mask = 0
+
+[node name="StoneSculptedHead" type="Sprite2D" parent="ActorsAndProps/PillarsAndGenericSupport12_56/StoneSculptedHead_59" unique_id=1880473431]
+texture = ExtResource("28_tlsbk")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Rocks0_86" type="Sprite2D" parent="ActorsAndProps" unique_id=1075011439]
+position = Vector2(607, 150)
+texture = ExtResource("29_3io5o")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations233_88" type="Sprite2D" parent="ActorsAndProps" unique_id=901532421]
+position = Vector2(709.682, 314.614)
+texture = ExtResource("30_dy1p7")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations314_89" type="Sprite2D" parent="ActorsAndProps" unique_id=952456799]
+position = Vector2(577, 219.5)
+texture = ExtResource("31_t7bcd")
+centered = false
+offset = Vector2(-32, -64)
+
+[node name="Vegetations35_91" type="Sprite2D" parent="ActorsAndProps" unique_id=796802330]
+position = Vector2(604, 211)
+texture = ExtResource("32_25w2n")
+centered = false
+offset = Vector2(-16, -64)
+
+[node name="Vegetations241_92" type="Sprite2D" parent="ActorsAndProps" unique_id=1459451600]
+position = Vector2(705, 174.25)
+texture = ExtResource("33_s303i")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations245_94" type="Sprite2D" parent="ActorsAndProps" unique_id=2004703518]
+position = Vector2(551, 190.75)
+texture = ExtResource("34_yxbt8")
+centered = false
+offset = Vector2(-16, -64)
+
+[node name="TallDryGrassIsh29_97" type="Sprite2D" parent="ActorsAndProps" unique_id=752111017]
+position = Vector2(641, 182)
+texture = ExtResource("35_oj0dg")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh18_98" type="Sprite2D" parent="ActorsAndProps" unique_id=1631844044]
+position = Vector2(558.5, 198.5)
+texture = ExtResource("36_vqe20")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh27_99" type="Sprite2D" parent="ActorsAndProps" unique_id=49021685]
+position = Vector2(536.5, 185)
+texture = ExtResource("37_hmyru")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh32_100" type="Sprite2D" parent="ActorsAndProps" unique_id=657775703]
+position = Vector2(687, 146)
+texture = ExtResource("38_yanfh")
+centered = false
+offset = Vector2(-48, -32)
+
+[node name="TallDryGrassIsh12_101" type="Sprite2D" parent="ActorsAndProps" unique_id=1368668301]
+position = Vector2(687, 180.5)
+texture = ExtResource("39_frfa0")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh13_102" type="Sprite2D" parent="ActorsAndProps" unique_id=1151676165]
+position = Vector2(642, 198.5)
+texture = ExtResource("40_fv8cb")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh20_103" type="Sprite2D" parent="ActorsAndProps" unique_id=188432077]
+position = Vector2(746.5, 204.5)
+texture = ExtResource("41_egsq8")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh12_104" type="Sprite2D" parent="ActorsAndProps" unique_id=757041979]
+position = Vector2(736.5, 208)
+texture = ExtResource("39_frfa0")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations319_114" type="Sprite2D" parent="ActorsAndProps" unique_id=1184149594]
+position = Vector2(750, 170.5)
+texture = ExtResource("42_cf2pq")
+centered = false
+offset = Vector2(-32, -64)
+
+[node name="Vegetations312_115" type="Sprite2D" parent="ActorsAndProps" unique_id=297018021]
+position = Vector2(762, 152)
+texture = ExtResource("43_l782q")
+centered = false
+offset = Vector2(-32, -64)
+
+[node name="Vegetations32_116" type="Sprite2D" parent="ActorsAndProps" unique_id=377413108]
+position = Vector2(781.5, 171)
+texture = ExtResource("44_vl54u")
+centered = false
+offset = Vector2(-16, -64)
+
+[node name="Rocks33_119" parent="ActorsAndProps" unique_id=1069531038 instance=ExtResource("45_ww7v7")]
+position = Vector2(635.5, 224.5)
+
+[node name="Rocks2_120" type="Sprite2D" parent="ActorsAndProps" unique_id=1332334590]
+position = Vector2(638.5, 221.5)
+texture = ExtResource("46_wmnk5")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="PortalGrass_121" parent="ActorsAndProps" unique_id=1329357255 instance=ExtResource("47_55dwl")]
+position = Vector2(116, 175)
+
+[node name="TallDryGrassIsh26_123" type="Sprite2D" parent="ActorsAndProps" unique_id=1986118426]
+position = Vector2(691.5, 193.5)
+texture = ExtResource("48_afl4q")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh7_126" type="Sprite2D" parent="ActorsAndProps" unique_id=1392255267]
+position = Vector2(712, 206.5)
+texture = ExtResource("49_8v8s4")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Rocks3_128" type="Sprite2D" parent="ActorsAndProps" unique_id=1522648579]
+position = Vector2(799.5, 105.5)
+texture = ExtResource("50_mog5d")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Rocks6_129" type="Sprite2D" parent="ActorsAndProps" unique_id=2125883331]
+position = Vector2(714.5, 81.5)
+texture = ExtResource("51_ss652")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Rocks28_130" parent="ActorsAndProps" unique_id=1488760078 instance=ExtResource("52_jyb0c")]
+position = Vector2(705.5, 44.5)
+
+[node name="LittleStonesToCreatePaths36_136" type="Sprite2D" parent="ActorsAndProps" unique_id=689681455]
+position = Vector2(1195.5, 225.5)
+texture = ExtResource("53_gxfjx")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths28_138" type="Sprite2D" parent="ActorsAndProps" unique_id=1318718080]
+position = Vector2(1208, 245)
+texture = ExtResource("54_btwy8")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths53_139" type="Sprite2D" parent="ActorsAndProps" unique_id=774060973]
+position = Vector2(1195.5, 359.5)
+texture = ExtResource("15_q61ir")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths55_140" type="Sprite2D" parent="ActorsAndProps" unique_id=1258884613]
+position = Vector2(1188, 383.5)
+texture = ExtResource("20_uibjh")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths41_141" type="Sprite2D" parent="ActorsAndProps" unique_id=540953969]
+position = Vector2(1218.5, 378.5)
+texture = ExtResource("55_0q3bk")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths44_142" type="Sprite2D" parent="ActorsAndProps" unique_id=487121587]
+position = Vector2(1255, 370)
+texture = ExtResource("56_kjqwi")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths32_143" type="Sprite2D" parent="ActorsAndProps" unique_id=1280311698]
+position = Vector2(1267.5, 392.5)
+texture = ExtResource("57_m5cgs")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths34_144" type="Sprite2D" parent="ActorsAndProps" unique_id=1103236641]
+position = Vector2(1216.5, 402)
+texture = ExtResource("17_s6x4c")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths48_145" type="Sprite2D" parent="ActorsAndProps" unique_id=1956126365]
+position = Vector2(1248.5, 407)
+texture = ExtResource("23_r14te")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths55_146" type="Sprite2D" parent="ActorsAndProps" unique_id=1745581914]
+position = Vector2(1274, 421.5)
+scale = Vector2(-1, 1)
+texture = ExtResource("20_uibjh")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Trees11_148" parent="ActorsAndProps" unique_id=138556972 instance=ExtResource("58_4ynql")]
+position = Vector2(1262, 588.5)
+
+[node name="Trees7_149" parent="ActorsAndProps" unique_id=31851658 instance=ExtResource("59_o1a8j")]
+position = Vector2(1204, 633)
+
+[node name="Trees4_150" parent="ActorsAndProps" unique_id=1241724414 instance=ExtResource("60_uo7f4")]
+position = Vector2(1267.5, 675.5)
+
+[node name="BirchTrees8_151" parent="ActorsAndProps" unique_id=1815197124 instance=ExtResource("61_eosl0")]
+position = Vector2(1251.5, 511.5)
+
+[node name="BirchTrees0_152" parent="ActorsAndProps" unique_id=531465835 instance=ExtResource("62_cwnj3")]
+position = Vector2(1294, 488)
+
+[node name="BirchTreesNoLeaves5_154" parent="ActorsAndProps" unique_id=1749817194 instance=ExtResource("63_ky2pd")]
+position = Vector2(1281.5, 349.5)
+
+[node name="FloodedGrasDetails5_155" type="Sprite2D" parent="ActorsAndProps" unique_id=1651833903]
+position = Vector2(1043.5, 427)
+texture = ExtResource("64_clghc")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails6_156" type="Sprite2D" parent="ActorsAndProps" unique_id=423900389]
+position = Vector2(876, 513)
+texture = ExtResource("65_0skds")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails11_158" type="Sprite2D" parent="ActorsAndProps" unique_id=457482683]
+position = Vector2(1108, 518.5)
+texture = ExtResource("66_bseng")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails2_159" type="Sprite2D" parent="ActorsAndProps" unique_id=1898685497]
+position = Vector2(839, 531)
+texture = ExtResource("67_8vh6a")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails1_160" type="Sprite2D" parent="ActorsAndProps" unique_id=883551588]
+position = Vector2(826, 535.5)
+texture = ExtResource("68_0j074")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails3_161" type="Sprite2D" parent="ActorsAndProps" unique_id=186044628]
+position = Vector2(849, 538.5)
+texture = ExtResource("69_e6wao")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails3_162" type="Sprite2D" parent="ActorsAndProps" unique_id=323319213]
+position = Vector2(819, 629)
+texture = ExtResource("69_e6wao")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails4_163" type="Sprite2D" parent="ActorsAndProps" unique_id=749581706]
+position = Vector2(811, 625)
+texture = ExtResource("70_mgd50")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails4_164" type="Sprite2D" parent="ActorsAndProps" unique_id=2118959856]
+position = Vector2(1203, 736)
+texture = ExtResource("70_mgd50")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails0_165" type="Sprite2D" parent="ActorsAndProps" unique_id=1402363810]
+position = Vector2(1202, 724)
+texture = ExtResource("71_bisth")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails1_166" type="Sprite2D" parent="ActorsAndProps" unique_id=939359962]
+position = Vector2(1178.5, 734)
+texture = ExtResource("68_0j074")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails3_167" type="Sprite2D" parent="ActorsAndProps" unique_id=515655861]
+position = Vector2(1169.5, 744)
+texture = ExtResource("69_e6wao")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails5_168" type="Sprite2D" parent="ActorsAndProps" unique_id=141939202]
+position = Vector2(1159.5, 728.5)
+texture = ExtResource("64_clghc")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails5_169" type="Sprite2D" parent="ActorsAndProps" unique_id=1057485123]
+position = Vector2(1070, 708.5)
+texture = ExtResource("64_clghc")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails0_170" type="Sprite2D" parent="ActorsAndProps" unique_id=2118641631]
+position = Vector2(1086.5, 693.5)
+texture = ExtResource("71_bisth")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails2_171" type="Sprite2D" parent="ActorsAndProps" unique_id=722080004]
+position = Vector2(1099.5, 715.5)
+texture = ExtResource("67_8vh6a")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails3_172" type="Sprite2D" parent="ActorsAndProps" unique_id=1505967063]
+position = Vector2(1109.5, 665)
+texture = ExtResource("69_e6wao")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails3_173" type="Sprite2D" parent="ActorsAndProps" unique_id=1440234657]
+position = Vector2(1093.5, 695)
+texture = ExtResource("69_e6wao")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails3_174" type="Sprite2D" parent="ActorsAndProps" unique_id=1652321410]
+position = Vector2(1143.5, 770.5)
+texture = ExtResource("69_e6wao")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails11_175" type="Sprite2D" parent="ActorsAndProps" unique_id=591888575]
+position = Vector2(1143, 754.5)
+texture = ExtResource("66_bseng")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails10_176" type="Sprite2D" parent="ActorsAndProps" unique_id=1396556755]
+position = Vector2(1184.5, 705.5)
+texture = ExtResource("72_hrgua")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails7_177" type="Sprite2D" parent="ActorsAndProps" unique_id=501386176]
+position = Vector2(1124.5, 696.5)
+texture = ExtResource("73_w7wqy")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="FloodedGrasDetails0_179" type="Sprite2D" parent="ActorsAndProps" unique_id=1645859794]
+position = Vector2(1101.33, 539.333)
+texture = ExtResource("71_bisth")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh30_183" type="Sprite2D" parent="ActorsAndProps" unique_id=499656841]
+position = Vector2(1208.33, 450.333)
+texture = ExtResource("74_aaxga")
+centered = false
+offset = Vector2(-48, -32)
+
+[node name="TallDryGrassIsh24_184" type="Sprite2D" parent="ActorsAndProps" unique_id=2025348747]
+position = Vector2(1183.33, 486.333)
+texture = ExtResource("75_fwc1d")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="Vegetations241_185" type="Sprite2D" parent="ActorsAndProps" unique_id=558831063]
+position = Vector2(1179.33, 426.833)
+texture = ExtResource("33_s303i")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations240_186" type="Sprite2D" parent="ActorsAndProps" unique_id=1483439217]
+position = Vector2(1142, 427)
+texture = ExtResource("76_f6kn3")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations246_187" type="Sprite2D" parent="ActorsAndProps" unique_id=211286734]
+position = Vector2(1158.33, 449)
+texture = ExtResource("77_u73eb")
+centered = false
+offset = Vector2(-16, -64)
+
+[node name="Vegetations241_188" type="Sprite2D" parent="ActorsAndProps" unique_id=889142911]
+position = Vector2(1122.67, 423.667)
+texture = ExtResource("33_s303i")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Rocks36_189" parent="ActorsAndProps" unique_id=1896992999 instance=ExtResource("78_i6u75")]
+position = Vector2(1213.5, 414.5)
+
+[node name="Rocks11_190" type="Sprite2D" parent="ActorsAndProps" unique_id=960895641]
+position = Vector2(1189, 411.5)
+texture = ExtResource("79_s7olj")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Rocks10_191" type="Sprite2D" parent="ActorsAndProps" unique_id=512846871]
+position = Vector2(1211.5, 471.5)
+texture = ExtResource("80_xvfbe")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh11_192" type="Sprite2D" parent="ActorsAndProps" unique_id=343543281]
+position = Vector2(1214.5, 426)
+texture = ExtResource("81_rmt82")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh12_193" type="Sprite2D" parent="ActorsAndProps" unique_id=1161470848]
+position = Vector2(1205.5, 427.5)
+texture = ExtResource("39_frfa0")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="BirchTreesNoLeaves2_194" parent="ActorsAndProps" unique_id=1675025038 instance=ExtResource("82_svh8q")]
+position = Vector2(1272, 178)
+
+[node name="PillarsAndGenericSupport232_198" parent="ActorsAndProps" unique_id=650565247 instance=ExtResource("83_n3l60")]
+position = Vector2(1139.5, 129)
+
+[node name="PillarsAndGenericSupport233_199" parent="ActorsAndProps" unique_id=1541086716 instance=ExtResource("84_l5d0b")]
+position = Vector2(1097, 132.5)
+
+[node name="Vegetations2020_201" type="Sprite2D" parent="ActorsAndProps" unique_id=1064143142]
+position = Vector2(1135.5, 101)
+texture = ExtResource("85_b025s")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations3434_202" type="Sprite2D" parent="ActorsAndProps" unique_id=786486084]
+position = Vector2(1032, 130)
+texture = ExtResource("86_ie5w6")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations218_203" type="Sprite2D" parent="ActorsAndProps" unique_id=1244887763]
+position = Vector2(1167.5, 113)
+texture = ExtResource("87_ylsuy")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations221_204" type="Sprite2D" parent="ActorsAndProps" unique_id=654761897]
+position = Vector2(1112, 121.5)
+texture = ExtResource("88_qxuhx")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Bushes11_219" type="Sprite2D" parent="ActorsAndProps" unique_id=831998415]
+position = Vector2(342, 151)
+texture = ExtResource("89_mrw3h")
+centered = false
+offset = Vector2(-32, -64)
+
+[node name="Bushes3_220" type="Sprite2D" parent="ActorsAndProps" unique_id=1849846250]
+position = Vector2(306.5, 159.5)
+texture = ExtResource("90_keljr")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="Bushes9_222" type="Sprite2D" parent="ActorsAndProps" unique_id=860894029]
+position = Vector2(353.5, 177.5)
+texture = ExtResource("91_lodh1")
+centered = false
+offset = Vector2(-32, -64)
+
+[node name="TallDryGrassIsh31_226" type="Sprite2D" parent="ActorsAndProps" unique_id=657076817]
+position = Vector2(381.5, 215.5)
+texture = ExtResource("92_wsqr4")
+centered = false
+offset = Vector2(-48, -64)
+
+[node name="TallDryGrassIsh25_227" type="Sprite2D" parent="ActorsAndProps" unique_id=1617818827]
+position = Vector2(344, 219.5)
+texture = ExtResource("93_qhv20")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh26_228" type="Sprite2D" parent="ActorsAndProps" unique_id=1432287104]
+position = Vector2(307.5, 182)
+texture = ExtResource("48_afl4q")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh24_230" type="Sprite2D" parent="ActorsAndProps" unique_id=1455463754]
+position = Vector2(303, 204.5)
+texture = ExtResource("75_fwc1d")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh19_231" type="Sprite2D" parent="ActorsAndProps" unique_id=968493517]
+position = Vector2(398.5, 168)
+texture = ExtResource("94_0n82j")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh12_232" type="Sprite2D" parent="ActorsAndProps" unique_id=2064243027]
+position = Vector2(557.5, 141)
+texture = ExtResource("39_frfa0")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh0_233" type="Sprite2D" parent="ActorsAndProps" unique_id=36450356]
+position = Vector2(497.5, 144)
+texture = ExtResource("95_eru76")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh2_234" type="Sprite2D" parent="ActorsAndProps" unique_id=1971641917]
+position = Vector2(461.5, 141)
+texture = ExtResource("96_unbl4")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh13_235" type="Sprite2D" parent="ActorsAndProps" unique_id=355858328]
+position = Vector2(641, 146)
+texture = ExtResource("40_fv8cb")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="PillarsAndGenericSupport77_238" parent="ActorsAndProps" unique_id=1421591362 instance=ExtResource("97_flmfy")]
+position = Vector2(730.667, 441.333)
+
+[node name="Shrubs1_239" type="Sprite2D" parent="ActorsAndProps" unique_id=1183368373]
+position = Vector2(656, 436)
+texture = ExtResource("9_425ls")
+centered = false
+offset = Vector2(-16, -64)
+
+[node name="Shrubs0_240" type="Sprite2D" parent="ActorsAndProps" unique_id=569093479]
+position = Vector2(689, 411)
+texture = ExtResource("98_0mn35")
+centered = false
+offset = Vector2(-16, -64)
+
+[node name="Shrubs2_242" type="Sprite2D" parent="ActorsAndProps" unique_id=1429376946]
+position = Vector2(704, 447.5)
+texture = ExtResource("8_8d6sh")
+centered = false
+offset = Vector2(-16, -64)
+
+[node name="Shrubs4_243" type="Sprite2D" parent="ActorsAndProps" unique_id=669556939]
+position = Vector2(764, 427.5)
+texture = ExtResource("5_l4bmb")
+centered = false
+offset = Vector2(-32, -96)
+
+[node name="Shrubs5_244" type="Sprite2D" parent="ActorsAndProps" unique_id=1290239147]
+position = Vector2(748, 483)
+texture = ExtResource("7_lkh57")
+centered = false
+offset = Vector2(-32, -96)
+
+[node name="Shrubs1_245" type="Sprite2D" parent="ActorsAndProps" unique_id=1536458235]
+position = Vector2(835, 416)
+texture = ExtResource("9_425ls")
+centered = false
+offset = Vector2(-16, -64)
+
+[node name="Shrubs0_248" type="Sprite2D" parent="ActorsAndProps" unique_id=1123191598]
+position = Vector2(779.5, 462)
+texture = ExtResource("98_0mn35")
+centered = false
+offset = Vector2(-16, -64)
+
+[node name="Shrubs2_249" type="Sprite2D" parent="ActorsAndProps" unique_id=726730599]
+position = Vector2(798, 478)
+texture = ExtResource("8_8d6sh")
+centered = false
+offset = Vector2(-16, -64)
+
+[node name="TallDryGrassIsh29_250" type="Sprite2D" parent="ActorsAndProps" unique_id=1324236592]
+position = Vector2(829, 348)
+texture = ExtResource("35_oj0dg")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh24_259" type="Sprite2D" parent="ActorsAndProps" unique_id=701180555]
+position = Vector2(660.5, 366.5)
+texture = ExtResource("75_fwc1d")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh10_260" type="Sprite2D" parent="ActorsAndProps" unique_id=1103923863]
+position = Vector2(792.591, 404.523)
+texture = ExtResource("99_qc1sj")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh21_261" type="Sprite2D" parent="ActorsAndProps" unique_id=395187947]
+position = Vector2(803.091, 414.523)
+texture = ExtResource("100_5nrea")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh18_262" type="Sprite2D" parent="ActorsAndProps" unique_id=1712378188]
+position = Vector2(825.591, 400.023)
+texture = ExtResource("36_vqe20")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations120_265" type="Sprite2D" parent="ActorsAndProps" unique_id=163822258]
+position = Vector2(638.5, 389.5)
+texture = ExtResource("101_ftmq4")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations117_266" type="Sprite2D" parent="ActorsAndProps" unique_id=1506895297]
+position = Vector2(632.5, 456)
+texture = ExtResource("102_o85f7")
+centered = false
+offset = Vector2(-32, -64)
+
+[node name="Trees3_273" parent="ActorsAndProps" unique_id=1164909869 instance=ExtResource("103_syhwh")]
+position = Vector2(1066, 117)
+
+[node name="Bushes2_275" type="Sprite2D" parent="ActorsAndProps" unique_id=1117887329]
+position = Vector2(606.5, 328)
+texture = ExtResource("104_erppm")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="Shrubs5_276" type="Sprite2D" parent="ActorsAndProps" unique_id=1662619664]
+position = Vector2(644, 339)
+texture = ExtResource("7_lkh57")
+centered = false
+offset = Vector2(-32, -96)
+
+[node name="Vegetations88_284" type="Sprite2D" parent="ActorsAndProps" unique_id=1058802901]
+position = Vector2(522, 421)
+texture = ExtResource("105_buy4w")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations2121_285" type="Sprite2D" parent="ActorsAndProps" unique_id=650386360]
+position = Vector2(494, 425)
+texture = ExtResource("106_graqf")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations240_287" type="Sprite2D" parent="ActorsAndProps" unique_id=380655136]
+position = Vector2(683, 449.5)
+texture = ExtResource("76_f6kn3")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations241_288" type="Sprite2D" parent="ActorsAndProps" unique_id=1192141364]
+position = Vector2(626.5, 463.5)
+texture = ExtResource("33_s303i")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations241_289" type="Sprite2D" parent="ActorsAndProps" unique_id=913255918]
+position = Vector2(672, 454)
+texture = ExtResource("33_s303i")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh24_290" type="Sprite2D" parent="ActorsAndProps" unique_id=693155151]
+position = Vector2(655.5, 476)
+texture = ExtResource("75_fwc1d")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh25_291" type="Sprite2D" parent="ActorsAndProps" unique_id=1743194495]
+position = Vector2(843, 457)
+texture = ExtResource("93_qhv20")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="Bushes1_293" type="Sprite2D" parent="ActorsAndProps" unique_id=1655120678]
+position = Vector2(851, 437.5)
+texture = ExtResource("107_8s0pj")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh0_294" type="Sprite2D" parent="ActorsAndProps" unique_id=2100481293]
+position = Vector2(842.5, 475)
+texture = ExtResource("95_eru76")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh2_295" type="Sprite2D" parent="ActorsAndProps" unique_id=77409795]
+position = Vector2(779, 489)
+texture = ExtResource("96_unbl4")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh10_296" type="Sprite2D" parent="ActorsAndProps" unique_id=933397421]
+position = Vector2(805, 494)
+texture = ExtResource("99_qc1sj")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh18_297" type="Sprite2D" parent="ActorsAndProps" unique_id=1210328492]
+position = Vector2(782.5, 501)
+texture = ExtResource("36_vqe20")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh7_298" type="Sprite2D" parent="ActorsAndProps" unique_id=191042191]
+position = Vector2(769.5, 520)
+texture = ExtResource("49_8v8s4")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh4_299" type="Sprite2D" parent="ActorsAndProps" unique_id=2137403107]
+position = Vector2(779.5, 515)
+texture = ExtResource("108_1i8ka")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Shrubs2_312" type="Sprite2D" parent="ActorsAndProps" unique_id=1140689598]
+position = Vector2(737, 367)
+texture = ExtResource("8_8d6sh")
+centered = false
+offset = Vector2(-16, -64)
+
+[node name="PillarsAndGenericSupport314_313" parent="ActorsAndProps" unique_id=1118921958 instance=ExtResource("109_mm6we")]
+position = Vector2(780.625, 328)
+
+[node name="PillarsAndGenericSupport317_314" parent="ActorsAndProps" unique_id=49453316 instance=ExtResource("110_nne7c")]
+position = Vector2(725.125, 327)
+
+[node name="PillarsAndGenericSupport314_315" parent="ActorsAndProps" unique_id=880445216 instance=ExtResource("109_mm6we")]
+position = Vector2(748.625, 328)
+
+[node name="PillarsAndGenericSupport315_320" parent="ActorsAndProps" unique_id=486633515 instance=ExtResource("111_fcigg")]
+position = Vector2(812.625, 328)
+
+[node name="PillarsAndGenericSupport318_321" parent="ActorsAndProps" unique_id=236097100 instance=ExtResource("112_arad5")]
+position = Vector2(838.625, 329)
+
+[node name="PillarsAndGenericSupport311_322" parent="ActorsAndProps" unique_id=328327983 instance=ExtResource("113_yx144")]
+position = Vector2(866.875, 327)
+
+[node name="TallDryGrassIsh32_323" type="Sprite2D" parent="ActorsAndProps" unique_id=801316382]
+position = Vector2(751.5, 345.5)
+texture = ExtResource("38_yanfh")
+centered = false
+offset = Vector2(-48, -32)
+
+[node name="Vegetations324_324" type="Sprite2D" parent="ActorsAndProps" unique_id=593426470]
+position = Vector2(895, 370)
+texture = ExtResource("114_qd53b")
+centered = false
+offset = Vector2(-32, -64)
+
+[node name="Vegetations312_325" type="Sprite2D" parent="ActorsAndProps" unique_id=2085637098]
+position = Vector2(866.5, 390.5)
+texture = ExtResource("43_l782q")
+centered = false
+offset = Vector2(-32, -64)
+
+[node name="Vegetations326_326" type="Sprite2D" parent="ActorsAndProps" unique_id=182486686]
+position = Vector2(896.5, 399.5)
+texture = ExtResource("115_t77pl")
+centered = false
+offset = Vector2(-32, -64)
+
+[node name="Vegetations410_327" type="Sprite2D" parent="ActorsAndProps" unique_id=1615440286]
+position = Vector2(873, 406)
+texture = ExtResource("116_p0n3v")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations46_328" type="Sprite2D" parent="ActorsAndProps" unique_id=771515283]
+position = Vector2(820, 368.5)
+texture = ExtResource("117_qldwi")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh31_329" type="Sprite2D" parent="ActorsAndProps" unique_id=732186832]
+position = Vector2(612, 758)
+texture = ExtResource("92_wsqr4")
+centered = false
+offset = Vector2(-48, -64)
+
+[node name="TallDryGrassIsh25_330" type="Sprite2D" parent="ActorsAndProps" unique_id=239222986]
+position = Vector2(610, 773.5)
+texture = ExtResource("93_qhv20")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh25_331" type="Sprite2D" parent="ActorsAndProps" unique_id=2083877082]
+position = Vector2(538.5, 663)
+texture = ExtResource("93_qhv20")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh27_332" type="Sprite2D" parent="ActorsAndProps" unique_id=1546852635]
+position = Vector2(638, 589.5)
+texture = ExtResource("37_hmyru")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh27_333" type="Sprite2D" parent="ActorsAndProps" unique_id=9504708]
+position = Vector2(550.5, 527)
+texture = ExtResource("37_hmyru")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh25_334" type="Sprite2D" parent="ActorsAndProps" unique_id=1338937403]
+position = Vector2(877.5, 677)
+texture = ExtResource("93_qhv20")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh27_335" type="Sprite2D" parent="ActorsAndProps" unique_id=445974095]
+position = Vector2(942.5, 613)
+texture = ExtResource("37_hmyru")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh28_336" type="Sprite2D" parent="ActorsAndProps" unique_id=2040180957]
+position = Vector2(1029, 630.5)
+texture = ExtResource("118_j6jcq")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh30_337" type="Sprite2D" parent="ActorsAndProps" unique_id=96746321]
+position = Vector2(1003, 688)
+texture = ExtResource("74_aaxga")
+centered = false
+offset = Vector2(-48, -32)
+
+[node name="TallDryGrassIsh32_338" type="Sprite2D" parent="ActorsAndProps" unique_id=562875571]
+position = Vector2(923, 768.5)
+texture = ExtResource("38_yanfh")
+centered = false
+offset = Vector2(-48, -32)
+
+[node name="TallDryGrassIsh27_339" type="Sprite2D" parent="ActorsAndProps" unique_id=797074150]
+position = Vector2(1034.5, 737.5)
+texture = ExtResource("37_hmyru")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh26_340" type="Sprite2D" parent="ActorsAndProps" unique_id=1643275107]
+position = Vector2(905.5, 725)
+texture = ExtResource("48_afl4q")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh27_341" type="Sprite2D" parent="ActorsAndProps" unique_id=257575565]
+position = Vector2(1074.5, 755)
+texture = ExtResource("37_hmyru")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh27_342" type="Sprite2D" parent="ActorsAndProps" unique_id=1810385566]
+position = Vector2(903.5, 629)
+texture = ExtResource("37_hmyru")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh25_343" type="Sprite2D" parent="ActorsAndProps" unique_id=568768661]
+position = Vector2(953.5, 635)
+texture = ExtResource("93_qhv20")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh25_344" type="Sprite2D" parent="ActorsAndProps" unique_id=1783916425]
+position = Vector2(1080.5, 591)
+texture = ExtResource("93_qhv20")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh24_345" type="Sprite2D" parent="ActorsAndProps" unique_id=1453526542]
+position = Vector2(862.5, 763.5)
+texture = ExtResource("75_fwc1d")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="BirchTrees4_346" parent="ActorsAndProps" unique_id=1686050308 instance=ExtResource("119_sxvj5")]
+position = Vector2(995.5, 592)
+
+[node name="BirchTreesNoLeaves1_347" parent="ActorsAndProps" unique_id=203707948 instance=ExtResource("120_ppsqf")]
+position = Vector2(924.5, 667.5)
+
+[node name="BirchTreesNoLeaves5_348" parent="ActorsAndProps" unique_id=892377559 instance=ExtResource("63_ky2pd")]
+position = Vector2(1004.5, 758.5)
+
+[node name="BirchTrees2_351" parent="ActorsAndProps" unique_id=1080579188 instance=ExtResource("121_thnx0")]
+position = Vector2(1030.5, 669.5)
+scale = Vector2(-1, 1)
+
+[node name="BirchTrees1_353" parent="ActorsAndProps" unique_id=1984522938 instance=ExtResource("122_7hc8r")]
+position = Vector2(935, 737)
+
+[node name="Rocks7_356" type="Sprite2D" parent="ActorsAndProps" unique_id=349197237]
+position = Vector2(718.5, 383)
+texture = ExtResource("123_vuqob")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Rocks3_357" type="Sprite2D" parent="ActorsAndProps" unique_id=603498481]
+position = Vector2(796.5, 377.5)
+texture = ExtResource("50_mog5d")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Rocks11_358" type="Sprite2D" parent="ActorsAndProps" unique_id=1092305798]
+position = Vector2(858, 410.5)
+texture = ExtResource("79_s7olj")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh7_371" type="Sprite2D" parent="ActorsAndProps" unique_id=647324405]
+position = Vector2(479, 392)
+texture = ExtResource("49_8v8s4")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh6_373" type="Sprite2D" parent="ActorsAndProps" unique_id=1358046217]
+position = Vector2(446.25, 398.5)
+texture = ExtResource("125_5me28")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh0_374" type="Sprite2D" parent="ActorsAndProps" unique_id=2050539254]
+position = Vector2(637.667, 355.333)
+texture = ExtResource("95_eru76")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh29_375" type="Sprite2D" parent="ActorsAndProps" unique_id=498403235]
+position = Vector2(266, 372)
+texture = ExtResource("35_oj0dg")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="TallDryGrassIsh30_377" type="Sprite2D" parent="ActorsAndProps" unique_id=1717286902]
+position = Vector2(8, 517)
+texture = ExtResource("74_aaxga")
+centered = false
+offset = Vector2(-48, -32)
+
+[node name="Shrubs1_379" type="Sprite2D" parent="ActorsAndProps" unique_id=2034159001]
+position = Vector2(244, 468)
+texture = ExtResource("9_425ls")
+centered = false
+offset = Vector2(-16, -64)
+
+[node name="Shrubs2_380" type="Sprite2D" parent="ActorsAndProps" unique_id=968914485]
+position = Vector2(242, 378)
+texture = ExtResource("8_8d6sh")
+centered = false
+offset = Vector2(-16, -64)
+
+[node name="PillarsAndGenericSupport39_83" parent="ActorsAndProps" unique_id=895226719 instance=ExtResource("126_xwlea")]
+position = Vector2(683, 325.5)
+
+[node name="PillarsAndGenericSupport320_85" parent="ActorsAndProps" unique_id=1340948283 instance=ExtResource("127_70e0g")]
+position = Vector2(811, 205)
+
+[node name="Vegetations425_109" type="Sprite2D" parent="ActorsAndProps" unique_id=516231251]
+position = Vector2(755, 213)
+texture = ExtResource("128_5neve")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations412_111" type="Sprite2D" parent="ActorsAndProps" unique_id=1727236134]
+position = Vector2(769.5, 210.5)
+texture = ExtResource("129_4ihpe")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations2020_112" type="Sprite2D" parent="ActorsAndProps" unique_id=121331877]
+position = Vector2(821.5, 164)
+texture = ExtResource("85_b025s")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations20_113" type="Sprite2D" parent="ActorsAndProps" unique_id=378308217]
+position = Vector2(828.5, 138.5)
+texture = ExtResource("130_kt4n0")
+centered = false
+offset = Vector2(-32, -64)
+
+[node name="PillarsAndGenericSupport320_236" parent="ActorsAndProps" unique_id=1199989194 instance=ExtResource("127_70e0g")]
+position = Vector2(576, 464.5)
+
+[node name="TallDryGrassIsh8_254" type="Sprite2D" parent="ActorsAndProps" unique_id=20642785]
+position = Vector2(798, 351)
+texture = ExtResource("131_q1rey")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Trees1_267" parent="ActorsAndProps" unique_id=363131577 instance=ExtResource("132_ehax6")]
+position = Vector2(687, 609)
+
+[node name="Trees2_268" parent="ActorsAndProps" unique_id=1851911536 instance=ExtResource("10_ny5ci")]
+position = Vector2(587.5, 613.5)
+
+[node name="Trees9_270" parent="ActorsAndProps" unique_id=1232145675 instance=ExtResource("133_c8i04")]
+position = Vector2(593, 708)
+
+[node name="Trees2_271" parent="ActorsAndProps" unique_id=1328975936 instance=ExtResource("10_ny5ci")]
+position = Vector2(720, 671)
+
+[node name="Trees11_272" parent="ActorsAndProps" unique_id=1351877565 instance=ExtResource("58_4ynql")]
+position = Vector2(659, 757)
+
+[node name="Vegetations47_278" type="Sprite2D" parent="ActorsAndProps" unique_id=1474887187]
+position = Vector2(667.5, 334)
+texture = ExtResource("134_5noye")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations3434_279" type="Sprite2D" parent="ActorsAndProps" unique_id=1805074155]
+position = Vector2(616.5, 351)
+texture = ExtResource("86_ie5w6")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations428_280" type="Sprite2D" parent="ActorsAndProps" unique_id=775719839]
+position = Vector2(697, 346)
+texture = ExtResource("135_2j7ao")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations45_281" type="Sprite2D" parent="ActorsAndProps" unique_id=1343303840]
+position = Vector2(679.5, 351.5)
+texture = ExtResource("136_n7bm2")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations422_282" type="Sprite2D" parent="ActorsAndProps" unique_id=357822055]
+position = Vector2(711.5, 365.5)
+texture = ExtResource("137_l6nuj")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="TallDryGrassIsh30_300" type="Sprite2D" parent="ActorsAndProps" unique_id=687788542]
+position = Vector2(782.5, 579)
+texture = ExtResource("74_aaxga")
+centered = false
+offset = Vector2(-48, -32)
+
+[node name="TallDryGrassIsh27_301" type="Sprite2D" parent="ActorsAndProps" unique_id=949664675]
+position = Vector2(766.5, 554.5)
+texture = ExtResource("37_hmyru")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="Rocks3_305" type="Sprite2D" parent="ActorsAndProps" unique_id=1690300526]
+position = Vector2(759.5, 664)
+texture = ExtResource("50_mog5d")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Rocks7_306" type="Sprite2D" parent="ActorsAndProps" unique_id=1877790497]
+position = Vector2(800, 599.5)
+texture = ExtResource("123_vuqob")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Vegetations211_359" type="Sprite2D" parent="ActorsAndProps" unique_id=1872877697]
+position = Vector2(508, 353)
+texture = ExtResource("138_3khit")
+centered = false
+offset = Vector2(-16, -64)
+
+[node name="Vegetations418_361" type="Sprite2D" parent="ActorsAndProps" unique_id=376944355]
+position = Vector2(540, 478)
+texture = ExtResource("139_w1k2j")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="Moose1" parent="ActorsAndProps" unique_id=675831012 instance=ExtResource("131_iw1tq")]
+position = Vector2(307, 484)
+
+[node name="Moose2" parent="ActorsAndProps" unique_id=1819411534 instance=ExtResource("132_q61ir")]
+position = Vector2(532, 381)
+
+[node name="Moose3" parent="ActorsAndProps" unique_id=635513529 instance=ExtResource("133_xlhnt")]
+position = Vector2(426, 366)
+
+[node name="Moose4" parent="ActorsAndProps" unique_id=1677090384 instance=ExtResource("134_s6x4c")]
+position = Vector2(383, 439)
+
+[node name="Moose5" parent="ActorsAndProps" unique_id=633631720 instance=ExtResource("135_nr3mg")]
+position = Vector2(339, 363)
+
+[node name="Moose6" parent="ActorsAndProps" unique_id=697033017 instance=ExtResource("136_r7gt4")]
+position = Vector2(262, 419)
+
+[node name="NPCMerchant" parent="ActorsAndProps" unique_id=1392327939 instance=ExtResource("137_uibjh")]
+position = Vector2(386, 240)
+
+[node name="NPCMerchantAnimatedItems" parent="ActorsAndProps" unique_id=1675609778 instance=ExtResource("138_jph0k")]
+position = Vector2(306, 236)
+
+[node name="StoneGolem" parent="ActorsAndProps" unique_id=662020762 instance=ExtResource("139_kmnbq")]
+position = Vector2(562, 268)
+
+[node name="StoneGolemV2" parent="ActorsAndProps" unique_id=2039561233 instance=ExtResource("140_r14te")]
+position = Vector2(477, 263)
+
+[node name="SillyLuckCreature" parent="ActorsAndProps" unique_id=535513223 instance=ExtResource("141_6g78x")]
+position = Vector2(693, 222)
+
+[node name="TestingCharacter" parent="ActorsAndProps" unique_id=1249981257 instance=ExtResource("140_ea1p1")]
+position = Vector2(361, 313)
+
+[node name="props" type="Node2D" parent="." unique_id=2055152743]
+z_index = -1
+
+[node name="LittleStonesToCreatePaths39_33" type="Sprite2D" parent="props" unique_id=1320366686]
+position = Vector2(1053, 271)
+texture = ExtResource("12_4cb2m")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths51_34" type="Sprite2D" parent="props" unique_id=132074441]
+position = Vector2(1038, 295)
+texture = ExtResource("13_yyqjh")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths49_35" type="Sprite2D" parent="props" unique_id=523854140]
+position = Vector2(1071, 299)
+texture = ExtResource("14_iw1tq")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths53_37" type="Sprite2D" parent="props" unique_id=557123728]
+position = Vector2(1092.82, 280.636)
+texture = ExtResource("15_q61ir")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths53_53" type="Sprite2D" parent="props" unique_id=517627016]
+position = Vector2(1092.82, 280.636)
+texture = ExtResource("15_q61ir")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths47_38" type="Sprite2D" parent="props" unique_id=990884159]
+position = Vector2(1111.36, 296.091)
+texture = ExtResource("16_xlhnt")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths47_52" type="Sprite2D" parent="props" unique_id=1227914045]
+position = Vector2(1111.36, 296.091)
+texture = ExtResource("16_xlhnt")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths34_39" type="Sprite2D" parent="props" unique_id=323826414]
+position = Vector2(1123, 327)
+texture = ExtResource("17_s6x4c")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths43_40" type="Sprite2D" parent="props" unique_id=2005360842]
+position = Vector2(1087, 263)
+texture = ExtResource("18_nr3mg")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths33_41" type="Sprite2D" parent="props" unique_id=1661192712]
+position = Vector2(1112.67, 247)
+texture = ExtResource("19_r7gt4")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths55_42" type="Sprite2D" parent="props" unique_id=2008805808]
+position = Vector2(1120.79, 267.758)
+texture = ExtResource("20_uibjh")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths35_43" type="Sprite2D" parent="props" unique_id=122053817]
+position = Vector2(1148.33, 255.667)
+texture = ExtResource("21_jph0k")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths31_44" type="Sprite2D" parent="props" unique_id=1146327933]
+position = Vector2(1132.33, 235.333)
+texture = ExtResource("22_kmnbq")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths53_45" type="Sprite2D" parent="props" unique_id=615698315]
+position = Vector2(1157.67, 229.333)
+texture = ExtResource("15_q61ir")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths35_46" type="Sprite2D" parent="props" unique_id=1597543415]
+position = Vector2(1177, 245.333)
+texture = ExtResource("21_jph0k")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths35_47" type="Sprite2D" parent="props" unique_id=1326742156]
+position = Vector2(1101.67, 312.333)
+texture = ExtResource("21_jph0k")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths48_48" type="Sprite2D" parent="props" unique_id=835410030]
+position = Vector2(1148, 318.667)
+texture = ExtResource("23_r14te")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths52_49" type="Sprite2D" parent="props" unique_id=595772937]
+position = Vector2(1145, 344)
+texture = ExtResource("24_6g78x")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths40_50" type="Sprite2D" parent="props" unique_id=2049034491]
+position = Vector2(1175.33, 339.333)
+texture = ExtResource("25_ro8vv")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="LittleStonesToCreatePaths47_51" type="Sprite2D" parent="props" unique_id=1640321301]
+position = Vector2(1167.83, 361)
+texture = ExtResource("16_xlhnt")
+centered = false
+offset = Vector2(-16, -32)
+
+[node name="StoneDetail304_366" type="Sprite2D" parent="props" unique_id=674513802]
+position = Vector2(336, 704)
+texture = ExtResource("124_py8vt")
+centered = false
+offset = Vector2(-16, -32)
+region_enabled = true
+region_rect = Rect2(128, 192, 32, 32)
+
+[node name="StoneDetail356_367" type="Sprite2D" parent="props" unique_id=1383346215]
+position = Vector2(368, 704)
+texture = ExtResource("124_py8vt")
+centered = false
+offset = Vector2(-16, -32)
+region_enabled = true
+region_rect = Rect2(192, 224, 32, 32)
+
+[node name="StoneDetail306_368" type="Sprite2D" parent="props" unique_id=493832338]
+position = Vector2(368, 736)
+texture = ExtResource("124_py8vt")
+centered = false
+offset = Vector2(-16, -32)
+region_enabled = true
+region_rect = Rect2(192, 192, 32, 32)

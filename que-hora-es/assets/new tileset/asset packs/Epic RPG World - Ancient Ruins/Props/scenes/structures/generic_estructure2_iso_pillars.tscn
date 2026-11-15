@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://ce74ytq3g31us"]
+
+[ext_resource type="Texture2D" uid="uid://cman8lk6c241i" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/generic_estructure2-iso-pillars.png" id="1_6apo0"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6apo0"]
+radius = 9.0
+height = 28.0
+
+[node name="GenericEstructure2IsoPillars" type="StaticBody2D" unique_id=1726250923]
+texture_filter = 1
+collision_mask = 0
+
+[node name="GenericEstructure2IsoPillars" type="Sprite2D" parent="." unique_id=1097823490]
+texture = ExtResource("1_6apo0")
+centered = false
+offset = Vector2(-100, -119)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1709434506]
+position = Vector2(68, 22)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_6apo0")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1006256547]
+position = Vector2(5, -10)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_6apo0")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=1352473858]
+position = Vector2(-58, -43)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_6apo0")

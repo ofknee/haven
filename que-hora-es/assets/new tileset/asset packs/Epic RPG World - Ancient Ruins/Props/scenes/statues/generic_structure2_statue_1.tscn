@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://gejv1aemeitf"]
+
+[ext_resource type="Texture2D" uid="uid://dciew8urp48qm" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/generic structure2-statue_1.png" id="1_o4qhs"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p4nqj"]
+radius = 13.0
+height = 29.7
+
+[node name="GenericStructure2Statue1" type="StaticBody2D" unique_id=14724666]
+texture_filter = 1
+collision_mask = 0
+
+[node name="GenericStructure2Statue1" type="Sprite2D" parent="." unique_id=956322028]
+texture = ExtResource("1_o4qhs")
+centered = false
+offset = Vector2(-32.5, -90)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=443950009]
+position = Vector2(-2, -14)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_p4nqj")

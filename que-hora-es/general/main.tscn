@@ -8,6 +8,10 @@
 [ext_resource type="Texture2D" uid="uid://cuqb1nwkf4nnh" path="res://assets/ProgressBar/StraightBars_Spritesheet.png" id="6_cwgdg"]
 [ext_resource type="Script" uid="uid://dxsmmi1upr6ug" path="res://general/progress_bar.gd" id="7_t36mh"]
 [ext_resource type="Script" uid="uid://c4aq2o0tn2eej" path="res://general/ghost.gd" id="8_0vfjo"]
+[ext_resource type="Script" uid="uid://cci6d5jy10lp6" path="res://general/popup_instructions.gd" id="8_s7w8m"]
+[ext_resource type="Texture2D" uid="uid://1vftfbk5u0ao" path="res://assets/ui/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/inventory_Light_example_2.png" id="8_yvgs8"]
+[ext_resource type="FontFile" uid="uid://blqbusty1lapl" path="res://assets/ui/Sprout Lands - UI Pack - Basic pack/fonts/pixelFont-7-8x14-sproutLands.ttf" id="9_x0v65"]
+[ext_resource type="Texture2D" uid="uid://bq4v41o5ag3xb" path="res://assets/ui/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Sprite sheet for Basic Pack.png" id="11_6c2sp"]
 
 [sub_resource type="Resource" id="Resource_0vfjo"]
 script = ExtResource("5_t36mh")
@@ -24,6 +28,20 @@ region = Rect2(0, 0, 48, 11)
 [sub_resource type="AtlasTexture" id="AtlasTexture_q1nve"]
 atlas = ExtResource("6_cwgdg")
 region = Rect2(672, 0, 48, 11)
+
+[sub_resource type="InputEventAction" id="InputEventAction_mnuec"]
+action = &"next"
+
+[sub_resource type="Shortcut" id="Shortcut_4srqi"]
+events = [SubResource("InputEventAction_mnuec")]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_teyov"]
+atlas = ExtResource("11_6c2sp")
+region = Rect2(837, 100, 22, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4rilo"]
+atlas = ExtResource("11_6c2sp")
+region = Rect2(869, 100, 22, 24)
 
 [node name="main" type="Node2D" unique_id=870418785]
 y_sort_enabled = true
@@ -67,8 +85,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="UI/Control" unique_id=166965618]
+[node name="TimeTimer" type="MarginContainer" parent="UI/Control" unique_id=166965618]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -77,11 +96,13 @@ offset_left = -112.0
 offset_right = 112.0
 offset_bottom = 30.0
 grow_horizontal = 2
+mouse_filter = 2
 theme_override_constants/margin_top = 12
 
-[node name="ProgressBar" type="TextureProgressBar" parent="UI/Control/MarginContainer" unique_id=653295992]
+[node name="ProgressBar" type="TextureProgressBar" parent="UI/Control/TimeTimer" unique_id=653295992]
 visible = false
 layout_mode = 2
+mouse_filter = 2
 value = 100.0
 fill_mode = 6
 nine_patch_stretch = true
@@ -94,17 +115,85 @@ texture_over = SubResource("AtlasTexture_8o121")
 texture_progress = SubResource("AtlasTexture_q1nve")
 script = ExtResource("7_t36mh")
 
-[node name="Timer" type="Timer" parent="UI/Control/MarginContainer/ProgressBar" unique_id=1169884365]
+[node name="Timer" type="Timer" parent="UI/Control/TimeTimer/ProgressBar" unique_id=1169884365]
 process_callback = 0
 wait_time = 5.0
 ignore_time_scale = true
 
+[node name="PopupInstructions" type="MarginContainer" parent="UI/Control" unique_id=62129837]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -133.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+script = ExtResource("8_s7w8m")
+text_list = Array[String](["I used to live in a clock... until the particle accelerator next door exploded.", "Now, I experience time differently and can manipulate relativity. [A] to move faster than time.", "Be careful! When my ability runs out, I return to my \"real-time\" self.", "Collect wood chips to rebuild my clock!", "Don't get trapped, dont die (we cats don't actually have 9 lives...), and good luck!!"])
+
+[node name="NinePatchRect" type="NinePatchRect" parent="UI/Control/PopupInstructions" unique_id=1262366837]
+layout_mode = 2
+texture = ExtResource("8_yvgs8")
+region_rect = Rect2(4, 24, 294, 69)
+patch_margin_left = 15
+patch_margin_top = 15
+patch_margin_right = 15
+patch_margin_bottom = 15
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/Control/PopupInstructions/NinePatchRect" unique_id=754815332]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="RichTextLabel" type="RichTextLabel" parent="UI/Control/PopupInstructions/NinePatchRect/MarginContainer" unique_id=62157699]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/default_color = Color(0.56, 0.36848, 0.24080001, 1)
+theme_override_constants/line_separation = 6
+theme_override_constants/shadow_outline_size = 3
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_fonts/normal_font = ExtResource("9_x0v65")
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 28
+theme_override_font_sizes/bold_italics_font_size = 14
+theme_override_font_sizes/italics_font_size = 14
+text = "Testing Testing 1 2 3
+there once was a cat named philly and it was evil and timeo"
+vertical_alignment = 1
+
+[node name="ExitButton" type="TextureButton" parent="UI/Control/PopupInstructions" unique_id=1498415230]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+offset_transform_enabled = true
+offset_transform_position = Vector2(-10, -10)
+shortcut = SubResource("Shortcut_4srqi")
+texture_normal = SubResource("AtlasTexture_teyov")
+texture_pressed = SubResource("AtlasTexture_4rilo")
+
 [node name="Ghost" type="Node2D" parent="." unique_id=376190932 node_paths=PackedStringArray("player_sprite")]
-visible = false
 modulate = Color(1.836, 4.144, 3.837, 0.714)
+z_index = 1
+y_sort_enabled = true
 script = ExtResource("8_0vfjo")
 player_sprite = NodePath("../Player/cat")
 
 [node name="Sprite2D" type="Sprite2D" parent="Ghost" unique_id=2018701831]
+
+[connection signal="pressed" from="UI/Control/PopupInstructions/ExitButton" to="UI/Control/PopupInstructions" method="_on_exit_button_pressed"]
 
 [editable path="Player"]

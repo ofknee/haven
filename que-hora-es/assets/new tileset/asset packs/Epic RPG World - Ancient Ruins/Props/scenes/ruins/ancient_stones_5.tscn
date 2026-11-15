@@ -1,0 +1,21 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/ancient stones_5.png" id="1_gdied"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_83mav"]
+radius = 4.5
+height = 37.8
+
+[node name="AncientStones5" type="StaticBody2D" unique_id=1968219931]
+texture_filter = 1
+collision_mask = 0
+
+[node name="AncientStones5" type="Sprite2D" parent="." unique_id=66262543]
+texture = ExtResource("1_gdied")
+centered = false
+offset = Vector2(-31, -63)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1387115730]
+position = Vector2(0, -4.5)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_83mav")

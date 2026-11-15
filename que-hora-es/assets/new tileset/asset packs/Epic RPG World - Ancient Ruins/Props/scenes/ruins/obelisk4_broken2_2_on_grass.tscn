@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dgfekgarq6tax"]
+
+[ext_resource type="Texture2D" uid="uid://cqt6iay70bavt" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/obelisk4-broken2-2-on-grass.png" id="1_fi4c5"]
+
+[node name="Obelisk4Broken22OnGrass" type="StaticBody2D" unique_id=874558026]
+texture_filter = 1
+collision_mask = 0
+
+[node name="Obelisk4Broken22OnGrass" type="Sprite2D" parent="." unique_id=1224842697]
+texture = ExtResource("1_fi4c5")
+centered = false
+offset = Vector2(-24, -63)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=336210021]
+polygon = PackedVector2Array(3, -1, 47, -18, 49, -30, 30, -28, -16, -6)
