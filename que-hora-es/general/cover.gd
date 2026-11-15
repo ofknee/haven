@@ -4,7 +4,7 @@ extends CanvasLayer
 @export var pause_game: bool = true
 @export var wood_goal: int = 25
 
-@onready var wood_label: Label = $Label
+@onready var wood_label = $RichTextLabel
 
 var hurt_count := 0
 
