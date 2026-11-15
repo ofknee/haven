@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dpisgmlnotut"]
+
+[ext_resource type="Texture2D" uid="uid://cy0psxgt1o1mf" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/stone pillars99 - 3 .png" id="1_42cgq"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3ilqi"]
+radius = 11.5
+height = 27.9
+
+[node name="StonePillars993" type="StaticBody2D" unique_id=402910746]
+texture_filter = 1
+collision_mask = 0
+
+[node name="StonePillars993" type="Sprite2D" parent="." unique_id=516265361]
+texture = ExtResource("1_42cgq")
+centered = false
+offset = Vector2(-15.5, -95)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1395251780]
+position = Vector2(0, -12)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_3ilqi")

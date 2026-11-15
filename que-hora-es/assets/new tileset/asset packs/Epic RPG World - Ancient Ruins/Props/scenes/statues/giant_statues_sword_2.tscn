@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dpxdemblbg7wp"]
+
+[ext_resource type="Texture2D" uid="uid://cr8lg6ds1x140" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/giant statues-sword-2.png" id="1_rmp2y"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8vdef"]
+radius = 9.0
+height = 50.0
+
+[node name="GiantStatuesSword2" type="StaticBody2D" unique_id=390099422]
+texture_filter = 1
+collision_mask = 0
+
+[node name="GiantStatuesSword2" type="Sprite2D" parent="." unique_id=1736109290]
+texture = ExtResource("1_rmp2y")
+centered = false
+offset = Vector2(-55, -272)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=110454131]
+position = Vector2(-7, -8)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_8vdef")

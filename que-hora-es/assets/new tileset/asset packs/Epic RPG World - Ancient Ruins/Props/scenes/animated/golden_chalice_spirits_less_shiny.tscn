@@ -1,0 +1,83 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/animated/golden chalice 64x64-spirits-less shiny.png" id="1_1ngfn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lbwmd"]
+atlas = ExtResource("1_1ngfn")
+region = Rect2(0, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r36yo"]
+atlas = ExtResource("1_1ngfn")
+region = Rect2(64, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ib7pc"]
+atlas = ExtResource("1_1ngfn")
+region = Rect2(128, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qcmdb"]
+atlas = ExtResource("1_1ngfn")
+region = Rect2(192, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5m84a"]
+atlas = ExtResource("1_1ngfn")
+region = Rect2(256, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q1d6w"]
+atlas = ExtResource("1_1ngfn")
+region = Rect2(320, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r1gpn"]
+atlas = ExtResource("1_1ngfn")
+region = Rect2(384, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aeqn4"]
+atlas = ExtResource("1_1ngfn")
+region = Rect2(448, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5qu70"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lbwmd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r36yo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ib7pc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qcmdb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5m84a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q1d6w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r1gpn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aeqn4")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[node name="GoldenChaliceSpiritsLessShiny" type="AnimatedSprite2D" unique_id=1967704127]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_5qu70")
+animation = &"idle"
+autoplay = "idle"
+centered = false
+offset = Vector2(-32, -58)

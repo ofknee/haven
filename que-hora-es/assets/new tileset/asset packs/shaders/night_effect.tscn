@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cxuarr5ak751u"]
+
+[ext_resource type="Shader" uid="uid://cf2e7tj8dsh1o" path="res://RafaelMatos/asset packs/shaders/night_effect.gdshader" id="1_night"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_night"]
+resource_local_to_scene = true
+shader = ExtResource("1_night")
+shader_parameter/strength = 0.66999998502416
+shader_parameter/brightness = 0.53999998792992
+shader_parameter/saturation = 0.75999998301248
+shader_parameter/night_tint = Color(0.5198887, 0.38728863, 0.99998504, 1)
+shader_parameter/vignette_strength = 0.7999999821184
+shader_parameter/vignette_radius = 0.57999998703584
+shader_parameter/vignette_softness = 0.5999999865888
+
+[node name="NightEffect" type="CanvasLayer" unique_id=384787736]
+
+[node name="NightOverlay" type="ColorRect" parent="." unique_id=1898850921]
+material = SubResource("ShaderMaterial_night")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

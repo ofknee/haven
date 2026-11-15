@@ -1,0 +1,18 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/generic structure_19.png" id="1_dahfk"]
+
+[node name="GenericStructure19" type="StaticBody2D" unique_id=88220343]
+texture_filter = 1
+collision_mask = 0
+
+[node name="GenericStructure19" type="Sprite2D" parent="." unique_id=1141076741]
+texture = ExtResource("1_dahfk")
+centered = false
+offset = Vector2(-63.5, -136)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1997575982]
+polygon = PackedVector2Array(-43, -35, -29, -35, -29, -9, -43, -9)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="." unique_id=1860775994]
+polygon = PackedVector2Array(29, -35, 43, -35, 43, -9, 29, -9)

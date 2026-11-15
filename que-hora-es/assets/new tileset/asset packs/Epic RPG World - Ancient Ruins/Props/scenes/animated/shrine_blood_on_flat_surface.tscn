@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://chc13gembyy0h"]
+
+[ext_resource type="Texture2D" uid="uid://bnstisuc0rtbg" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/animated/shrine or fountain-blood- 160x128-on flat surface.png" id="1_nrnvp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0tls7"]
+atlas = ExtResource("1_nrnvp")
+region = Rect2(0, 0, 160, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ii1h"]
+atlas = ExtResource("1_nrnvp")
+region = Rect2(160, 0, 160, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_03eit"]
+atlas = ExtResource("1_nrnvp")
+region = Rect2(320, 0, 160, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jiaa0"]
+atlas = ExtResource("1_nrnvp")
+region = Rect2(480, 0, 160, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c0f20"]
+atlas = ExtResource("1_nrnvp")
+region = Rect2(640, 0, 160, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gpcq4"]
+atlas = ExtResource("1_nrnvp")
+region = Rect2(800, 0, 160, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wfexn"]
+atlas = ExtResource("1_nrnvp")
+region = Rect2(960, 0, 160, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_utf3v"]
+atlas = ExtResource("1_nrnvp")
+region = Rect2(1120, 0, 160, 128)
+filter_clip = true
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mg6wh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0tls7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ii1h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_03eit")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jiaa0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c0f20")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gpcq4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wfexn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_utf3v")
+}],
+"loop": 1,
+"name": &"flow",
+"speed": 10.0
+}]
+
+[node name="ShrineBloodOnFlatSurface" type="StaticBody2D" unique_id=1714034734]
+texture_filter = 1
+collision_mask = 0
+
+[node name="ShrineBloodOnFlatSurface" type="AnimatedSprite2D" parent="." unique_id=1700663575]
+sprite_frames = SubResource("SpriteFrames_mg6wh")
+animation = &"flow"
+autoplay = "flow"
+centered = false
+offset = Vector2(-80, -119)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=814771615]
+polygon = PackedVector2Array(-16, -113, 18, -113, 61, -68, 62, -45, 12, 5, -12, 5, -60, -46, -61, -69)

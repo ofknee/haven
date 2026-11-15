@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dx4nuceybulxn"]
+
+[ext_resource type="Texture2D" uid="uid://nsl1ukjn34l4" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/pillars and generic support3__19.png" id="1_hnt8u"]
+
+[node name="PillarsAndGenericSupport319" type="StaticBody2D" unique_id=917943166]
+texture_filter = 1
+collision_mask = 0
+
+[node name="PillarsAndGenericSupport319" type="Sprite2D" parent="." unique_id=523555102]
+texture = ExtResource("1_hnt8u")
+centered = false
+offset = Vector2(-63.5, -60)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=561175387]
+polygon = PackedVector2Array(8, -1, -60, -18, -60, -30, -39, -43, 29, -24, 29, -12)
