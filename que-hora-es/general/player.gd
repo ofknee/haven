@@ -91,7 +91,7 @@ func create_afterimage(xform: Transform2D) -> void:
 	image.flip_v = cat.flip_v
 	image.offset = cat.offset
 	image.centered = cat.centered
-	image.modulate = Color(0.75, 0.85, 1.0, 0.5)
+	image.modulate = Color(0.75, 0.85, 1.0, 0.4)
 
 	add_child(image)
 	move_child(image, 0)
