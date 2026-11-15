@@ -201,6 +201,12 @@ blend_point_3/name = &"catfront"
 [node name="Player" type="CharacterBody2D" unique_id=77730844]
 z_index = 1
 script = ExtResource("1_cvdqf")
+move_speed = null
+speed_boost = null
+afterimage_spacing = null
+afterimage_lifetime = null
+dust_color = null
+dust_feet_offset = null
 
 [node name="cat" type="Sprite2D" parent="." unique_id=1124817446]
 texture = ExtResource("2_cvdqf")
@@ -224,5 +230,3 @@ root_node = NodePath(".")
 tree_root = SubResource("AnimationNodeBlendSpace2D_3eeao")
 anim_player = NodePath("../AnimationPlayer")
 parameters/blend_position = Vector2(-0.020657301, 0)
-
-[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=1015374859]
