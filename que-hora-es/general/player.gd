@@ -10,7 +10,7 @@ var invincible := false
 var dead := false
 var knockback := Vector2.ZERO
 @export var move_speed: float = 100.0
-@export var speed_boost: float = 1.0
+@export var speed_boost: float = 1
 
 @export var art_faces_right: bool = false
 
@@ -54,6 +54,7 @@ func take_damage(amount: int, from_position: Vector2 = Vector2.ZERO) -> void:
 
 	health -= amount
 	SignalBus.player_health_changed.emit(health, max_health)
+	SignalBus.player_hurt.emit()
 
 	if health <= 0:
 		_die()

@@ -1,7 +1,8 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://6kigac1bwv0i"]
 
-[ext_resource type="Texture2D" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/silly luck creature-idle.png" id="1_5k4dr"]
-[ext_resource type="Texture2D" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/silly luck creature-run.png" id="2_yjmck"]
+[ext_resource type="Texture2D" uid="uid://kbttjulcx6au" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/silly luck creature-idle.png" id="1_5k4dr"]
+[ext_resource type="Script" uid="uid://dh00ev5uwgxhi" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/scenes/silly_luck_creature.gd" id="1_yjmck"]
+[ext_resource type="Texture2D" uid="uid://cyq177rih6pcu" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/silly luck creature-run.png" id="2_yjmck"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_thfn7"]
 atlas = ExtResource("1_5k4dr")
@@ -105,6 +106,7 @@ y_sort_enabled = true
 texture_filter = 1
 collision_layer = 2
 motion_mode = 1
+script = ExtResource("1_yjmck")
 
 [node name="SillyLuckCreature" type="AnimatedSprite2D" parent="." unique_id=112593092]
 sprite_frames = SubResource("SpriteFrames_32mlh")

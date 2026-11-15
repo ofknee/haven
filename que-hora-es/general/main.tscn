@@ -12,7 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://1vftfbk5u0ao" path="res://assets/ui/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/inventory_Light_example_2.png" id="8_yvgs8"]
 [ext_resource type="FontFile" uid="uid://blqbusty1lapl" path="res://assets/ui/Sprout Lands - UI Pack - Basic pack/fonts/pixelFont-7-8x14-sproutLands.ttf" id="9_x0v65"]
 [ext_resource type="Texture2D" uid="uid://bq4v41o5ag3xb" path="res://assets/ui/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Sprite sheet for Basic Pack.png" id="11_6c2sp"]
-[ext_resource type="PackedScene" uid="uid://boyycnx4ntc3o" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/scenes/moose_1.tscn" id="13_6c2sp"]
+[ext_resource type="PackedScene" uid="uid://bktrmci6wcc4e" path="res://general/cover.tscn" id="14_mcu5j"]
+[ext_resource type="PackedScene" uid="uid://6kigac1bwv0i" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/scenes/silly_luck_creature.tscn" id="14_xg67p"]
 
 [sub_resource type="Resource" id="Resource_0vfjo"]
 script = ExtResource("5_t36mh")
@@ -47,10 +48,82 @@ region = Rect2(869, 100, 22, 24)
 [node name="main" type="Node2D" unique_id=870418785]
 y_sort_enabled = true
 
-[node name="Player" parent="." unique_id=77730844 instance=ExtResource("2_xilss")]
+[node name="SillyLuckCreature" parent="." unique_id=535513223 instance=ExtResource("14_xg67p")]
+z_index = 1
+position = Vector2(514, 155)
+
+[node name="SillyLuckCreature2" parent="." unique_id=967366086 instance=ExtResource("14_xg67p")]
+z_index = 1
+position = Vector2(1328, 412)
+
+[node name="SillyLuckCreature3" parent="." unique_id=1961334925 instance=ExtResource("14_xg67p")]
+z_index = 1
+position = Vector2(1424, 439)
+
+[node name="SillyLuckCreature4" parent="." unique_id=1663757433 instance=ExtResource("14_xg67p")]
+z_index = 1
+position = Vector2(1496, 688)
+
+[node name="SillyLuckCreature5" parent="." unique_id=1431405995 instance=ExtResource("14_xg67p")]
+z_index = 1
+position = Vector2(1393, 953)
+
+[node name="SillyLuckCreature6" parent="." unique_id=1059619760 instance=ExtResource("14_xg67p")]
+z_index = 1
+position = Vector2(1055, 1093)
+
+[node name="SillyLuckCreature7" parent="." unique_id=1742757903 instance=ExtResource("14_xg67p")]
+z_index = 1
+position = Vector2(915, 1084)
+
+[node name="SillyLuckCreature8" parent="." unique_id=189403260 instance=ExtResource("14_xg67p")]
+z_index = 1
+position = Vector2(849, 678)
+
+[node name="SillyLuckCreature9" parent="." unique_id=1927399914 instance=ExtResource("14_xg67p")]
+z_index = 1
+position = Vector2(849, 995)
+
+[node name="SillyLuckCreature10" parent="." unique_id=1364383001 instance=ExtResource("14_xg67p")]
+z_index = 1
+position = Vector2(477, 993)
+
+[node name="SillyLuckCreature11" parent="." unique_id=285157855 instance=ExtResource("14_xg67p")]
+z_index = 1
+position = Vector2(217, 774)
+
+[node name="SillyLuckCreature12" parent="." unique_id=987534312 instance=ExtResource("14_xg67p")]
+z_index = 1
+position = Vector2(219, 372)
+
+[node name="SillyLuckCreature13" parent="." unique_id=767212483 instance=ExtResource("14_xg67p")]
+z_index = 1
+position = Vector2(207, 511)
+
+[node name="SillyLuckCreature14" parent="." unique_id=2054620278 instance=ExtResource("14_xg67p")]
+z_index = 1
+position = Vector2(672, 140)
+
+[node name="Player" parent="." unique_id=77730844 groups=["player"] instance=ExtResource("2_xilss")]
 unique_name_in_owner = true
 y_sort_enabled = true
 position = Vector2(155, 150)
+max_health = 5
+invincible_time = 1.0
+knockback_strength = 150.0
+move_speed = 100.0
+speed_boost = 1.0
+art_faces_right = false
+sideways_y_offset = 10.0
+move_x_offset = 23.0
+afterimage_spacing = 5.0
+afterimage_lifetime = 0.25
+dust_color = Color(0.82, 0.72, 0.6, 1)
+dust_feet_offset = Vector2(0, 10)
+dust_forward_nudge = -8.0
+dust_spacing = 7.0
+dust_per_puff = 3
+dust_lifetime = 0.4
 
 [node name="TileMapLayer" parent="." unique_id=1602380198 instance=ExtResource("1_ciee5")]
 
@@ -196,9 +269,7 @@ player_sprite = NodePath("../Player/cat")
 
 [node name="Sprite2D" type="Sprite2D" parent="Ghost" unique_id=2018701831]
 
-[node name="Moose1" parent="." unique_id=675831012 instance=ExtResource("13_6c2sp")]
-z_index = 1
-position = Vector2(588, 161)
+[node name="CanvasLayer" parent="." unique_id=1488366219 instance=ExtResource("14_mcu5j")]
 
 [connection signal="pressed" from="UI/Control/PopupInstructions/ExitButton" to="UI/Control/PopupInstructions" method="_on_exit_button_pressed"]
 

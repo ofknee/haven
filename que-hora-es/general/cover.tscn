@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://bktrmci6wcc4e"]
+
+[ext_resource type="Texture2D" uid="uid://7exeepc0qhab" path="res://cover_ending.png" id="1_8er7p"]
+[ext_resource type="Script" uid="uid://ds4vxgjg450kg" path="res://general/cover.gd" id="1_i5mxp"]
+[ext_resource type="FontFile" uid="uid://blqbusty1lapl" path="res://assets/ui/Sprout Lands - UI Pack - Basic pack/fonts/pixelFont-7-8x14-sproutLands.ttf" id="3_7v47e"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1488366219]
+script = ExtResource("1_i5mxp")
+
+[node name="CoverEnding" type="Sprite2D" parent="." unique_id=1928139124]
+position = Vector2(288, 162)
+texture = ExtResource("1_8er7p")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1442818426]
+offset_left = 363.0
+offset_top = 220.0
+offset_right = 532.0
+offset_bottom = 286.0
+theme_override_colors/font_outline_color = Color(0.40392157, 0.4, 0.30980393, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/normal_font = ExtResource("3_7v47e")
+theme_override_font_sizes/normal_font_size = 30
+text = "xx / 25
+wood found"
+horizontal_alignment = 1
+vertical_alignment = 1
