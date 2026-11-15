@@ -157,13 +157,17 @@ tracks/2/keys = {
 "values": [Vector2(-12.61, -1.055)]
 }
 
+[sub_resource type="Animation" id="Animation_cvdqf"]
+resource_name = "idlefront"
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_p8qui"]
 _data = {
 &"RESET": SubResource("Animation_mybyn"),
 &"catback": SubResource("Animation_q1ikj"),
 &"catfront": SubResource("Animation_wt85g"),
 &"catleft": SubResource("Animation_u6uc5"),
-&"catright": SubResource("Animation_jij6b")
+&"catright": SubResource("Animation_jij6b"),
+&"idlefront": SubResource("Animation_cvdqf")
 }
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_n8x8b"]
@@ -182,7 +186,7 @@ animation = &"catfront"
 snap = Vector2(0.01, 0.01)
 blend_mode = 1
 blend_point_0/node = SubResource("AnimationNodeAnimation_n8x8b")
-blend_point_0/pos = Vector2(0, 1)
+blend_point_0/pos = Vector2(0, -1)
 blend_point_0/name = &"catback"
 blend_point_1/node = SubResource("AnimationNodeAnimation_akpqg")
 blend_point_1/pos = Vector2(-1, 0)
@@ -191,7 +195,7 @@ blend_point_2/node = SubResource("AnimationNodeAnimation_2g3n0")
 blend_point_2/pos = Vector2(1, 0)
 blend_point_2/name = &"catright"
 blend_point_3/node = SubResource("AnimationNodeAnimation_cjcoy")
-blend_point_3/pos = Vector2(0, -1)
+blend_point_3/pos = Vector2(0, 1)
 blend_point_3/name = &"catfront"
 
 [node name="Player" type="CharacterBody2D" unique_id=77730844]
@@ -219,4 +223,4 @@ libraries/ = SubResource("AnimationLibrary_p8qui")
 root_node = NodePath(".")
 tree_root = SubResource("AnimationNodeBlendSpace2D_3eeao")
 anim_player = NodePath("../AnimationPlayer")
-parameters/blend_position = Vector2(-0.14084506, 0.021897793)
+parameters/blend_position = Vector2(-0.020657301, 0)
