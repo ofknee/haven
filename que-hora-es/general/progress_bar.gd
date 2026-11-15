@@ -12,6 +12,7 @@ func _ready() -> void:
 	timer.one_shot = true
 	timer.timeout.connect(finish)
 	hide()
+	SignalBus.revert.emit()
 
 
 func _process(_delta: float) -> void:
