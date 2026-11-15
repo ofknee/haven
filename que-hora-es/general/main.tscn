@@ -30,13 +30,13 @@ y_sort_enabled = true
 
 [node name="Player" parent="." unique_id=77730844 instance=ExtResource("2_xilss")]
 y_sort_enabled = true
-position = Vector2(42, 144)
+position = Vector2(155, 150)
 
 [node name="TileMapLayer" parent="." unique_id=1602380198 instance=ExtResource("1_ciee5")]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=902821499]
 physics_interpolation_mode = 1
-position = Vector2(42, 144)
+position = Vector2(155, 150)
 zoom = Vector2(1.5, 1.5)
 process_callback = 0
 
@@ -48,7 +48,7 @@ metadata/_custom_type_script = "uid://bd046eokvcnu2"
 
 [node name="PhantomCamera2D" type="Node2D" parent="." unique_id=126753815 node_paths=PackedStringArray("follow_target")]
 top_level = true
-position = Vector2(42, 144)
+position = Vector2(155, 150)
 script = ExtResource("4_cwgdg")
 follow_mode = 2
 follow_target = NodePath("../Player")

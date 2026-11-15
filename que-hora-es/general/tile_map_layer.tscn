@@ -527,7 +527,7 @@ tile_set = ExtResource("1_776qs")
 tile_map_data = PackedByteArray("AAAGAAUAAQAAAAAAAQAIAAUAAQAAAAAAAQAHAAYAAQAAAAAAAQA=")
 tile_set = ExtResource("1_776qs")
 
-[connection signal="body_entered" from="Water/Wood" to="Water/Wood" method="_on_body_entered"]
-[connection signal="body_entered" from="Wood/Wood" to="Wood/Wood" method="_on_body_entered"]
-[connection signal="body_entered" from="Wood/@Area2D@263172" to="Wood/@Area2D@263172" method="_on_body_entered"]
-[connection signal="body_entered" from="Wood/@Area2D@263173" to="Wood/@Area2D@263173" method="_on_body_entered"]
+[connection signal="body_entered" from="Water/@Area2D@30260" to="Water/@Area2D@30260" method="_on_body_entered"]
+[connection signal="body_entered" from="Wood/@Area2D@30261" to="Wood/@Area2D@30261" method="_on_body_entered"]
+[connection signal="body_entered" from="Wood/@Area2D@30262" to="Wood/@Area2D@30262" method="_on_body_entered"]
+[connection signal="body_entered" from="Wood/@Area2D@30263" to="Wood/@Area2D@30263" method="_on_body_entered"]
