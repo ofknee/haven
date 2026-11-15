@@ -1,23 +1,23 @@
 extends MarginContainer
 
 @export var text_list : Array[String]
-
-@onready var TextNode := $NinePatchRect/MarginContainer/RichTextLabel
-@onready var text = TextNode.text
+@onready var text_node : RichTextLabel = $NinePatchRect/MarginContainer/RichTextLabel
 
 var iteration : int = 0
 
 func _ready() -> void:
-	text = text_list[iteration]
+	if text_list.is_empty():
+		hide()
+		return
+	text_node.text = text_list[iteration]
 	show()
 
 func _on_exit_button_pressed() -> void:
 	next()
-	
+
 func next() -> void:
 	iteration += 1
-	text = text_list[iteration]
 	if iteration >= text_list.size():
-		print("hiding!")
 		hide()
-	
+		return
+	text_node.text = text_list[iteration]

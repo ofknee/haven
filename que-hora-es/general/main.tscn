@@ -51,7 +51,6 @@ y_sort_enabled = true
 position = Vector2(155, 150)
 
 [node name="TileMapLayer" parent="." unique_id=1602380198 instance=ExtResource("1_ciee5")]
-visible = false
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=902821499]
 physics_interpolation_mode = 1
@@ -127,7 +126,7 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -101.0
+offset_top = -133.0
 grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 2
@@ -136,7 +135,7 @@ theme_override_constants/margin_top = 15
 theme_override_constants/margin_right = 15
 theme_override_constants/margin_bottom = 15
 script = ExtResource("8_s7w8m")
-text_list = Array[String](["Hi! You might think I’m a normal cat with a normal life…I’m not! My owner was a clockmaker and I’ve always loved sleeping in his antique grandfather clock.", "But one day, as I was taking my afternoon nap, the clock went haywire and exploded!", "Now, I experience time differently and can manipulate relativity.", "However, I miss being able to spend time with my owner..so I’m on a journey to find pieces of that grandfather clock and fix it. To do so, we need to collect wooden chips to restore the clock. Please help me!", "Be careful of the guardians. Use my ability of time dilation to move quickly. You will see two of me: the observed version of me and the shadow version of me.", "The shadow version of me is what I should be going at at non-relativistic speed.", "My ability has a limit. When the timer runs out, I will bounce back to my real-time self.", "Don't get trapped, dont die (we don't actually have 9 lives...), and good luck!!"])
+text_list = Array[String](["I used to live in a clock... until the particle accelerator next door exploded.", "Now, I experience time differently and can manipulate relativity. [A] to move faster than time.", "Be careful! When my ability runs out, I return to my \"real-time\" self.", "Collect wood chips to rebuild my clock!", "Don't get trapped, dont die (we cats don't actually have 9 lives...), and good luck!!"])
 
 [node name="NinePatchRect" type="NinePatchRect" parent="UI/Control/PopupInstructions" unique_id=1262366837]
 layout_mode = 2
@@ -160,6 +159,7 @@ theme_override_constants/margin_right = 15
 theme_override_constants/margin_bottom = 15
 
 [node name="RichTextLabel" type="RichTextLabel" parent="UI/Control/PopupInstructions/NinePatchRect/MarginContainer" unique_id=62157699]
+texture_filter = 1
 layout_mode = 2
 theme_override_colors/default_color = Color(0.56, 0.36848, 0.24080001, 1)
 theme_override_constants/line_separation = 6
@@ -167,6 +167,10 @@ theme_override_constants/shadow_outline_size = 3
 theme_override_constants/shadow_offset_x = 1
 theme_override_constants/shadow_offset_y = 1
 theme_override_fonts/normal_font = ExtResource("9_x0v65")
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 28
+theme_override_font_sizes/bold_italics_font_size = 14
+theme_override_font_sizes/italics_font_size = 14
 text = "Testing Testing 1 2 3
 there once was a cat named philly and it was evil and timeo"
 vertical_alignment = 1
@@ -182,7 +186,6 @@ texture_normal = SubResource("AtlasTexture_teyov")
 texture_pressed = SubResource("AtlasTexture_4rilo")
 
 [node name="Ghost" type="Node2D" parent="." unique_id=376190932 node_paths=PackedStringArray("player_sprite")]
-visible = false
 modulate = Color(1.836, 4.144, 3.837, 0.714)
 z_index = 1
 y_sort_enabled = true
