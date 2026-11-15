@@ -6,7 +6,6 @@ extends CharacterBody2D
 var saved_position: Vector2
 var position_saved := false
 
-
 func _ready() -> void:
 	animation_tree.active = true
 	SignalBus.revert.connect(revert_position)
@@ -14,7 +13,6 @@ func _ready() -> void:
 
 func _physics_process(_delta: float) -> void:
 	if Input.is_action_just_pressed("timeo"):
-		saved_position = global_position
 		position_saved = true
 
 	var input_direction := Vector2(
@@ -28,8 +26,8 @@ func _physics_process(_delta: float) -> void:
 	move_and_slide()
 
 
-func revert_position() -> void:
+func revert_position(last_position) -> void:
 	if position_saved:
-		global_position = saved_position
+		global_position = last_position
 		velocity = Vector2.ZERO
 		position_saved = false

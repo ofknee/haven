@@ -32,11 +32,11 @@ y_sort_enabled = true
 
 [node name="Player" parent="." unique_id=77730844 instance=ExtResource("2_xilss")]
 y_sort_enabled = true
-position = Vector2(216, 160)
+position = Vector2(42, 144)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=902821499]
 physics_interpolation_mode = 1
-position = Vector2(216, 160)
+position = Vector2(42, 144)
 zoom = Vector2(1.5, 1.5)
 process_callback = 0
 
@@ -48,7 +48,7 @@ metadata/_custom_type_script = "uid://bd046eokvcnu2"
 
 [node name="PhantomCamera2D" type="Node2D" parent="." unique_id=126753815 node_paths=PackedStringArray("follow_target")]
 top_level = true
-position = Vector2(216, 160)
+position = Vector2(42, 144)
 script = ExtResource("4_cwgdg")
 follow_mode = 2
 follow_target = NodePath("../Player")
@@ -99,8 +99,11 @@ process_callback = 0
 wait_time = 5.0
 ignore_time_scale = true
 
-[node name="Ghost" type="Node2D" parent="." unique_id=376190932]
+[node name="Ghost" type="Node2D" parent="." unique_id=376190932 node_paths=PackedStringArray("player_sprite")]
+visible = false
+modulate = Color(1.836, 4.144, 3.837, 0.714)
 script = ExtResource("8_0vfjo")
+player_sprite = NodePath("../Player/cat")
 
 [node name="Sprite2D" type="Sprite2D" parent="Ghost" unique_id=2018701831]
 

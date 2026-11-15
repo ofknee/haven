@@ -1,6 +1,6 @@
 extends TextureProgressBar
 
-@export var duration: float = 2.0
+@export var duration: float = 5.0
 @onready var timer: Timer = $Timer
 
 var counting := false
@@ -11,7 +11,6 @@ func _ready() -> void:
 	timer.one_shot = true
 	timer.timeout.connect(finish)
 	hide()
-	SignalBus.revert.emit()
 
 
 func _process(_delta: float) -> void:
@@ -20,19 +19,19 @@ func _process(_delta: float) -> void:
 		value = 100
 		show()
 		timer.start(duration)
+		SignalBus.dialate_time.emit()
 
 	if counting:
 		value = (timer.time_left / duration) * 100.0
 
-		if Input.is_action_just_released("timeo"):
-			finish()
+		#if Input.is_action_just_released("timeo"):
+			#finish()
 
 
 func finish() -> void:
 	if not counting:
 		return
-
 	counting = false
 	timer.stop()
 	hide()
-	SignalBus.revert.emit()
+	SignalBus.time_finished.emit()

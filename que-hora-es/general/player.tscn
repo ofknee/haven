@@ -224,3 +224,5 @@ root_node = NodePath(".")
 tree_root = SubResource("AnimationNodeBlendSpace2D_3eeao")
 anim_player = NodePath("../AnimationPlayer")
 parameters/blend_position = Vector2(-0.020657301, 0)
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="." unique_id=1015374859]

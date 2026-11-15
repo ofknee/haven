@@ -1,4 +1,5 @@
 extends Node
 
-@warning_ignore("unused_signal")
-signal revert() 
+signal revert(last_position: Vector2)
+signal dialate_time
+signal time_finished

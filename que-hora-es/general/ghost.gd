@@ -7,13 +7,39 @@ extends Node2D
 var history: Array[Dictionary] = []
 var record_time: float = 0.0
 var playback_time: float = 0.0
+var recording := false
 
 
 func _ready() -> void:
-	ghost_sprite.modulate = Color(1, 1, 1, 0.3)
+	SignalBus.dialate_time.connect(start_recording)
+	SignalBus.time_finished.connect(stop_recording)
+	hide()
+
+
+
+	
+func start_recording() -> void:
+	history.clear()
+	record_time = 0.0
+	playback_time = 0.0
+	recording = true
 	record_frame()
+	ghost_sprite.global_transform = player_sprite.global_transform
+	show()
+
+
+func stop_recording() -> void:
+	if not recording:
+		return
+	var last_position := ghost_sprite.global_position
+	recording = false
+	hide()
+	SignalBus.revert.emit(last_position)
+
 
 func _process(delta: float) -> void:
+	if not recording:
+		return
 	record_time += delta
 	record_frame()
 	playback_time += delta * playback_speed
