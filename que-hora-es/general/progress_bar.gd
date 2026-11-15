@@ -1,10 +1,9 @@
 extends TextureProgressBar
 
-@export var duration: float = 5.0
+@export var duration: float = 3.0
 @onready var timer: Timer = $Timer
 
 var counting := false
-
 
 func _ready() -> void:
 	min_value = 0
