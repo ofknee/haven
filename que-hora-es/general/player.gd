@@ -1,4 +1,3 @@
-
 extends CharacterBody2D
 
 const STATE_IDLE := &"Idle"
@@ -41,31 +40,32 @@ func _ready() -> void:
 	prev_physics_pos = global_position
 	_prepare_dust()
 
-	if animation_tree == null:
-		push_error("AnimationTree node not found!")
-		return
-
-	if not (animation_tree.tree_root is AnimationNodeStateMachine):
-		push_error("AnimationTree root must be a StateMachine!")
-		return
-
 	animation_tree.active = true
-
 	playback = animation_tree.get(
 		"parameters/playback"
 	) as AnimationNodeStateMachinePlayback
 
-	if playback == null:
-		push_error("StateMachine playback not found!")
-		return
-
-	# Initialize both blend spaces
+	# Initialize both blend spaces with a cardinal direction
 	animation_tree.set(PARAM_IDLE, last_direction)
 	animation_tree.set(PARAM_WALK, last_direction)
 
-	# Start with idle
 	current_state = STATE_IDLE
 	playback.start(STATE_IDLE)
+
+
+# Snaps any direction to one of the 4 cardinal directions so the
+# BlendSpace2D never sits between animations (which causes frame glitching).
+func _snap_cardinal(v: Vector2) -> Vector2:
+	var ax: float = absf(v.x)
+	var ay: float = absf(v.y)
+
+	if ax > ay:
+		return Vector2(signf(v.x), 0.0)
+	elif ay > ax:
+		return Vector2(0.0, signf(v.y))
+
+	# Exact diagonal: keep the current facing to avoid flip-flopping
+	return last_direction
 
 
 func _update_animation(input_direction: Vector2) -> void:
@@ -76,21 +76,15 @@ func _update_animation(input_direction: Vector2) -> void:
 
 	if input_direction.length_squared() > 0.001:
 		# Character is moving
-		last_direction = input_direction
+		last_direction = _snap_cardinal(input_direction)
 		target = STATE_WALK
 
-		animation_tree.set(
-			PARAM_WALK,
-			last_direction
-		)
+		animation_tree.set(PARAM_WALK, last_direction)
 	else:
 		# Character stopped
 		target = STATE_IDLE
 
-		animation_tree.set(
-			PARAM_IDLE,
-			last_direction
-		)
+		animation_tree.set(PARAM_IDLE, last_direction)
 
 	# Only switch when the desired state changes
 	if current_state != target:
@@ -185,9 +179,7 @@ func create_afterimage(xform: Transform2D) -> void:
 	image.offset = cat.offset
 	image.centered = cat.centered
 
-	image.modulate = Color(
-		0.75, 0.85, 1.0, 0.4
-	)
+	image.modulate = Color(0.75, 0.85, 1.0, 0.4)
 
 	add_child(image)
 	move_child(image, 0)
@@ -205,12 +197,7 @@ func create_afterimage(xform: Transform2D) -> void:
 
 
 func _prepare_dust() -> void:
-	var img := Image.create(
-		4,
-		4,
-		false,
-		Image.FORMAT_RGBA8
-	)
+	var img := Image.create(4, 4, false, Image.FORMAT_RGBA8)
 
 	img.fill(Color.WHITE)
 
@@ -220,10 +207,7 @@ func _prepare_dust() -> void:
 		Vector2i(0, 3),
 		Vector2i(3, 3)
 	]:
-		img.set_pixelv(
-			corner,
-			Color(1, 1, 1, 0)
-		)
+		img.set_pixelv(corner, Color(1, 1, 1, 0))
 
 	dust_texture = ImageTexture.create_from_image(img)
 
@@ -248,10 +232,7 @@ func _spawn_dust_puff(dir: Vector2) -> void:
 		dot.z_as_relative = false
 		dot.z_index = 0
 
-		dot.modulate = Color(
-			dust_color,
-			0.75
-		)
+		dot.modulate = Color(dust_color, 0.75)
 
 		add_child(dot)
 		move_child(dot, 0)
@@ -263,16 +244,10 @@ func _spawn_dust_puff(dir: Vector2) -> void:
 
 		var drift: Vector2 = (
 			-dir * randf_range(2.0, 7.0)
-			+ Vector2(
-				0,
-				randf_range(-6.0, -2.0)
-			)
+			+ Vector2(0, randf_range(-6.0, -2.0))
 		)
 
-		var life: float = (
-			dust_lifetime
-			* randf_range(0.7, 1.1)
-		)
+		var life: float = dust_lifetime * randf_range(0.7, 1.1)
 
 		var tween := dot.create_tween()
 
@@ -292,9 +267,7 @@ func _spawn_dust_puff(dir: Vector2) -> void:
 			life
 		)
 
-		tween.chain().tween_callback(
-			dot.queue_free
-		)
+		tween.chain().tween_callback(dot.queue_free)
 
 
 func revert_position(last_position: Vector2) -> void:

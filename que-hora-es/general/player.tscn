@@ -11,38 +11,38 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../cat:frame")
+tracks/0/path = NodePath("cat:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [8]
+"values": [14]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("../cat:flip_h")
+tracks/1/path = NodePath("cat:offset")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
+"update": 0,
+"values": [Vector2(-12.145, -7.88)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("../cat:offset")
+tracks/2/path = NodePath("cat:flip_h")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-12.145, -7.88)]
+"update": 1,
+"values": [true]
 }
 
 [sub_resource type="Animation" id="Animation_q1ikj"]
@@ -51,14 +51,14 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../cat:frame")
+tracks/0/path = NodePath("cat:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [8, 9, 10, 11]
+"values": [8, 8, 10, 11]
 }
 
 [sub_resource type="Animation" id="Animation_wt85g"]
@@ -67,7 +67,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../cat:frame")
+tracks/0/path = NodePath("cat:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -83,7 +83,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../cat:frame")
+tracks/0/path = NodePath("cat:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -95,7 +95,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("../cat:flip_h")
+tracks/1/path = NodePath("cat:flip_h")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -107,14 +107,14 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("../cat:offset")
+tracks/2/path = NodePath("cat:offset")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(12.34, -0.94)]
+"values": [Vector2(13.145, -0.6)]
 }
 
 [sub_resource type="Animation" id="Animation_jij6b"]
@@ -123,38 +123,26 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../cat:frame")
+tracks/0/path = NodePath("cat:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.25, 0.5, 0.75),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 1,
-"values": [0, 3, 2, 3]
+"values": [0, 1, 2, 3]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("../cat:flip_h")
+tracks/1/path = NodePath("cat:offset")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("../cat:offset")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-12.61, -1.055)]
+"values": [Vector2(-12.575, -0.46)]
 }
 
 [sub_resource type="Animation" id="Animation_vynas"]
@@ -162,7 +150,7 @@ resource_name = "idleback"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../cat:frame")
+tracks/0/path = NodePath("cat:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -174,14 +162,14 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("../cat:offset")
+tracks/1/path = NodePath("cat:offset")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-12.145, -5.115)]
+"values": [Vector2(-12.145, -4.7)]
 }
 
 [sub_resource type="Animation" id="Animation_cvdqf"]
@@ -189,7 +177,7 @@ resource_name = "idlefront"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../cat:frame")
+tracks/0/path = NodePath("cat:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -201,14 +189,14 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("../cat:offset")
+tracks/1/path = NodePath("cat:offset")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-12.145, -3.92)]
+"values": [Vector2(-12.145, -3.21)]
 }
 
 [sub_resource type="Animation" id="Animation_w2ye0"]
@@ -216,7 +204,7 @@ resource_name = "idleleft"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../cat:frame")
+tracks/0/path = NodePath("cat:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -228,26 +216,26 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("../cat:flip_h")
+tracks/1/path = NodePath("cat:offset")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(-0.009999998),
+"times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
+"update": 0,
+"values": [Vector2(13.115, 1.98)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("../cat:offset")
+tracks/2/path = NodePath("cat:flip_h")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(13.175, 1.665)]
+"update": 1,
+"values": [false]
 }
 
 [sub_resource type="Animation" id="Animation_giciw"]
@@ -255,7 +243,7 @@ resource_name = "idleright"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("../cat:frame")
+tracks/0/path = NodePath("cat:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -267,14 +255,14 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("../cat:offset")
+tracks/1/path = NodePath("cat:offset")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.033333335),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(-12.145, 1.79)]
+"values": [Vector2(-12.705, 2.56), Vector2(-12.145, -7.88)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_p8qui"]
@@ -303,6 +291,7 @@ animation = &"idleright"
 animation = &"idleleft"
 
 [sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_vynas"]
+blend_mode = 1
 blend_point_0/node = SubResource("AnimationNodeAnimation_cvdqf")
 blend_point_0/pos = Vector2(0, 0.90000004)
 blend_point_0/name = &"idlefront"
@@ -353,12 +342,12 @@ advance_mode = 2
 
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_3eeao"]
 states/Idle/node = SubResource("AnimationNodeBlendSpace2D_vynas")
-states/Idle/position = Vector2(519, 126.59999)
+states/Idle/position = Vector2(445, -4.400009)
 states/Start/position = Vector2(240.79999, 84.80001)
 states/Walk/node = SubResource("AnimationNodeBlendSpace2D_tmyxc")
-states/Walk/position = Vector2(482.2, 35.4)
+states/Walk/position = Vector2(617.35, 98.675)
 transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_ewg24"), "Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_gg54g"), "Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_0pffj")]
-graph_offset = Vector2(17, -63)
+graph_offset = Vector2(143.76505, -35.962486)
 
 [node name="Player" type="CharacterBody2D" unique_id=77730844]
 z_index = 1
@@ -370,7 +359,7 @@ offset = Vector2(-12.145, -7.88)
 flip_h = true
 hframes = 4
 vframes = 4
-frame = 8
+frame = 14
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1663414437]
 position = Vector2(0, 5.5)
@@ -378,11 +367,9 @@ shape = SubResource("RectangleShape2D_8o121")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1330339208]
 deterministic = true
-root_node = NodePath("")
 libraries/ = SubResource("AnimationLibrary_p8qui")
 
 [node name="AnimationTree" type="AnimationTree" parent="." unique_id=2061749917]
-root_node = NodePath("")
 tree_root = SubResource("AnimationNodeStateMachine_3eeao")
 anim_player = NodePath("../AnimationPlayer")
 parameters/Idle/blend_position = Vector2(0, 0)

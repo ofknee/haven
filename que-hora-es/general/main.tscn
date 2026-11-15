@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://1vftfbk5u0ao" path="res://assets/ui/Sprout Lands - UI Pack - Basic pack/emojis-free/emoji style ui/inventory_Light_example_2.png" id="8_yvgs8"]
 [ext_resource type="FontFile" uid="uid://blqbusty1lapl" path="res://assets/ui/Sprout Lands - UI Pack - Basic pack/fonts/pixelFont-7-8x14-sproutLands.ttf" id="9_x0v65"]
 [ext_resource type="Texture2D" uid="uid://bq4v41o5ag3xb" path="res://assets/ui/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Sprite sheet for Basic Pack.png" id="11_6c2sp"]
+[ext_resource type="PackedScene" uid="uid://boyycnx4ntc3o" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/scenes/moose_1.tscn" id="13_6c2sp"]
 
 [sub_resource type="Resource" id="Resource_0vfjo"]
 script = ExtResource("5_t36mh")
@@ -47,6 +48,7 @@ region = Rect2(869, 100, 22, 24)
 y_sort_enabled = true
 
 [node name="Player" parent="." unique_id=77730844 instance=ExtResource("2_xilss")]
+unique_name_in_owner = true
 y_sort_enabled = true
 position = Vector2(155, 150)
 
@@ -193,6 +195,9 @@ script = ExtResource("8_0vfjo")
 player_sprite = NodePath("../Player/cat")
 
 [node name="Sprite2D" type="Sprite2D" parent="Ghost" unique_id=2018701831]
+
+[node name="Moose1" parent="." unique_id=675831012 instance=ExtResource("13_6c2sp")]
+position = Vector2(588, 143)
 
 [connection signal="pressed" from="UI/Control/PopupInstructions/ExitButton" to="UI/Control/PopupInstructions" method="_on_exit_button_pressed"]
 
