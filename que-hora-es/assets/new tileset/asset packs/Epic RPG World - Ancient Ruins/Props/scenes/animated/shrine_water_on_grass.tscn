@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://d3a227olfly7e"]
+
+[ext_resource type="Texture2D" uid="uid://b4xoaht5gsv46" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/animated/shrine or fountain 160x128-on grass.png" id="1_jv4fp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wmfct"]
+atlas = ExtResource("1_jv4fp")
+region = Rect2(0, 0, 160, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_18qhj"]
+atlas = ExtResource("1_jv4fp")
+region = Rect2(160, 0, 160, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rcu2t"]
+atlas = ExtResource("1_jv4fp")
+region = Rect2(320, 0, 160, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5mn8o"]
+atlas = ExtResource("1_jv4fp")
+region = Rect2(480, 0, 160, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2jg3l"]
+atlas = ExtResource("1_jv4fp")
+region = Rect2(640, 0, 160, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ck38v"]
+atlas = ExtResource("1_jv4fp")
+region = Rect2(800, 0, 160, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7jldj"]
+atlas = ExtResource("1_jv4fp")
+region = Rect2(960, 0, 160, 128)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_asuww"]
+atlas = ExtResource("1_jv4fp")
+region = Rect2(1120, 0, 160, 128)
+filter_clip = true
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wu08d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wmfct")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_18qhj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rcu2t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5mn8o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2jg3l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ck38v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7jldj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_asuww")
+}],
+"loop": 1,
+"name": &"flow",
+"speed": 10.0
+}]
+
+[node name="ShrineWaterOnGrass" type="StaticBody2D" unique_id=1252984699]
+texture_filter = 1
+collision_mask = 0
+
+[node name="ShrineWaterOnGrass" type="AnimatedSprite2D" parent="." unique_id=635465147]
+sprite_frames = SubResource("SpriteFrames_wu08d")
+animation = &"flow"
+autoplay = "flow"
+centered = false
+offset = Vector2(-80, -119)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1742109063]
+polygon = PackedVector2Array(-16, -113, 18, -113, 61, -68, 62, -45, 12, 5, -12, 5, -60, -46, -61, -69)

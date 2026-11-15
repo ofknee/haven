@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://urw1vxe8igwv"]
+
+[ext_resource type="Texture2D" uid="uid://d3u7eh8eei2w1" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/Ancient Temple/To be used on flat surface/Ancient-Temple-left pillar.png" id="1_qe8y2"]
+[ext_resource type="Texture2D" uid="uid://cw5b3b5bxbmkf" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/Ancient Temple/To be used on flat surface/Ancient-Temple-right pillar.png" id="2_ei28p"]
+[ext_resource type="Texture2D" uid="uid://csgka7isbyyti" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/Ancient Temple/To be used on flat surface/Ancient-Temple-main structure.png" id="3_pedg5"]
+[ext_resource type="Texture2D" uid="uid://ccvryut6v728o" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/Ancient Temple/To be used on flat surface/Ancient-Temple-top structure-floor1.png" id="4_1hm0e"]
+[ext_resource type="Texture2D" uid="uid://divfnd1erq0s0" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/Ancient Temple/To be used on flat surface/Ancient-Temple-top pillar.png" id="5_w6u6f"]
+[ext_resource type="Texture2D" uid="uid://finvbn26vmgc" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/Ancient Temple/To be used on flat surface/Ancient-Temple-entrance stairs.png" id="6_q1fvm"]
+
+[node name="AncientTempleFlatSurfaceFloor1" type="StaticBody2D" unique_id=1015290675]
+texture_filter = 1
+collision_mask = 0
+
+[node name="LeftPillar" type="Sprite2D" parent="." unique_id=370077306]
+z_index = 1
+texture = ExtResource("1_qe8y2")
+centered = false
+offset = Vector2(-368, -216)
+
+[node name="RightPillar" type="Sprite2D" parent="." unique_id=750469393]
+z_index = 1
+texture = ExtResource("2_ei28p")
+centered = false
+offset = Vector2(176, -216)
+
+[node name="MainStructure" type="Sprite2D" parent="." unique_id=1839512933]
+texture = ExtResource("3_pedg5")
+centered = false
+offset = Vector2(-272, -344)
+
+[node name="TopStructureFloor1" type="Sprite2D" parent="." unique_id=1897392531]
+texture = ExtResource("4_1hm0e")
+centered = false
+offset = Vector2(-176, -376)
+
+[node name="TopPillar" type="Sprite2D" parent="." unique_id=1507601377]
+texture = ExtResource("5_w6u6f")
+centered = false
+offset = Vector2(-44, -497)
+
+[node name="EntranceStairs" type="Sprite2D" parent="." unique_id=175479984]
+texture = ExtResource("6_q1fvm")
+centered = false
+offset = Vector2(-155, -56)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=2139707341]
+polygon = PackedVector2Array(-244, -94, -133, -139, -47, -134, -47, -35.92978, -65, -35, -74.26846, -11.554077, -120, 20, -167, 14, -172, -17, -244, -17)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="." unique_id=592809795]
+polygon = PackedVector2Array(46, -134, 130, -139, 252, -96, 253, -19, 176, -20, 171.1051, 8.943176, 127, 16, 81, -17, 72, -31, 46, -35.505707)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="." unique_id=1965318078]
+polygon = PackedVector2Array(-47, -129, 46, -129, 46, -36, -47, -36)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="." unique_id=531178981]
+polygon = PackedVector2Array(-352, -119, -302, -119, -302, -103, -352, -102)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="." unique_id=1910893791]
+polygon = PackedVector2Array(-247, -180, -155, -246, 165, -244, 250, -180, 252, -121, 274, -120, 273, -104, 252, -104, 252, -88, -245, -94, -245, -105, -266, -105, -267, -120, -245.64209, -121.610146)
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="." unique_id=1300839280]
+polygon = PackedVector2Array(309, -118, 357, -119, 357, -102, 309, -103)
+
+[node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="." unique_id=650061080]
+polygon = PackedVector2Array(-102, 67, -143, 68, -142, 48, -121, 21, -75, -12, -74, 30, -84, 39, -82, 100, -102, 100)
+
+[node name="CollisionPolygon2D9" type="CollisionPolygon2D" parent="." unique_id=299144144]
+position = Vector2(168, 4.0000005)
+scale = Vector2(0.7336956, 1)
+polygon = PackedVector2Array(-106.31112, 37.999996, -118.57778, 26.999998, -117.21482, -20, -64.059265, 7.999999, -24.53334, 44.999996, -25.896301, 61.999992, -84.50371, 62.999992, -80.414825, 95.99999, -109.03704, 95.99999)

@@ -1,0 +1,147 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/animated/atmospheric nature particles.png" id="1_ox6vu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q5vy2"]
+atlas = ExtResource("1_ox6vu")
+region = Rect2(0, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oaewu"]
+atlas = ExtResource("1_ox6vu")
+region = Rect2(64, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_flllf"]
+atlas = ExtResource("1_ox6vu")
+region = Rect2(128, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n1tom"]
+atlas = ExtResource("1_ox6vu")
+region = Rect2(192, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5oedr"]
+atlas = ExtResource("1_ox6vu")
+region = Rect2(256, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fx4e1"]
+atlas = ExtResource("1_ox6vu")
+region = Rect2(320, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fglgd"]
+atlas = ExtResource("1_ox6vu")
+region = Rect2(384, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vt5ld"]
+atlas = ExtResource("1_ox6vu")
+region = Rect2(448, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gklpc"]
+atlas = ExtResource("1_ox6vu")
+region = Rect2(512, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4hrti"]
+atlas = ExtResource("1_ox6vu")
+region = Rect2(576, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gdmln"]
+atlas = ExtResource("1_ox6vu")
+region = Rect2(640, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3mbb8"]
+atlas = ExtResource("1_ox6vu")
+region = Rect2(704, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bd53n"]
+atlas = ExtResource("1_ox6vu")
+region = Rect2(768, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lptua"]
+atlas = ExtResource("1_ox6vu")
+region = Rect2(832, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u1qfo"]
+atlas = ExtResource("1_ox6vu")
+region = Rect2(896, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kyt3b"]
+atlas = ExtResource("1_ox6vu")
+region = Rect2(960, 0, 64, 64)
+filter_clip = true
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ntjn2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q5vy2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oaewu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_flllf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n1tom")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5oedr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fx4e1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fglgd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vt5ld")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gklpc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4hrti")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gdmln")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3mbb8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bd53n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lptua")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u1qfo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kyt3b")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[node name="AtmosphericNatureParticles" type="AnimatedSprite2D" unique_id=1357542369]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_ntjn2")
+animation = &"idle"
+autoplay = "idle"
+centered = false
+offset = Vector2(-32, -32)

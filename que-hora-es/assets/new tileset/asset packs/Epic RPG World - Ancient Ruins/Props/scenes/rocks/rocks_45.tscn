@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bfqiyhs7bbuw6"]
+
+[ext_resource type="Texture2D" uid="uid://dtdcajiikqire" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Props/atlas-props-individual sprites/rocks_45.png" id="1_yivsk"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yivsk"]
+radius = 9.0
+height = 48.6
+
+[node name="Rocks45" type="StaticBody2D" unique_id=1019236741]
+texture_filter = 1
+collision_mask = 0
+
+[node name="Rocks45" type="Sprite2D" parent="." unique_id=1470294347]
+texture = ExtResource("1_yivsk")
+centered = false
+offset = Vector2(-41, -31)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2076286945]
+position = Vector2(11, -15)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_yivsk")

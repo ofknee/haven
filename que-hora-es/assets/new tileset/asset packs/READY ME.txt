@@ -1,0 +1,12 @@
+#--------ERW Walls Autotile 2T/3T PLUGIN---------
+#This project features a custom autotile plugin called ERW Walls Autotile 2T/3T to make it
+#possible to draw big walls(2 and 3 tiles tall) from the Epic RPG World tilesets
+#This plugin also allows you to use your own tilesets by choosing the custom profile
+#This custom profile has a simplified version of the autotile rule used for the
+#Epic RPG Word series tilesets
+
+#You can find the ERW Walls in the right side panel by default
+
+#--------BRUSH SIZE PLUGIN---------
+#Brush size plugin for Terrains. My tilesets have reduced amount of tiles so 
+#I'd recomend using a brush of 2x2 minimum to make it easier to draw.
