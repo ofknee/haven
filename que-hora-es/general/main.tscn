@@ -36,6 +36,7 @@ position = Vector2(216, 160)
 [node name="Camera2D" type="Camera2D" parent="." unique_id=902821499]
 physics_interpolation_mode = 1
 position = Vector2(216, 160)
+zoom = Vector2(1.5, 1.5)
 process_callback = 0
 
 [node name="PhantomCameraHost" type="Node" parent="Camera2D" unique_id=1667432914]
@@ -50,6 +51,7 @@ position = Vector2(216, 160)
 script = ExtResource("4_cwgdg")
 follow_mode = 2
 follow_target = NodePath("../Player")
+zoom = Vector2(1.5, 1.5)
 tween_resource = SubResource("Resource_0vfjo")
 follow_damping = true
 follow_damping_value = Vector2(0.5, 0.5)
