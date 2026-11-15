@@ -1,20 +1,21 @@
 extends CharacterBody2D
 
-const STATE_IDLE := &"Idle"
-const STATE_WALK := &"Walk"
+@onready var cat: AnimatedSprite2D = $cat
+@export var max_health: int = 5
+@export var invincible_time: float = 1.0
+@export var knockback_strength: float = 150.0
 
-const PARAM_IDLE := "parameters/Idle/blend_position"
-const PARAM_WALK := "parameters/Walk/blend_position"
-
-@onready var cat: Sprite2D = $cat
-@onready var animation_tree: AnimationTree = $AnimationTree
-
-var playback: AnimationNodeStateMachinePlayback
-var current_state: StringName = STATE_IDLE
-var last_direction: Vector2 = Vector2.DOWN
-
+var health: int
+var invincible := false
+var dead := false
+var knockback := Vector2.ZERO
 @export var move_speed: float = 100.0
 @export var speed_boost: float = 1.0
+
+@export var art_faces_right: bool = false
+
+@export var sideways_y_offset: float = 10.0
+@export var move_x_offset: float = 23.0
 
 @export var afterimage_spacing: float = 5.0
 @export var afterimage_lifetime: float = 0.25
@@ -26,6 +27,8 @@ var last_direction: Vector2 = Vector2.DOWN
 @export var dust_per_puff: int = 3
 @export var dust_lifetime: float = 0.4
 
+var facing: Vector2 = Vector2.DOWN
+var base_cat_position: Vector2
 var speeding := false
 var last_image_position: Vector2
 var prev_physics_pos: Vector2
@@ -37,24 +40,45 @@ func _ready() -> void:
 	SignalBus.revert.connect(revert_position)
 	SignalBus.dialate_time.connect(start_speed_effect)
 
+	base_cat_position = cat.position
 	prev_physics_pos = global_position
 	_prepare_dust()
+	_play_animation(false)
+	health = max_health
+	SignalBus.player_health_changed.emit(health, max_health)
+	
 
-	animation_tree.active = true
-	playback = animation_tree.get(
-		"parameters/playback"
-	) as AnimationNodeStateMachinePlayback
+func take_damage(amount: int, from_position: Vector2 = Vector2.ZERO) -> void:
+	if invincible or dead:
+		return
 
-	# Initialize both blend spaces with a cardinal direction
-	animation_tree.set(PARAM_IDLE, last_direction)
-	animation_tree.set(PARAM_WALK, last_direction)
+	health -= amount
+	SignalBus.player_health_changed.emit(health, max_health)
 
-	current_state = STATE_IDLE
-	playback.start(STATE_IDLE)
+	if health <= 0:
+		_die()
+		return
+
+	# knockback away from the attacker
+	knockback = (global_position - from_position).normalized() * knockback_strength
+
+	# invincibility + flicker
+	invincible = true
+	var tween := create_tween()
+	tween.set_loops(int(invincible_time / 0.2))
+	tween.tween_property(cat, "modulate:a", 0.3, 0.1)
+	tween.tween_property(cat, "modulate:a", 1.0, 0.1)
+	await get_tree().create_timer(invincible_time).timeout
+	cat.modulate.a = 1.0
+	invincible = false
 
 
-# Snaps any direction to one of the 4 cardinal directions so the
-# BlendSpace2D never sits between animations (which causes frame glitching).
+func _die() -> void:
+	dead = true
+	velocity = Vector2.ZERO
+	# swap for a game over screen later
+	get_tree().call_deferred("reload_current_scene")
+	
 func _snap_cardinal(v: Vector2) -> Vector2:
 	var ax: float = absf(v.x)
 	var ay: float = absf(v.y)
@@ -64,32 +88,42 @@ func _snap_cardinal(v: Vector2) -> Vector2:
 	elif ay > ax:
 		return Vector2(0.0, signf(v.y))
 
-	# Exact diagonal: keep the current facing to avoid flip-flopping
-	return last_direction
+	return facing
+
+
+func _play_animation(moving: bool) -> void:
+	var anim: StringName
+
+	if facing.x != 0.0:
+		anim = &"right" if moving else &"idle-right"
+		var facing_left: bool = facing.x < 0.0
+		cat.flip_h = (facing_left == art_faces_right)
+		var x_shift: float = move_x_offset if facing_left else 0.0
+		cat.position = base_cat_position + Vector2(x_shift, sideways_y_offset)
+	elif facing.y < 0.0:
+		anim = &"up" if moving else &"idle-up"
+		cat.flip_h = false
+		var x_shift: float = move_x_offset
+		cat.position = base_cat_position + Vector2(x_shift, 0.0)
+	else:
+		anim = &"down" if moving else &"idle-down"
+		cat.flip_h = false
+		var x_shift: float = move_x_offset
+		cat.position = base_cat_position + Vector2(x_shift, 0.0)
+
+	if cat.animation != anim:
+		cat.play(anim)
+	elif not cat.is_playing():
+		cat.play(anim)
 
 
 func _update_animation(input_direction: Vector2) -> void:
-	if playback == null:
-		return
+	var moving: bool = input_direction.length_squared() > 0.001
 
-	var target: StringName = STATE_IDLE
+	if moving:
+		facing = _snap_cardinal(input_direction)
 
-	if input_direction.length_squared() > 0.001:
-		# Character is moving
-		last_direction = _snap_cardinal(input_direction)
-		target = STATE_WALK
-
-		animation_tree.set(PARAM_WALK, last_direction)
-	else:
-		# Character stopped
-		target = STATE_IDLE
-
-		animation_tree.set(PARAM_IDLE, last_direction)
-
-	# Only switch when the desired state changes
-	if current_state != target:
-		current_state = target
-		playback.travel(current_state)
+	_play_animation(moving)
 
 
 func _get_visual_transform() -> Transform2D:
@@ -109,10 +143,12 @@ func start_speed_effect() -> void:
 	last_image_position = _get_visual_transform().origin
 
 
-func _physics_process(_delta: float) -> void:
+func _physics_process(delta: float) -> void:
+	if dead:
+		return
+
 	prev_physics_pos = global_position
 
-	# Input direction
 	var input_direction := Vector2(
 		Input.get_action_strength("right")
 			- Input.get_action_strength("left"),
@@ -120,19 +156,17 @@ func _physics_process(_delta: float) -> void:
 			- Input.get_action_strength("up")
 	).normalized()
 
-	# Update animation
 	_update_animation(input_direction)
 
-	# Movement
 	var speed: float = move_speed
 
 	if speeding:
 		speed *= speed_boost
 
-	velocity = input_direction * speed
+	velocity = input_direction * speed + knockback
+	knockback = knockback.move_toward(Vector2.ZERO, 600.0 * delta)
 	move_and_slide()
 
-	# Dust particles based on actual distance moved
 	var distance_moved: float = global_position.distance_to(
 		prev_physics_pos
 	)
@@ -159,23 +193,22 @@ func _process(_delta: float) -> void:
 		create_afterimage(current)
 		last_image_position = current.origin
 
-
+	
 func create_afterimage(xform: Transform2D) -> void:
-	var image := Sprite2D.new()
+	var image := AnimatedSprite2D.new()
 
 	image.top_level = true
 	image.physics_interpolation_mode = (
 		Node.PHYSICS_INTERPOLATION_MODE_OFF
 	)
 
-	image.texture = cat.texture
-	image.hframes = cat.hframes
-	image.vframes = cat.vframes
+	image.sprite_frames = cat.sprite_frames
+	image.animation = cat.animation
 	image.frame = cat.frame
+	image.pause()
 
 	image.flip_h = cat.flip_h
 	image.flip_v = cat.flip_v
-
 	image.offset = cat.offset
 	image.centered = cat.centered
 
@@ -283,9 +316,4 @@ func revert_position(last_position: Vector2) -> void:
 	dust_distance = 0.0
 	last_image_position = _get_visual_transform().origin
 
-	# Return to idle after reverting
-	current_state = STATE_IDLE
-
-	if playback != null:
-		animation_tree.set(PARAM_IDLE, last_direction)
-		playback.travel(STATE_IDLE)
+	_play_animation(false)

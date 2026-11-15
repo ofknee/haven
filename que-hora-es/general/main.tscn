@@ -197,7 +197,8 @@ player_sprite = NodePath("../Player/cat")
 [node name="Sprite2D" type="Sprite2D" parent="Ghost" unique_id=2018701831]
 
 [node name="Moose1" parent="." unique_id=675831012 instance=ExtResource("13_6c2sp")]
-position = Vector2(588, 143)
+z_index = 1
+position = Vector2(588, 161)
 
 [connection signal="pressed" from="UI/Control/PopupInstructions/ExitButton" to="UI/Control/PopupInstructions" method="_on_exit_button_pressed"]
 

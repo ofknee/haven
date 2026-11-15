@@ -8,7 +8,10 @@ extends CharacterBody2D
 @export var max_health: int = 3
 
 @onready var sprite: AnimatedSprite2D = $Moose
+@export var attack_damage: int = 1
+@export var hit_frame: int = 2   # which frame of "attack" actually hits; adjust to your art
 
+var hit_done := false
 var player: Node2D
 var health: int
 var is_attacking := false
@@ -22,7 +25,17 @@ func _ready() -> void:
 	player = %Player
 	sprite.animation_finished.connect(_on_animation_finished)
 	sprite.play("idle")
+	sprite.frame_changed.connect(_on_frame_changed)
 
+func _on_frame_changed() -> void:
+	if is_dead or hit_done:
+		return
+	if sprite.animation == "attack" and sprite.frame >= hit_frame:
+		hit_done = true
+		# only damage if the player is still close when the swing lands
+		var dist := player.global_position.distance_to(global_position)
+		if dist <= attack_range * 1.5 and player.has_method("take_damage"):
+			player.take_damage(attack_damage, global_position)
 
 func _physics_process(delta: float) -> void:
 	if is_dead:
