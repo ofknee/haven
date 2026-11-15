@@ -1,147 +1,7 @@
 [gd_scene format=3 uid="uid://bbtkhynfqgm7g"]
 
 [ext_resource type="Script" uid="uid://btmt3on07ds3r" path="res://general/player.gd" id="1_cvdqf"]
-[ext_resource type="Texture2D" uid="uid://dpgmf6vuiqwsd" path="res://assets/cat/catmaster.png" id="2_cvdqf"]
-[ext_resource type="Texture2D" uid="uid://b8tm14msaq4s6" path="res://assets/cat/cat_front.png" id="2_u6uc5"]
-[ext_resource type="Texture2D" uid="uid://cj4wn17duq2xv" path="res://assets/cat/cat_back.png" id="4_jij6b"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vynas"]
-atlas = ExtResource("2_u6uc5")
-region = Rect2(0, 0, 60, 82)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_w2ye0"]
-atlas = ExtResource("2_u6uc5")
-region = Rect2(60, 0, 60, 82)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_giciw"]
-atlas = ExtResource("2_u6uc5")
-region = Rect2(120, 0, 60, 82)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qkcuc"]
-atlas = ExtResource("2_u6uc5")
-region = Rect2(180, 0, 60, 82)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0a551"]
-atlas = ExtResource("2_cvdqf")
-region = Rect2(60, 246, 60, 82)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tmyxc"]
-atlas = ExtResource("2_cvdqf")
-region = Rect2(120, 246, 60, 82)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ewg24"]
-atlas = ExtResource("2_cvdqf")
-region = Rect2(0, 246, 60, 82)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gg54g"]
-atlas = ExtResource("2_cvdqf")
-region = Rect2(0, 0, 60, 82)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0pffj"]
-atlas = ExtResource("2_cvdqf")
-region = Rect2(60, 0, 60, 82)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1xkpt"]
-atlas = ExtResource("2_cvdqf")
-region = Rect2(120, 0, 60, 82)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6ih3v"]
-atlas = ExtResource("2_cvdqf")
-region = Rect2(180, 0, 60, 82)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_moglf"]
-atlas = ExtResource("4_jij6b")
-region = Rect2(0, 0, 60, 82)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_3h13k"]
-atlas = ExtResource("4_jij6b")
-region = Rect2(60, 0, 60, 82)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_o0cis"]
-atlas = ExtResource("4_jij6b")
-region = Rect2(120, 0, 60, 82)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_46852"]
-atlas = ExtResource("4_jij6b")
-region = Rect2(180, 0, 60, 82)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_43hlm"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vynas")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_w2ye0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_giciw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qkcuc")
-}],
-"loop": 1,
-"name": &"down",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0a551")
-}],
-"loop": 1,
-"name": &"idle-down",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tmyxc")
-}],
-"loop": 1,
-"name": &"idle-right",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ewg24")
-}],
-"loop": 1,
-"name": &"idle-up",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gg54g")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0pffj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1xkpt")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6ih3v")
-}],
-"loop": 1,
-"name": &"right",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_moglf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3h13k")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_o0cis")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_46852")
-}],
-"loop": 1,
-"name": &"up",
-"speed": 5.0
-}]
+[ext_resource type="SpriteFrames" uid="uid://b6jfkujnibww6" path="res://resources/new_sprite_frames.tres" id="2_cvdqf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8o121"]
 size = Vector2(24, 10.5)
@@ -168,7 +28,7 @@ dust_lifetime = null
 
 [node name="cat" type="AnimatedSprite2D" parent="." unique_id=610387042]
 position = Vector2(-12, -7)
-sprite_frames = SubResource("SpriteFrames_43hlm")
+sprite_frames = ExtResource("2_cvdqf")
 animation = &"idle-right"
 flip_h = true
 

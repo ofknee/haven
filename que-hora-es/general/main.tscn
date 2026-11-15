@@ -105,6 +105,18 @@ z_index = 1
 position = Vector2(672, 140)
 
 [node name="Player" parent="." unique_id=77730844 groups=["player"] instance=ExtResource("2_xilss")]
+[node name="Ghost" type="Node2D" parent="." unique_id=376190932 node_paths=PackedStringArray("player_sprite")]
+modulate = Color(1.836, 4.144, 3.837, 0.714)
+z_index = 1
+y_sort_enabled = true
+script = ExtResource("8_0vfjo")
+player_sprite = NodePath("../Player/cat")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Ghost" unique_id=452611768]
+sprite_frames = ExtResource("13_xg67p")
+animation = &"down"
+
+[node name="Player" parent="." unique_id=77730844 instance=ExtResource("2_xilss")]
 unique_name_in_owner = true
 y_sort_enabled = true
 position = Vector2(155, 150)
