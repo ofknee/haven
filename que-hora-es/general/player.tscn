@@ -157,8 +157,125 @@ tracks/2/keys = {
 "values": [Vector2(-12.61, -1.055)]
 }
 
+[sub_resource type="Animation" id="Animation_vynas"]
+resource_name = "idleback"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../cat:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [12]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../cat:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-12.145, -7.88)]
+}
+
 [sub_resource type="Animation" id="Animation_cvdqf"]
 resource_name = "idlefront"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../cat:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [13]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../cat:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-12.145, -7.88)]
+}
+
+[sub_resource type="Animation" id="Animation_w2ye0"]
+resource_name = "idleleft"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../cat:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [14]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../cat:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../cat:offset")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-12.145, 1.665)]
+}
+
+[sub_resource type="Animation" id="Animation_giciw"]
+resource_name = "idleright"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../cat:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [14]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../cat:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-12.145, 1.79)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_p8qui"]
 _data = {
@@ -167,7 +284,10 @@ _data = {
 &"catfront": SubResource("Animation_wt85g"),
 &"catleft": SubResource("Animation_u6uc5"),
 &"catright": SubResource("Animation_jij6b"),
-&"idlefront": SubResource("Animation_cvdqf")
+&"idleback": SubResource("Animation_vynas"),
+&"idlefront": SubResource("Animation_cvdqf"),
+&"idleleft": SubResource("Animation_w2ye0"),
+&"idleright": SubResource("Animation_giciw")
 }
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_n8x8b"]
@@ -181,6 +301,9 @@ animation = &"catright"
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_cjcoy"]
 animation = &"catfront"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_cvdqf"]
+animation = &"idleleft"
 
 [sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_3eeao"]
 snap = Vector2(0.01, 0.01)
@@ -197,23 +320,20 @@ blend_point_2/name = &"catright"
 blend_point_3/node = SubResource("AnimationNodeAnimation_cjcoy")
 blend_point_3/pos = Vector2(0, 1)
 blend_point_3/name = &"catfront"
+blend_point_4/node = SubResource("AnimationNodeAnimation_cvdqf")
+blend_point_4/pos = Vector2(0, 0)
+blend_point_4/name = &"idleleft"
 
 [node name="Player" type="CharacterBody2D" unique_id=77730844]
 z_index = 1
 script = ExtResource("1_cvdqf")
-move_speed = null
-speed_boost = null
-afterimage_spacing = null
-afterimage_lifetime = null
-dust_color = null
-dust_feet_offset = null
 
 [node name="cat" type="Sprite2D" parent="." unique_id=1124817446]
 texture = ExtResource("2_cvdqf")
 offset = Vector2(-12.145, -7.88)
 flip_h = true
 hframes = 4
-vframes = 3
+vframes = 4
 frame = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1663414437]
