@@ -24,7 +24,6 @@ func _physics_process(_delta: float) -> void:
 
 	if input_direction != Vector2.ZERO:
 		animation_tree.set("parameters/blend_position", input_direction)
-
 	velocity = input_direction * move_speed
 	move_and_slide()
 

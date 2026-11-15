@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="5_t36mh"]
 [ext_resource type="Texture2D" uid="uid://cuqb1nwkf4nnh" path="res://assets/ProgressBar/StraightBars_Spritesheet.png" id="6_cwgdg"]
 [ext_resource type="Script" uid="uid://dxsmmi1upr6ug" path="res://general/progress_bar.gd" id="7_t36mh"]
+[ext_resource type="Script" uid="uid://c4aq2o0tn2eej" path="res://general/ghost.gd" id="8_0vfjo"]
 
 [sub_resource type="Resource" id="Resource_0vfjo"]
 script = ExtResource("5_t36mh")
@@ -97,3 +98,10 @@ script = ExtResource("7_t36mh")
 process_callback = 0
 wait_time = 5.0
 ignore_time_scale = true
+
+[node name="Ghost" type="Node2D" parent="." unique_id=376190932]
+script = ExtResource("8_0vfjo")
+
+[node name="Sprite2D" type="Sprite2D" parent="Ghost" unique_id=2018701831]
+
+[editable path="Player"]
