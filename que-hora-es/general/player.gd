@@ -9,11 +9,16 @@ extends CharacterBody2D
 @export var afterimage_lifetime: float = 0.25
 @export var dust_color := Color(0.82, 0.72, 0.6)   # warm cream-tan
 @export var dust_feet_offset := Vector2(0, 10)
+@export var dust_forward_nudge: float = -8.0   # pushes the dust toward the cat's front
+@export var dust_spacing: float = 7.0         # pixels walked between puffs
+@export var dust_per_puff: int = 3            # little dots per step
+@export var dust_lifetime: float = 0.4
 
 var speeding := false
 var last_image_position: Vector2
 var prev_physics_pos: Vector2
-var dust: CPUParticles2D
+var dust_distance := 0.0
+var dust_texture: ImageTexture
 
 
 func _ready() -> void:
@@ -21,10 +26,10 @@ func _ready() -> void:
 	SignalBus.revert.connect(revert_position)
 	SignalBus.dialate_time.connect(start_speed_effect)
 	prev_physics_pos = global_position
-	_setup_dust()
+	_prepare_dust()
 
 
-# where the cat is drawn on screen rn
+# where the cat is actually drawn on screen right now
 func _get_visual_transform() -> Transform2D:
 	var xform: Transform2D = cat.global_transform
 	var visual_pos: Vector2 = prev_physics_pos.lerp(
@@ -39,7 +44,7 @@ func start_speed_effect() -> void:
 	last_image_position = _get_visual_transform().origin
 
 
-func _physics_process(_delta: float) -> void:
+func _physics_process(delta: float) -> void:
 	prev_physics_pos = global_position
 
 	var input_direction := Vector2(
@@ -53,7 +58,15 @@ func _physics_process(_delta: float) -> void:
 	var speed := move_speed * (speed_boost if speeding else 1.0)
 	velocity = input_direction * speed
 	move_and_slide()
-	_update_dust()
+
+	# a puff of dust every few pixels walked
+	if velocity.length() > 1.0:
+		dust_distance += velocity.length() * delta
+		if dust_distance >= dust_spacing:
+			dust_distance = 0.0
+			_spawn_dust_puff(velocity.normalized())
+	else:
+		dust_distance = dust_spacing * 0.5   # first step after stopping puffs quickly
 
 
 func _process(_delta: float) -> void:
@@ -89,56 +102,40 @@ func create_afterimage(xform: Transform2D) -> void:
 	tween.tween_callback(image.queue_free)
 
 
-func _setup_dust() -> void:
-	# 4x4 pixel circle (clipped corners)
+func _prepare_dust() -> void:
+	# 4x4 pixel circle (clipped corners), built once and shared by every dot
 	var img := Image.create(4, 4, false, Image.FORMAT_RGBA8)
 	img.fill(Color.WHITE)
 	for corner in [Vector2i(0, 0), Vector2i(3, 0), Vector2i(0, 3), Vector2i(3, 3)]:
 		img.set_pixelv(corner, Color(1, 1, 1, 0))
-
-	dust = CPUParticles2D.new()
-	dust.texture = ImageTexture.create_from_image(img)
-	dust.position = dust_feet_offset
-	dust.z_index = -1                      # beats y-sort so it draws under the cat
-	dust.local_coords = false
-	dust.emitting = false
-
-	# denser, shorter-lived = tight little puffs
-	dust.amount = 14
-	dust.lifetime = 0.35
-	dust.explosiveness = 0.0
-	dust.randomness = 0.7
-
-	# wide, flat area at the paws
-	dust.emission_shape = CPUParticles2D.EMISSION_SHAPE_RECTANGLE
-	dust.emission_rect_extents = Vector2(4, 1.5)
-	dust.spread = 40.0
-	dust.gravity = Vector2(0, -10)         # tiny upward float
-	dust.initial_velocity_min = 3.0
-	dust.initial_velocity_max = 10.0
-	dust.damping_min = 10.0
-	dust.damping_max = 18.0
-	dust.scale_amount_min = 1.0            # whole numbers keep it crisp
-	dust.scale_amount_max = 1.0
-
-	# quick soft fade in, then fade out
-	var fade := Gradient.new()
-	fade.offsets = PackedFloat32Array([0.0, 0.15, 1.0])
-	fade.colors = PackedColorArray([
-		Color(dust_color, 0.0),
-		Color(dust_color, 0.75),
-		Color(dust_color, 0.0)
-	])
-	dust.color_ramp = fade
-
-	add_child(dust)
+	dust_texture = ImageTexture.create_from_image(img)
 
 
-func _update_dust() -> void:
-	var moving := velocity.length() > 1.0
-	dust.emitting = moving
-	if moving:
-		dust.direction = -velocity.normalized()
+func _spawn_dust_puff(dir: Vector2) -> void:
+	var base_pos: Vector2 = global_position + dust_feet_offset + dir * dust_forward_nudge
+
+	for i in dust_per_puff:
+		var dot := Sprite2D.new()
+		dot.texture = dust_texture
+		dot.top_level = true
+		dot.physics_interpolation_mode = Node.PHYSICS_INTERPOLATION_MODE_OFF
+		dot.z_as_relative = false
+		dot.z_index = 0                       # above the ground, below the cat (z 1)
+		dot.modulate = Color(dust_color, 0.75)
+
+		add_child(dot)
+		move_child(dot, 0)
+		dot.global_position = base_pos + Vector2(randf_range(-3.0, 3.0), randf_range(-1.5, 1.5))
+
+		# drift backward and up a little, fading as it goes
+		var drift: Vector2 = -dir * randf_range(2.0, 7.0) + Vector2(0, randf_range(-6.0, -2.0))
+		var life: float = dust_lifetime * randf_range(0.7, 1.1)
+
+		var tween := dot.create_tween()
+		tween.set_parallel(true)
+		tween.tween_property(dot, "global_position", dot.global_position + drift, life)
+		tween.tween_property(dot, "modulate:a", 0.0, life)
+		tween.chain().tween_callback(dot.queue_free)
 
 
 func revert_position(last_position: Vector2) -> void:
