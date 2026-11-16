@@ -1,6 +1,6 @@
 extends TextureProgressBar
 
-@export var duration: float = 5.0
+@export var duration: float = 3.0
 @onready var timer: Timer = $Timer
 
 var counting := false
@@ -14,7 +14,7 @@ func _ready() -> void:
 
 
 func _process(_delta: float) -> void:
-	if Input.is_action_just_pressed("timeo"):
+	if Input.is_action_just_pressed("timeo") and not counting:
 		counting = true
 		value = 100
 		show()
@@ -23,9 +23,6 @@ func _process(_delta: float) -> void:
 
 	if counting:
 		value = (timer.time_left / duration) * 100.0
-
-		#if Input.is_action_just_released("timeo"):
-			#finish()
 
 
 func finish() -> void:

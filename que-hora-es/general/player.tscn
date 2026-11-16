@@ -9,22 +9,6 @@ size = Vector2(24, 10.5)
 [node name="Player" type="CharacterBody2D" unique_id=77730844]
 z_index = 1
 script = ExtResource("1_cvdqf")
-max_health = null
-invincible_time = null
-knockback_strength = null
-move_speed = null
-speed_boost = null
-art_faces_right = null
-sideways_y_offset = null
-move_x_offset = null
-afterimage_spacing = null
-afterimage_lifetime = null
-dust_color = null
-dust_feet_offset = null
-dust_forward_nudge = null
-dust_spacing = null
-dust_per_puff = null
-dust_lifetime = null
 
 [node name="cat" type="AnimatedSprite2D" parent="." unique_id=610387042]
 position = Vector2(-12, -7)
