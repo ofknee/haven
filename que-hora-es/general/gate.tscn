@@ -1,0 +1,93 @@
+[gd_scene format=3 uid="uid://bujxpa6fod1dg"]
+
+[ext_resource type="Texture2D" uid="uid://k8jpreoljdyw" path="res://assets/new tileset/asset packs/Epic RPG World - Ancient Ruins/Props/animated/waterfall-structure.png" id="1_3hd1l"]
+[ext_resource type="Texture2D" uid="uid://ct3lf0ga5mk2f" path="res://assets/new tileset/asset packs/Epic RPG World - Ancient Ruins/Props/animated/waterfall-structure-gate-closing.png" id="2_f1i0h"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qi4v7"]
+atlas = ExtResource("2_f1i0h")
+region = Rect2(0, 0, 160, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uuypi"]
+atlas = ExtResource("2_f1i0h")
+region = Rect2(160, 0, 160, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0gp2m"]
+atlas = ExtResource("2_f1i0h")
+region = Rect2(320, 0, 160, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o2cf6"]
+atlas = ExtResource("2_f1i0h")
+region = Rect2(480, 0, 160, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_koqf5"]
+atlas = ExtResource("2_f1i0h")
+region = Rect2(640, 0, 160, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qw1e1"]
+atlas = ExtResource("2_f1i0h")
+region = Rect2(800, 0, 160, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3y1jf"]
+atlas = ExtResource("2_f1i0h")
+region = Rect2(960, 0, 160, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xfh3m"]
+atlas = ExtResource("2_f1i0h")
+region = Rect2(1120, 0, 160, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8bin"]
+atlas = ExtResource("2_f1i0h")
+region = Rect2(1280, 0, 160, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8o121"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qi4v7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uuypi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0gp2m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o2cf6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_koqf5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qw1e1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3y1jf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xfh3m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8bin")
+}],
+"loop": 1,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[node name="Gate" type="Area2D" unique_id=522069593]
+
+[node name="BaseGate" type="Sprite2D" parent="." unique_id=2051026468]
+position = Vector2(0, 30.25)
+texture = ExtResource("1_3hd1l")
+
+[node name="AnimatedDoor" type="AnimatedSprite2D" parent="." unique_id=1760159550]
+sprite_frames = SubResource("SpriteFrames_8o121")
+animation = &"new_animation"
+frame_progress = 0.09575681
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1816672915]

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dcqhccid1cnh"]
 
 [ext_resource type="Texture2D" uid="uid://cr8nlklqt421f" path="res://assets/spike-placeholder.png" id="1_ci6cu"]
+[ext_resource type="Script" uid="uid://8n1mhrpnhhg2" path="res://general/spike.gd" id="1_id88g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8o121"]
 size = Vector2(32, 32)
@@ -49,6 +50,7 @@ animations = [{
 }]
 
 [node name="Spike" type="Area2D" unique_id=547501236]
+script = ExtResource("1_id88g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1959059190]
 shape = SubResource("RectangleShape2D_8o121")
@@ -56,4 +58,4 @@ shape = SubResource("RectangleShape2D_8o121")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1828141065]
 sprite_frames = SubResource("SpriteFrames_43hlm")
 autoplay = "default"
-frame_progress = 0.6798504
+frame_progress = 0.80554104
