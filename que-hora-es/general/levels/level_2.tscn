@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://doy3ne58gjaqf"]
 
 [ext_resource type="TileSet" uid="uid://bm4afay5iq6fq" path="res://assets/new tileset/asset packs/Epic RPG World - Ancient Ruins/Tilesets/Ancient Ruins.tres" id="1_olsrp"]
+[ext_resource type="TileSet" uid="uid://b7dciyk42en35" path="res://resources/scene.tres" id="2_jfnpl"]
 
 [node name="level2" type="Node2D" unique_id=1696342563]
 
@@ -35,3 +36,7 @@ tile_set = ExtResource("1_olsrp")
 z_index = 1
 tile_map_data = PackedByteArray("AAAIAPb/GgAjAAwAAAAIAPf/GgAjAA0AAAAIAPr/GgAsAA4AAAAIAPv/GgAsAA8AAAATAPz/GgAkABAAAAAVAPj/GgAjAA4AAAAVAPn/GgAjAA8AAAALAAIAGgAbAAwAAAALAAMAGgAbAA0AAAAMAAIAGgAcAAwAAAAMAAMAGgAcAA0AAAAMAAUAAAAmABsAAAAMAAYAAAAkAB0AAAANAAUAAAAeABsAAAANAAYAAAAdAB4AAAALAAQAAAAiABwAAAAcAPr/BAAXABsAAAAFAAYAEAADAAwAAEAFAAUAEAACAAwAAEAGAAYAEAADAA0AAEAGAAUAEAACAA0AAEAHAAYAEAADAAwAAEAHAAUAEAACAAwAAEAIAAYAEAADAAwAAEAIAAUAEAACAAwAAEAJAAYAEAADAA0AAEAJAAUAEAACAA0AAEAKAAUAAAAiABsAAAALAAUAAAAbABsAAAALAAYAAAAlAB0AAAAMAAQAAAAjABsAAAAKAAYAAAAaAB0AAAALAAcAAAAbAB4AAAAMAAcAAAAdAB4AAAD7//3/AQAZADwAAAD7//7/AQAZAD0AAAD7////AQAZAD4AAAD7/wAAAQAZAD8AAAD8//3/AQAaADwAAAD8//7/AQAaAD0AAAD8////AQAaAD4AAAD8/wAAAQAaAD8AAAD9//3/AQAbADwAAAD9//7/AQAbAD0AAAD9////AQAbAD4AAAD9/wAAAQAbAD8AAAA=")
 tile_set = ExtResource("1_olsrp")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1801007893]
+tile_map_data = PackedByteArray("AAAAAP//AAAAAAAAAwA=")
+tile_set = ExtResource("2_jfnpl")

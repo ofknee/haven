@@ -2,10 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://dcqhccid1cnh" path="res://general/spike.tscn" id="1_qavee"]
 [ext_resource type="PackedScene" uid="uid://bbwrrwjwfplai" path="res://general/wood.tscn" id="2_1ljbg"]
+[ext_resource type="PackedScene" uid="uid://bujxpa6fod1dg" path="res://general/gate.tscn" id="3_1ljbg"]
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_dt1jo"]
 scenes/1/scene = ExtResource("1_qavee")
 scenes/2/scene = ExtResource("2_1ljbg")
+scenes/3/scene = ExtResource("3_1ljbg")
+scenes/3/display_placeholder = true
 
 [resource]
 tile_size = Vector2i(32, 32)
