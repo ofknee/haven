@@ -31,7 +31,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg", "res://addons/phantom_camera/plugin.cfg")
+enabled=PackedStringArray("res://addons/erw_walls_autotile/plugin.cfg", "res://addons/godot_super-wakatime/plugin.cfg", "res://addons/native_tile_brush_size/plugin.cfg", "res://addons/phantom_camera/plugin.cfg")
 
 [file_customization]
 

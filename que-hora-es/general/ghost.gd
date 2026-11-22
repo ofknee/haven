@@ -1,7 +1,7 @@
 extends Node2D
 
 @export var player_sprite: AnimatedSprite2D
-@export var playback_speed: float = 0.5
+@export var playback_speed: float = 0.3
 @onready var ghost_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
 var history: Array[Dictionary] = []

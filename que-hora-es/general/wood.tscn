@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cl41dei0t6ecn" path="res://assets/wood.png" id="1_ei65n"]
 [ext_resource type="Script" uid="uid://bk8jnb2307x81" path="res://general/wood.gd" id="1_hpos1"]
+[ext_resource type="FontFile" uid="uid://blqbusty1lapl" path="res://assets/ui/Sprout Lands - UI Pack - Basic pack/fonts/pixelFont-7-8x14-sproutLands.ttf" id="2_qwscn"]
 [ext_resource type="AudioStream" uid="uid://btjnlks6ir62r" path="res://assets/sound/coinsound.mp3" id="3_xjluu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8o121"]
@@ -9,6 +10,14 @@ radius = 5.0249376
 
 [node name="Wood" type="Area2D" unique_id=129079986]
 script = ExtResource("1_hpos1")
+bob_height = null
+bob_speed = null
+magnet_range = null
+magnet_speed = null
+pop_scale = null
+show_plus_one = null
+particle_color = null
+plus_one_font = ExtResource("2_qwscn")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=177243980]
 texture = ExtResource("1_ei65n")

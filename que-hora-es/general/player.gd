@@ -46,7 +46,7 @@ func _ready() -> void:
 	_play_animation(false)
 	health = max_health
 	SignalBus.player_health_changed.emit(health, max_health)
-	
+
 
 func take_damage(amount: int, from_position: Vector2 = Vector2.ZERO) -> void:
 	if invincible or dead:
@@ -60,10 +60,8 @@ func take_damage(amount: int, from_position: Vector2 = Vector2.ZERO) -> void:
 		_die()
 		return
 
-	# knockback away from the attacker
 	knockback = (global_position - from_position).normalized() * knockback_strength
 
-	# invincibility + flicker
 	invincible = true
 	var tween := create_tween()
 	tween.set_loops(int(invincible_time / 0.2))
@@ -77,9 +75,9 @@ func take_damage(amount: int, from_position: Vector2 = Vector2.ZERO) -> void:
 func _die() -> void:
 	dead = true
 	velocity = Vector2.ZERO
-	# swap for a game over screen later
 	get_tree().call_deferred("reload_current_scene")
-	
+
+
 func _snap_cardinal(v: Vector2) -> Vector2:
 	var ax: float = absf(v.x)
 	var ay: float = absf(v.y)
@@ -140,6 +138,8 @@ func _get_visual_transform() -> Transform2D:
 
 
 func start_speed_effect() -> void:
+	if speeding:
+		return
 	speeding = true
 	last_image_position = _get_visual_transform().origin
 
@@ -194,7 +194,7 @@ func _process(_delta: float) -> void:
 		create_afterimage(current)
 		last_image_position = current.origin
 
-	
+
 func create_afterimage(xform: Transform2D) -> void:
 	var image := AnimatedSprite2D.new()
 
