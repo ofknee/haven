@@ -1,3 +1,14 @@
-[gd_scene format=3 uid="uid://dehy4uhtd877a"]
+[gd_scene format=3 uid="uid://ca6mrwyjifsj3"]
 
-[node name="level4" type="Node2D" unique_id=240334424]
+[node name="level4" type="Node2D" unique_id=434228405]
+
+[node name="Ground" type="TileMapLayer" parent="." unique_id=1525186183]
+
+[node name="Wall" type="TileMapLayer" parent="." unique_id=1949830926]
+z_index = 1
+
+[node name="Tree" type="TileMapLayer" parent="." unique_id=813873735]
+z_index = 1
+
+[node name="Other Props" type="TileMapLayer" parent="." unique_id=1643004935]
+z_index = 1
