@@ -1,10 +1,7 @@
 [gd_scene format=3 uid="uid://bnh1tvyu8hqcj"]
 
-[ext_resource type="TileSet" uid="uid://70eohgk6sj10" path="res://resources/rpg_tileset.tres" id="1_776qs"]
-
-[node name="TileMapLayer" type="TileMapLayer" unique_id=1602380198]
+[node name="maps" type="Node2D" unique_id=1549143052]
 y_sort_enabled = true
-tile_set = ExtResource("1_776qs")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=962236278]
 y_sort_enabled = true
@@ -14,3 +11,5 @@ offset_right = 2300.0
 offset_bottom = 1598.0
 color = Color(0.5137255, 0.53333336, 0.23529412, 1)
 metadata/_edit_use_anchors_ = true
+
+[node name="level1" type="Node2D" parent="." unique_id=617518238]

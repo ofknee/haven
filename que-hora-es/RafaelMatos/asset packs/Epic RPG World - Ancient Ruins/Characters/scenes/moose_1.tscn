@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://boyycnx4ntc3o"]
 
 [ext_resource type="Texture2D" uid="uid://bxvylfk33e6sv" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/Moose/moose1-attack-all effects-347x192.png" id="1_163mf"]
-[ext_resource type="Script" uid="uid://b4wnwndeg7w1e" path="res://general/moose_1.gd" id="1_845hu"]
+[ext_resource type="Script" uid="uid://b4wnwndeg7w1e" path="res://general/characters/moose_1.gd" id="1_845hu"]
 [ext_resource type="Texture2D" uid="uid://boboxbdhpm76e" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/Moose/moose1-attack-no effects-347x192.png" id="2_845hu"]
 [ext_resource type="Texture2D" uid="uid://chmoaxtwuvkkt" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/Moose/moose1-attack-only dust effect-347x192.png" id="3_5e7wl"]
 [ext_resource type="Texture2D" uid="uid://5fynuj61qgo6" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/Moose/moose1-attack-only smear effect-347x192.png" id="4_qpd4o"]
