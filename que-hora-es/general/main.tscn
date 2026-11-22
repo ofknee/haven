@@ -109,29 +109,11 @@ position = Vector2(672, 140)
 [node name="Player" parent="." unique_id=77730844 groups=["player"] instance=ExtResource("2_xilss")]
 unique_name_in_owner = true
 y_sort_enabled = true
-position = Vector2(155, 150)
-max_health = 5
-invincible_time = 1.0
-knockback_strength = 150.0
-move_speed = 100.0
-speed_boost = 1.0
-art_faces_right = false
-sideways_y_offset = 10.0
-move_x_offset = 23.0
-afterimage_spacing = 5.0
-afterimage_lifetime = 0.25
-dust_color = Color(0.82, 0.72, 0.6, 1)
-dust_feet_offset = Vector2(0, 10)
-dust_forward_nudge = -8.0
-dust_spacing = 7.0
-dust_per_puff = 3
-dust_lifetime = 0.4
 
 [node name="TileMapLayer" parent="." unique_id=1602380198 instance=ExtResource("1_ciee5")]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=902821499]
 physics_interpolation_mode = 1
-position = Vector2(155, 150)
 process_callback = 0
 editor_draw_limits = true
 
@@ -143,7 +125,6 @@ metadata/_custom_type_script = "uid://bd046eokvcnu2"
 
 [node name="PhantomCamera2D" type="Node2D" parent="." unique_id=126753815 node_paths=PackedStringArray("follow_target")]
 top_level = true
-position = Vector2(155, 150)
 script = ExtResource("4_cwgdg")
 follow_mode = 2
 follow_target = NodePath("../Player")

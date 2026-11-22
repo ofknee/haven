@@ -9,15 +9,6 @@
 [node name="maps" type="Node2D" unique_id=1549143052]
 y_sort_enabled = true
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=962236278]
-y_sort_enabled = true
-offset_left = -426.0
-offset_top = -416.0
-offset_right = 2300.0
-offset_bottom = 1598.0
-color = Color(0.5137255, 0.53333336, 0.23529412, 1)
-metadata/_edit_use_anchors_ = true
-
 [node name="level1" parent="." unique_id=1572515335 instance=ExtResource("1_u7kw6")]
 
 [node name="level2" parent="." unique_id=1696342563 instance=ExtResource("2_w8nm5")]
