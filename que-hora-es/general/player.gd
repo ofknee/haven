@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @onready var cat: AnimatedSprite2D = $cat
-@export var max_health: int = 5
+@export var max_health: int = 3
 @export var invincible_time: float = 1.0
 @export var knockback_strength: float = 150.0
 
@@ -10,7 +10,7 @@ var invincible := false
 var dead := false
 var knockback := Vector2.ZERO
 @export var move_speed: float = 100.0
-@export var speed_boost: float = 1
+@export var speed_boost: float = 1.5
 
 @export var art_faces_right: bool = false
 
