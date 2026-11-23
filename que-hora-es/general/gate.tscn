@@ -79,6 +79,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8o121"]
+size = Vector2(50.5, 20)
+
 [node name="Gate" type="Area2D" unique_id=522069593]
 
 [node name="BaseGate" type="Sprite2D" parent="." unique_id=2051026468]
@@ -88,6 +91,8 @@ texture = ExtResource("1_3hd1l")
 [node name="AnimatedDoor" type="AnimatedSprite2D" parent="." unique_id=1760159550]
 sprite_frames = SubResource("SpriteFrames_8o121")
 animation = &"new_animation"
-frame_progress = 0.09575681
+frame_progress = 0.4437215
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1816672915]
+[node name="Area2D" type="CollisionShape2D" parent="." unique_id=815116574]
+position = Vector2(0, 25)
+shape = SubResource("RectangleShape2D_8o121")

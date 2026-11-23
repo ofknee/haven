@@ -44,12 +44,12 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_y0h2i")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"default",
 "speed": 5.0
 }]
 
-[node name="Spike" type="Area2D" unique_id=547501236]
+[node name="Spike" type="Area2D" unique_id=547501236 groups=["spikes"]]
 script = ExtResource("1_id88g")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1959059190]
@@ -57,5 +57,7 @@ shape = SubResource("RectangleShape2D_8o121")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1828141065]
 sprite_frames = SubResource("SpriteFrames_43hlm")
-autoplay = "default"
-frame_progress = 0.80554104
+frame = 4
+frame_progress = 1.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
