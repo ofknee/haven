@@ -1,19 +1,7 @@
 [gd_scene format=4 uid="uid://b1fdba0eysqiy"]
 
 [ext_resource type="TileSet" uid="uid://bm4afay5iq6fq" path="res://assets/new tileset/asset packs/Epic RPG World - Ancient Ruins/Tilesets/Ancient Ruins.tres" id="1_6r2cq"]
-[ext_resource type="PackedScene" uid="uid://dcqhccid1cnh" path="res://general/spike.tscn" id="2_ypr4c"]
-[ext_resource type="PackedScene" uid="uid://bbwrrwjwfplai" path="res://general/wood.tscn" id="3_a7oyw"]
-[ext_resource type="PackedScene" uid="uid://bujxpa6fod1dg" path="res://general/gate.tscn" id="4_a7oyw"]
-
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_dt1jo"]
-scenes/1/scene = ExtResource("2_ypr4c")
-scenes/2/scene = ExtResource("3_a7oyw")
-scenes/3/scene = ExtResource("4_a7oyw")
-scenes/3/display_placeholder = true
-
-[sub_resource type="TileSet" id="TileSet_t6kwa"]
-tile_size = Vector2i(32, 32)
-sources/0 = SubResource("TileSetScenesCollectionSource_dt1jo")
+[ext_resource type="TileSet" uid="uid://b7dciyk42en35" path="res://resources/scene.tres" id="2_4ej0i"]
 
 [node name="level1" type="Node2D" unique_id=1572515335]
 
@@ -48,4 +36,4 @@ tile_set = ExtResource("1_6r2cq")
 
 [node name="Interactive" type="TileMapLayer" parent="." unique_id=640233099]
 tile_map_data = PackedByteArray("AAANAP3/AAAAAAAAAQAOAP3/AAAAAAAAAQAPAP3/AAAAAAAAAQA=")
-tile_set = SubResource("TileSet_t6kwa")
+tile_set = ExtResource("2_4ej0i")

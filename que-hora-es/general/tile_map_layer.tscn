@@ -1,15 +1,16 @@
 [gd_scene format=3 uid="uid://bnh1tvyu8hqcj"]
 
 [ext_resource type="PackedScene" uid="uid://b1fdba0eysqiy" path="res://general/levels/level_1.tscn" id="1_u7kw6"]
-[ext_resource type="PackedScene" uid="uid://ch7uwdh5cxryb" path="res://general/levels/level_2.tscn" id="2_w8nm5"]
-[ext_resource type="PackedScene" uid="uid://kdjnrp46owro" path="res://general/levels/level_3.tscn" id="3_ext01"]
-[ext_resource type="PackedScene" uid="uid://ca6mrwyjifsj3" path="res://general/levels/level_4.tscn" id="4_waodt"]
-[ext_resource type="PackedScene" uid="uid://b2rul00k2xi61" path="res://general/levels/level_5.tscn" id="5_35fuk"]
+[ext_resource type="PackedScene" uid="uid://doy3ne58gjaqf" path="res://general/levels/level_2.tscn" id="2_w8nm5"]
+[ext_resource type="PackedScene" uid="uid://8tcdyn3p12d0" path="res://general/levels/level_3.tscn" id="3_ext01"]
+[ext_resource type="PackedScene" uid="uid://dehy4uhtd877a" path="res://general/levels/level_4.tscn" id="4_waodt"]
+[ext_resource type="PackedScene" uid="uid://ctpgilqf5q8da" path="res://general/levels/level_5.tscn" id="5_35fuk"]
 
 [node name="maps" type="Node2D" unique_id=1549143052]
 y_sort_enabled = true
 
 [node name="level1" parent="." unique_id=1572515335 instance=ExtResource("1_u7kw6")]
+visible = false
 
 [node name="level2" parent="." unique_id=1696342563 instance=ExtResource("2_w8nm5")]
 
