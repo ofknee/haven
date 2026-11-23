@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://bq4v41o5ag3xb" path="res://assets/ui/Sprout Lands - UI Pack - Basic pack/Sprite sheets/Sprite sheet for Basic Pack.png" id="11_6c2sp"]
 [ext_resource type="SpriteFrames" uid="uid://b6jfkujnibww6" path="res://resources/new_sprite_frames.tres" id="14_8sj3o"]
 [ext_resource type="PackedScene" uid="uid://bktrmci6wcc4e" path="res://general/cover.tscn" id="14_mcu5j"]
-[ext_resource type="PackedScene" uid="uid://6kigac1bwv0i" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/scenes/silly_luck_creature.tscn" id="14_xg67p"]
+[ext_resource type="PackedScene" path="res://RafaelMatos/asset packs/Epic RPG World - Ancient Ruins/Characters/scenes/silly_luck_creature.tscn" id="14_xg67p"]
 
 [sub_resource type="Resource" id="Resource_0vfjo"]
 script = ExtResource("5_t36mh")
