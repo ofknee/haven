@@ -318,3 +318,7 @@ func revert_position(last_position: Vector2) -> void:
 	last_image_position = _get_visual_transform().origin
 
 	_play_animation(false)
+
+
+func update_level (_new_level : int):
+	global_position = Vector2.ZERO

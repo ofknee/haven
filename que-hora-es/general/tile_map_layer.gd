@@ -1,18 +1,18 @@
 extends Node2D
 
+@export var levels : Array[PackedScene]
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	Global.level = 1
+	Global.level_change.connect(update_level)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
+#shortcut to switch levels
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("next_level"):
-		pass
+		Global.level += 1
 	elif event.is_action_pressed("back_level"):
-		pass
-		
+		Global.level -= 1
+
+#redraw level map
+func update_level (new_level : int):
+	pass
