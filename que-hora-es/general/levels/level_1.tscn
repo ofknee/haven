@@ -4,9 +4,9 @@
 [ext_resource type="TileSet" uid="uid://b7dciyk42en35" path="res://resources/scene.tres" id="2_4ej0i"]
 
 [node name="level1" type="Node2D" unique_id=1572515335]
+y_sort_enabled = true
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=744263353]
-y_sort_enabled = true
 offset_left = -426.0
 offset_top = -416.0
 offset_right = 2300.0

@@ -6,3 +6,4 @@
 y_sort_enabled = true
 
 [node name="level1" parent="." unique_id=1572515335 instance=ExtResource("1_u7kw6")]
+y_sort_enabled = true
